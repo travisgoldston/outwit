@@ -5,11 +5,11 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 
 const navLinks = [
-  { href: "/home", label: "Home" },
-  { href: "/experiments", label: "Experiments" },
-  { href: "/services", label: "Services" },
-  { href: "/case-studies", label: "Case Studies" },
-  { href: "/blog", label: "Blog" },
+  { href: "#home", label: "Home" },
+  { href: "#experiments", label: "Experiments" },
+  { href: "#services", label: "Services" },
+  { href: "#case-studies", label: "Case Studies" },
+  { href: "#blog", label: "Blog" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -31,7 +31,7 @@ export default function Navbar() {
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-4 lg:px-8">
         <Link
-          href="/home"
+          href="#home"
           className="flex items-center gap-2 transition-opacity hover:opacity-90"
           aria-label="Outwit home"
         >
