@@ -1,17 +1,17 @@
 import Link from "next/link";
 
 const outwitLinks = [
-  { href: "#home", label: "About" },
-  { href: "#experiments", label: "Experiments" },
-  { href: "#services", label: "Services" },
-  { href: "#case-studies", label: "Case Studies" },
-  { href: "#blog", label: "Blog" },
+  { href: "/home", label: "About" },
+  { href: "/experiments", label: "Experiments" },
+  { href: "/services", label: "Services" },
+  { href: "/case-studies", label: "Case Studies" },
+  { href: "/blog", label: "Blog" },
 ];
 
 const resourceLinks = [
-  { href: "#experiments", label: "Marketing Experiments" },
-  { href: "#blog", label: "SEO Insights" },
-  { href: "#services", label: "Growth Strategy" },
+  { href: "/experiments", label: "Marketing Experiments" },
+  { href: "/blog", label: "SEO Insights" },
+  { href: "/services", label: "Growth Strategy" },
 ];
 
 export default function Footer() {

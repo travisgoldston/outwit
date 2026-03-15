@@ -54,7 +54,7 @@ export default function Experiments() {
                 {exp.summary}
               </p>
               <Link
-                href="#blog"
+                href="/blog"
                 className="mt-6 inline-flex items-center text-sm font-semibold text-neon-orange transition-colors hover:text-neon-orange/80"
               >
                 Read more
@@ -67,7 +67,7 @@ export default function Experiments() {
         </div>
         <div className="mt-12 flex justify-center">
           <Link
-            href="#blog"
+            href="/blog"
             className="inline-flex items-center justify-center rounded-xl border border-white/20 px-6 py-3.5 text-base font-semibold text-white transition-all hover:bg-white/10"
           >
             View All Experiments

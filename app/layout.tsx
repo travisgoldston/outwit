@@ -20,6 +20,9 @@ export const metadata: Metadata = {
   title: "Outwit — Smarter Marketing Through Strategy and Experimentation",
   description:
     "A clever digital marketing strategy lab that helps companies outsmart growth problems. Smart strategy, experiments, and growth systems — not brute force.",
+  icons: {
+    icon: "/icon.png",
+  },
   openGraph: {
     title: "Outwit — Outsmart Your Growth",
     description:

@@ -5,12 +5,12 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 
 const navLinks = [
-  { href: "#home", label: "Home" },
-  { href: "#experiments", label: "Experiments" },
-  { href: "#services", label: "Services" },
-  { href: "#case-studies", label: "Case Studies" },
-  { href: "#blog", label: "Blog" },
-  { href: "#contact", label: "Contact" },
+  { href: "/home", label: "Home" },
+  { href: "/experiments", label: "Experiments" },
+  { href: "/services", label: "Services" },
+  { href: "/case-studies", label: "Case Studies" },
+  { href: "/blog", label: "Blog" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export default function Navbar() {
@@ -31,7 +31,7 @@ export default function Navbar() {
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-4 lg:px-8">
         <Link
-          href="#home"
+          href="/home"
           className="flex items-center gap-2 transition-opacity hover:opacity-90"
           aria-label="Outwit home"
         >
@@ -62,7 +62,7 @@ export default function Navbar() {
 
         <div className="hidden items-center gap-4 md:flex">
           <Link
-            href="#contact"
+            href="/contact"
             className="rounded-lg bg-neon-orange px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-neon-orange/90 shadow-lg shadow-neon-orange/20"
           >
             Get a Strategy Call
@@ -98,7 +98,7 @@ export default function Navbar() {
             ))}
             <li>
               <Link
-                href="#contact"
+                href="/contact"
                 className="inline-block rounded-lg bg-neon-orange px-5 py-2.5 text-sm font-semibold text-white"
                 onClick={() => setMobileOpen(false)}
               >

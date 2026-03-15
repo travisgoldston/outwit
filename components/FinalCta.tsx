@@ -11,7 +11,7 @@ export default function FinalCta() {
           Let&apos;s find the growth opportunities your competitors are missing.
         </p>
         <Link
-          href="#contact"
+          href="/contact"
           className="mt-10 inline-flex items-center justify-center rounded-xl bg-white px-8 py-4 text-base font-semibold text-neon-orange shadow-lg transition-all hover:bg-white/95 hover:shadow-xl"
         >
           Start a Strategy Conversation
