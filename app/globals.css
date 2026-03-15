@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --fox-orange: #E86A1D;
+  --cream: #FDF7F0;
+  --deep-gray: #2C2C2C;
+  --strategy-navy: #1F3A5F;
+  --white: #FFFFFF;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply antialiased text-deep-gray bg-cream;
+}
+
+/* Subtle selection color */
+::selection {
+  background-color: rgba(232, 106, 29, 0.2);
+}
