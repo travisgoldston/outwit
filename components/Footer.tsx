@@ -72,12 +72,12 @@ export default function Footer() {
           <p className="mt-3 text-sm text-white/60">
             a thought project by{" "}
             <a
-              href="https://boldspark.co"
+              href="https://travisgoldston.com"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white/80 transition-colors hover:text-neon-orange"
             >
-              boldspark
+              Travis Goldston
             </a>{" "}
             ⚡
           </p>
