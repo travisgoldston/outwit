@@ -7,19 +7,6 @@ export default function Hero() {
       id="home"
       className="relative overflow-hidden bg-vibe-bg px-6 pt-16 pb-20 lg:px-8 lg:pt-24 lg:pb-28"
     >
-      {/* Mesh gradient: subtle radial glow behind hero fox */}
-      <div
-        className="pointer-events-none absolute inset-0 flex items-center justify-end pr-0 lg:pr-[10%]"
-        aria-hidden
-      >
-        <div
-          className="h-[80vh] w-[80vw] max-w-[900px] rounded-full opacity-[0.05]"
-          style={{
-            background: "radial-gradient(circle, #FF5F1F 0%, transparent 70%)",
-          }}
-        />
-      </div>
-
       <div className="relative mx-auto grid max-w-6xl gap-12 lg:grid-cols-2 lg:gap-16 lg:items-center">
         <div className="animate-fade-in-up">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl xl:text-7xl">
@@ -31,13 +18,13 @@ export default function Hero() {
           <div className="mt-10 flex flex-wrap gap-4">
             <Link
               href="#experiments"
-              className="inline-flex items-center justify-center rounded-lg bg-neon-orange px-6 py-3.5 text-base font-semibold text-white shadow-lg shadow-neon-orange/25 transition-all hover:bg-neon-orange/90 hover:shadow-neon-orange/30"
+              className="inline-flex items-center justify-center rounded-lg bg-neon-orange px-6 py-3.5 text-base font-semibold text-white shadow-lg shadow-neon-orange/25 transition-all hover:bg-neon-orange/90 hover:shadow-[0_0_20px_rgba(255,95,31,0.4)]"
             >
               Explore Experiments
             </Link>
             <Link
               href="#case-studies"
-              className="inline-flex items-center justify-center rounded-lg border border-white/20 px-6 py-3.5 text-base font-semibold text-white transition-all hover:bg-white/10"
+              className="inline-flex items-center justify-center rounded-lg border border-white bg-transparent px-6 py-3.5 text-base font-semibold text-white transition-all hover:border-neon-orange"
             >
               See the work
             </Link>

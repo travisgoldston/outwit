@@ -40,8 +40,11 @@ export default function Experiments() {
               className="flex flex-col rounded-2xl border border-white/10 bg-white/5 p-8 shadow-sm backdrop-blur-[8px] transition-all duration-300 hover:border-white/20 hover:bg-white/[0.07]"
             >
               <span
-                className={`font-mono inline-flex w-fit rounded px-3 py-1 text-xs font-semibold uppercase tracking-wider ${statusStyles[exp.status] ?? "bg-white/10 text-white/80"}`}
+                className={`font-mono inline-flex w-fit items-center gap-1.5 rounded px-3 py-1 text-xs font-semibold uppercase tracking-wider ${statusStyles[exp.status] ?? "bg-white/10 text-white/80"}`}
               >
+                {exp.status === "In Progress" && (
+                  <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-current animate-pulse-soft" aria-hidden />
+                )}
                 {exp.status}
               </span>
               <h3 className="mt-4 text-xl font-bold text-white">

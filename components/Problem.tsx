@@ -33,7 +33,7 @@ export default function Problem() {
         <h2 className="text-center text-3xl font-bold tracking-tight text-white sm:text-4xl">
           Most marketing wastes time and money.
         </h2>
-        <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-relaxed text-white/80">
+        <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-[1.75] text-white/80">
           Businesses are told to post more, run more ads, and produce more content. Growth rarely comes from doing more. It comes from understanding what actually works.
         </p>
         <div className="mt-14 grid gap-6 sm:grid-cols-3">

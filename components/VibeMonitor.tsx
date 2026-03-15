@@ -1,3 +1,5 @@
+const neonNumberShadow = { textShadow: "0 0 8px rgba(255, 95, 31, 0.3)" };
+
 export default function VibeMonitor() {
   return (
     <section className="border-t border-white/10 bg-vibe-bg px-6 py-10 lg:px-8">
@@ -7,7 +9,10 @@ export default function VibeMonitor() {
             <p className="font-mono text-sm uppercase tracking-wider text-white/60">
               Lines of Code
             </p>
-            <p className="mt-2 font-mono text-2xl font-semibold tabular-nums text-white lg:text-3xl">
+            <p
+              className="mt-2 font-mono text-3xl font-semibold tabular-nums text-white lg:text-4xl"
+              style={neonNumberShadow}
+            >
               2,845
             </p>
           </div>
@@ -15,7 +20,10 @@ export default function VibeMonitor() {
             <p className="font-mono text-sm uppercase tracking-wider text-white/60">
               Nights Tinker&apos;d
             </p>
-            <p className="mt-2 font-mono text-2xl font-semibold tabular-nums text-white lg:text-3xl">
+            <p
+              className="mt-2 font-mono text-3xl font-semibold tabular-nums text-white lg:text-4xl"
+              style={neonNumberShadow}
+            >
               41
             </p>
           </div>
@@ -23,7 +31,10 @@ export default function VibeMonitor() {
             <p className="font-mono text-sm uppercase tracking-wider text-white/60">
               Next Baby
             </p>
-            <p className="mt-2 font-mono text-xl font-semibold text-white lg:text-2xl">
+            <p
+              className="mt-2 font-mono text-2xl font-semibold text-white lg:text-3xl"
+              style={neonNumberShadow}
+            >
               <span className="animate-pulse-soft">[LOADING...]</span>
             </p>
           </div>
