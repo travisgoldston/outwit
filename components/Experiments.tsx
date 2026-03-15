@@ -27,20 +27,20 @@ export default function Experiments() {
   return (
     <section
       id="experiments"
-      className="border-t border-white/10 bg-vibe-bg px-6 py-20 lg:px-8 lg:py-28"
+      className="border-t border-white/5 bg-[#FAFAFA] px-6 py-20 text-slate-900 lg:px-8 lg:py-28"
     >
       <div className="mx-auto max-w-6xl">
-        <h2 className="text-center text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        <h2 className="text-center text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
           From the Outwit Lab.
         </h2>
-        <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-relaxed text-white/80">
+        <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-relaxed text-slate-600">
           Experiments in websites, SEO, and conversion that keep your marketing ahead of the curve.
         </p>
         <div className="mt-16 grid gap-8 sm:grid-cols-3">
           {experiments.map((exp) => (
             <article
               key={exp.title}
-              className="flex flex-col rounded-2xl border border-white/10 bg-white/5 p-8 shadow-sm backdrop-blur-[8px] transition-all duration-300 hover:border-white/20 hover:bg-white/[0.07]"
+              className="flex flex-col rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition-all duration-300 hover:border-neon-orange/60 hover:shadow-md"
             >
               <span
                 className={`font-mono inline-flex w-fit items-center gap-1.5 rounded px-3 py-1 text-xs font-semibold uppercase tracking-wider ${statusStyles[exp.status] ?? "bg-white/10 text-white/80"}`}
@@ -50,10 +50,10 @@ export default function Experiments() {
                 )}
                 {exp.status}
               </span>
-              <h3 className="mt-4 text-xl font-bold text-white">
+              <h3 className="mt-4 text-xl font-bold text-slate-900">
                 {exp.title}
               </h3>
-              <p className="mt-3 flex-1 leading-relaxed text-white/75">
+              <p className="mt-3 flex-1 leading-relaxed text-slate-600">
                 {exp.summary}
               </p>
               <Link

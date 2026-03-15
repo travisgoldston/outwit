@@ -22,13 +22,13 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="border-t border-white/10 bg-vibe-bg px-6 py-20 lg:px-8 lg:py-28"
+      className="border-t border-white/5 bg-[#FAFAFA] px-6 py-20 text-slate-900 lg:px-8 lg:py-28"
     >
       <div className="mx-auto max-w-6xl">
-        <h2 className="text-center text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        <h2 className="text-center text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
           Solutions built to outsmart, not outspend.
         </h2>
-        <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-relaxed text-white/80">
+        <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-relaxed text-slate-600">
           Outwit combines strategy, design, and SEO to solve the business problems that actually matter.
         </p>
         <div className="mt-16 grid gap-8 sm:grid-cols-3">
@@ -36,12 +36,12 @@ export default function Services() {
             <Link
               key={solution.title}
               href={solution.href}
-              className="group rounded-2xl border border-white/10 bg-white/5 p-8 text-left backdrop-blur-sm transition-all duration-300 hover:border-neon-orange/60 hover:bg-white/[0.08]"
+              className="group rounded-2xl border border-slate-200 bg-white p-8 text-left shadow-sm transition-all duration-300 hover:border-neon-orange/60 hover:shadow-md"
             >
-              <h3 className="text-xl font-bold text-white">
+              <h3 className="text-xl font-bold text-slate-900">
                 {solution.title}
               </h3>
-              <p className="mt-4 leading-relaxed text-white/75">
+              <p className="mt-4 leading-relaxed text-slate-600">
                 {solution.description}
               </p>
               <span className="mt-6 inline-flex items-center text-sm font-semibold text-neon-orange group-hover:text-neon-orange/80">

@@ -22,21 +22,21 @@ export default function Philosophy() {
   return (
     <section
       id="blog"
-      className="border-t border-white/10 bg-white/[0.03] px-6 py-20 lg:px-8 lg:py-28"
+      className="border-t border-white/5 bg-[#FAFAFA] px-6 py-20 text-slate-900 lg:px-8 lg:py-28"
     >
       <div className="mx-auto max-w-6xl">
         <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
           <div>
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
               Insights for smarter marketing.
             </h2>
-            <p className="mt-4 max-w-2xl text-lg leading-relaxed text-white/85">
+            <p className="mt-4 max-w-2xl text-lg leading-relaxed text-slate-600">
               Clear, no-jargon explanations that help founders and marketing leaders make better decisions.
             </p>
           </div>
           <Link
             href="/insights"
-            className="inline-flex items-center justify-center rounded-xl border border-white/20 px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-white/10"
+            className="inline-flex items-center justify-center rounded-xl border border-slate-200 px-5 py-2.5 text-sm font-semibold text-slate-900 transition-all hover:border-neon-orange/60 hover:text-neon-orange"
           >
             View all insights
           </Link>
@@ -45,12 +45,12 @@ export default function Philosophy() {
           {articles.map((article) => (
             <article
               key={article.title}
-              className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition-all duration-300 hover:border-white/20 hover:bg-white/[0.07]"
+              className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:border-neon-orange/60 hover:shadow-md"
             >
-              <h3 className="text-lg font-semibold text-white">
+              <h3 className="text-lg font-semibold text-slate-900">
                 {article.title}
               </h3>
-              <p className="mt-3 text-sm leading-relaxed text-white/80">
+              <p className="mt-3 text-sm leading-relaxed text-slate-600">
                 {article.summary}
               </p>
               <Link

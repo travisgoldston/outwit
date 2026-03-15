@@ -22,13 +22,13 @@ export default function CaseStudies() {
   return (
     <section
       id="case-studies"
-      className="border-t border-white/10 bg-vibe-bg px-6 py-20 lg:px-8 lg:py-28"
+      className="border-t border-white/5 bg-[#FAFAFA] px-6 py-20 text-slate-900 lg:px-8 lg:py-28"
     >
       <div className="mx-auto max-w-6xl">
-        <h2 className="text-center text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        <h2 className="text-center text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
           Case studies from the Outwit lab.
         </h2>
-        <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-relaxed text-white/80">
+        <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-relaxed text-slate-600">
           A sample of how smarter strategy, websites, and SEO turn into real pipeline and revenue.
         </p>
         <div className="mt-16 grid gap-8 sm:grid-cols-3">
@@ -36,15 +36,15 @@ export default function CaseStudies() {
             <Link
               key={c.slug}
               href={`/case-studies/${c.slug}`}
-              className="group rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm transition-all duration-300 hover:border-neon-orange/60 hover:bg-white/[0.08]"
+              className="group rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition-all duration-300 hover:border-neon-orange/60 hover:shadow-md"
             >
               <span className="font-mono text-xs font-semibold uppercase tracking-wider text-neon-orange">
                 Case Study
               </span>
-              <h3 className="mt-3 text-xl font-bold text-white">
+              <h3 className="mt-3 text-xl font-bold text-slate-900">
                 {c.title}
               </h3>
-              <p className="mt-4 text-sm font-medium text-white/80">
+              <p className="mt-4 text-sm font-medium text-slate-600">
                 {c.metric}
               </p>
               <span className="mt-6 inline-flex items-center text-sm font-semibold text-neon-orange group-hover:text-neon-orange/80">
