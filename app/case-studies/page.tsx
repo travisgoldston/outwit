@@ -30,12 +30,12 @@ const CASE_STUDIES = [
 
 export default function CaseStudiesPage() {
   return (
-    <div className="bg-vibe-bg px-6 py-16 lg:px-8 lg:py-24">
+    <div className="bg-[#FAFAFA] px-6 py-16 text-slate-900 lg:px-8 lg:py-24">
       <div className="mx-auto max-w-4xl text-center">
-        <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
+        <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
           Proof that smart beats loud.
         </h1>
-        <p className="mt-6 text-lg leading-relaxed text-white/80">
+        <p className="mt-6 text-lg leading-relaxed text-slate-600">
           These are snapshots from the Outwit lab—real projects where better strategy, websites,
           and SEO created measurable growth.
         </p>
@@ -46,13 +46,13 @@ export default function CaseStudiesPage() {
           <Link
             key={cs.slug}
             href={`/case-studies/${cs.slug}`}
-            className="group rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm transition-all duration-300 hover:border-neon-orange/60 hover:bg-white/[0.08]"
+            className="group rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition-all duration-300 hover:border-neon-orange/60 hover:shadow-md"
           >
             <span className="font-mono text-[11px] font-semibold uppercase tracking-[0.25em] text-neon-orange">
               {cs.label}
             </span>
-            <h2 className="mt-3 text-xl font-semibold text-white">{cs.title}</h2>
-            <p className="mt-4 text-sm font-medium text-white/80">{cs.metric}</p>
+            <h2 className="mt-3 text-xl font-semibold text-slate-900">{cs.title}</h2>
+            <p className="mt-4 text-sm font-medium text-slate-600">{cs.metric}</p>
             <span className="mt-6 inline-flex items-center text-sm font-semibold text-neon-orange group-hover:text-neon-orange/80">
               Read the case study
               <svg

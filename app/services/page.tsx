@@ -69,12 +69,12 @@ const services: Service[] = [
 
 export default function ServicesPage() {
   return (
-    <div className="bg-vibe-bg px-6 py-16 lg:px-8 lg:py-24">
+    <div className="bg-[#FAFAFA] px-6 py-16 text-slate-900 lg:px-8 lg:py-24">
       <div className="mx-auto max-w-4xl text-center">
-        <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
+        <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
           Services for strategy-driven teams.
         </h1>
-        <p className="mt-6 text-lg leading-relaxed text-white/80">
+        <p className="mt-6 text-lg leading-relaxed text-slate-600">
           Outwit blends strategy, design, and SEO into a focused set of services that turn your
           website and marketing into a system that consistently drives revenue.
         </p>
@@ -85,18 +85,18 @@ export default function ServicesPage() {
           <section
             key={service.id}
             id={service.id}
-            className="rounded-3xl border border-white/10 bg-white/[0.04] p-8 shadow-sm backdrop-blur-sm sm:p-10"
+            className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm sm:p-10"
           >
             <p className="text-xs font-mono uppercase tracking-[0.25em] text-neon-orange">
               {service.name}
             </p>
-            <h2 className="mt-3 text-2xl font-semibold tracking-tight text-white sm:text-3xl">
+            <h2 className="mt-3 text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">
               {service.summary}
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-white/80">
+            <p className="mt-4 text-base leading-relaxed text-slate-600">
               {service.description}
             </p>
-            <ul className="mt-6 space-y-3 text-sm leading-relaxed text-white/80">
+            <ul className="mt-6 space-y-3 text-sm leading-relaxed text-slate-600">
               {service.benefits.map((benefit) => (
                 <li key={benefit} className="flex gap-2">
                   <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-neon-orange" />
@@ -109,7 +109,7 @@ export default function ServicesPage() {
                 <Link
                   key={link.href + link.label}
                   href={link.href}
-                  className="inline-flex items-center justify-center rounded-full border border-white/15 px-4 py-2 text-xs font-semibold text-white/85 transition-colors hover:border-neon-orange hover:text-neon-orange"
+                  className="inline-flex items-center justify-center rounded-full border border-slate-200 px-4 py-2 text-xs font-semibold text-slate-800 transition-colors hover:border-neon-orange/70 hover:text-neon-orange"
                 >
                   {link.label}
                 </Link>
@@ -119,11 +119,11 @@ export default function ServicesPage() {
         ))}
       </div>
 
-      <div className="mx-auto mt-20 max-w-3xl rounded-3xl border border-white/10 bg-white/[0.03] px-8 py-10 text-center">
-        <h2 className="text-2xl font-semibold tracking-tight text-white sm:text-3xl">
+      <div className="mx-auto mt-20 max-w-3xl rounded-3xl border border-slate-200 bg-white px-8 py-10 text-center shadow-sm">
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">
           Not sure where to start?
         </h2>
-        <p className="mt-4 text-base leading-relaxed text-white/80">
+        <p className="mt-4 text-base leading-relaxed text-slate-600">
           Share a bit about your business and we&apos;ll recommend the mix of services that gives
           you the most leverage—without unnecessary extras.
         </p>
@@ -136,7 +136,7 @@ export default function ServicesPage() {
           </Link>
           <Link
             href="/solutions"
-            className="text-sm font-semibold text-white/80 transition-colors hover:text-neon-orange"
+            className="text-sm font-semibold text-slate-800 transition-colors hover:text-neon-orange"
           >
             Explore solutions
           </Link>

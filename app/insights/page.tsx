@@ -59,12 +59,12 @@ const insights: Insight[] = [
 
 export default function InsightsPage() {
   return (
-    <div className="bg-vibe-bg px-6 py-16 lg:px-8 lg:py-24">
+    <div className="bg-[#FAFAFA] px-6 py-16 text-slate-900 lg:px-8 lg:py-24">
       <div className="mx-auto max-w-4xl text-center">
-        <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
+        <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
           Insights for smarter marketing decisions.
         </h1>
-        <p className="mt-6 text-lg leading-relaxed text-white/80">
+        <p className="mt-6 text-lg leading-relaxed text-slate-600">
           No fluff, no buzzwords—just clear explanations of how modern websites, SEO, and marketing
           systems actually work.
         </p>
@@ -74,16 +74,16 @@ export default function InsightsPage() {
         {insights.map((article) => (
           <article
             key={article.title}
-            className="flex flex-col justify-between rounded-2xl border border-white/10 bg-white/5 p-7 backdrop-blur-sm transition-all duration-300 hover:border-white/20 hover:bg-white/[0.07]"
+            className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-7 shadow-sm transition-all duration-300 hover:border-neon-orange/60 hover:shadow-md"
           >
             <div>
               <p className="text-xs font-mono uppercase tracking-[0.25em] text-neon-orange/80">
                 Insight
               </p>
-              <h2 className="mt-3 text-lg font-semibold text-white">{article.title}</h2>
-              <p className="mt-3 text-sm leading-relaxed text-white/80">{article.summary}</p>
+              <h2 className="mt-3 text-lg font-semibold text-slate-900">{article.title}</h2>
+              <p className="mt-3 text-sm leading-relaxed text-slate-600">{article.summary}</p>
             </div>
-            <p className="mt-5 text-xs font-medium text-white/60">{article.readTime}</p>
+            <p className="mt-5 text-xs font-medium text-slate-500">{article.readTime}</p>
           </article>
         ))}
       </div>

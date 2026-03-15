@@ -41,12 +41,12 @@ const statusStyles: Record<string, string> = {
 
 export default function LabPage() {
   return (
-    <div className="bg-vibe-bg px-6 py-16 lg:px-8 lg:py-24">
+    <div className="bg-[#FAFAFA] px-6 py-16 text-slate-900 lg:px-8 lg:py-24">
       <div className="mx-auto max-w-4xl text-center">
-        <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
+        <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
           The Outwit Marketing Lab.
         </h1>
-        <p className="mt-6 text-lg leading-relaxed text-white/80">
+        <p className="mt-6 text-lg leading-relaxed text-slate-600">
           Before we recommend a tactic, we test it. These experiments are where we validate what
           actually moves the needle in modern marketing.
         </p>
@@ -56,7 +56,7 @@ export default function LabPage() {
         {experiments.map((exp) => (
           <article
             key={exp.title}
-            className="flex flex-col rounded-2xl border border-white/10 bg-white/5 p-7 shadow-sm backdrop-blur-sm transition-all duration-300 hover:border-neon-orange/60 hover:bg-white/[0.08]"
+            className="flex flex-col rounded-2xl border border-slate-200 bg-white p-7 shadow-sm transition-all duration-300 hover:border-neon-orange/60 hover:shadow-md"
           >
             <span
               className={`inline-flex w-fit items-center gap-1.5 rounded-full px-3 py-1 text-[11px] font-mono uppercase tracking-[0.18em] ${
@@ -65,8 +65,8 @@ export default function LabPage() {
             >
               {exp.status}
             </span>
-            <h2 className="mt-4 text-lg font-semibold text-white">{exp.title}</h2>
-            <p className="mt-3 flex-1 text-sm leading-relaxed text-white/80">{exp.summary}</p>
+            <h2 className="mt-4 text-lg font-semibold text-slate-900">{exp.title}</h2>
+            <p className="mt-3 flex-1 text-sm leading-relaxed text-slate-600">{exp.summary}</p>
             <Link
               href="/contact"
               className="mt-6 inline-flex items-center text-xs font-semibold text-neon-orange transition-colors hover:text-neon-orange/80"
@@ -87,11 +87,11 @@ export default function LabPage() {
         ))}
       </div>
 
-      <div className="mx-auto mt-20 max-w-3xl rounded-3xl border border-white/10 bg-white/[0.03] px-8 py-10 text-center">
-        <h2 className="text-2xl font-semibold tracking-tight text-white sm:text-3xl">
+      <div className="mx-auto mt-20 max-w-3xl rounded-3xl border border-slate-200 bg-white px-8 py-10 text-center shadow-sm">
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">
           Want your growth problem in the Lab?
         </h2>
-        <p className="mt-4 text-base leading-relaxed text-white/80">
+        <p className="mt-4 text-base leading-relaxed text-slate-600">
           Share what you&apos;re trying to solve. If it&apos;s a good fit, we&apos;ll design a
           focused experiment and walk you through the play-by-play.
         </p>
@@ -104,7 +104,7 @@ export default function LabPage() {
           </Link>
           <Link
             href="/insights"
-            className="text-sm font-semibold text-white/80 transition-colors hover:text-neon-orange"
+            className="text-sm font-semibold text-slate-800 transition-colors hover:text-neon-orange"
           >
             Read related insights
           </Link>

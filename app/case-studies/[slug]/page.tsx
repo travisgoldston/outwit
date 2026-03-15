@@ -122,29 +122,29 @@ export default function CaseStudyDetail({ params }: PageProps) {
   if (!cs) notFound();
 
   return (
-    <div className="bg-vibe-bg px-6 py-16 lg:px-8 lg:py-24">
+    <div className="bg-[#FAFAFA] px-6 py-16 text-slate-900 lg:px-8 lg:py-24">
       <div className="mx-auto max-w-3xl">
         <Link
           href="/case-studies"
-          className="text-sm font-medium text-white/60 transition-colors hover:text-neon-orange"
+          className="text-sm font-medium text-slate-600 transition-colors hover:text-neon-orange"
         >
           ← Back to all case studies
         </Link>
         <p className="mt-6 text-xs font-mono uppercase tracking-[0.25em] text-neon-orange">
           {cs.clientType}
         </p>
-        <h1 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        <h1 className="mt-3 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
           {cs.title}
         </h1>
         <p className="mt-4 text-base font-medium text-neon-orange/90">{cs.metric}</p>
 
-        <div className="mt-10 space-y-10 text-white/85">
+        <div className="mt-10 space-y-10 text-slate-700">
           <section>
-            <h2 className="text-lg font-semibold text-white">The Problem</h2>
+            <h2 className="text-lg font-semibold text-slate-900">The Problem</h2>
             <ul className="mt-3 space-y-2 text-sm leading-relaxed">
               {cs.problem.map((item) => (
                 <li key={item} className="flex gap-2">
-                  <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-white/40" />
+                  <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-slate-300" />
                   <span>{item}</span>
                 </li>
               ))}
@@ -152,11 +152,11 @@ export default function CaseStudyDetail({ params }: PageProps) {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-white">The Strategy</h2>
+            <h2 className="text-lg font-semibold text-slate-900">The Strategy</h2>
             <ul className="mt-3 space-y-2 text-sm leading-relaxed">
               {cs.strategy.map((item) => (
                 <li key={item} className="flex gap-2">
-                  <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-white/40" />
+                  <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-slate-300" />
                   <span>{item}</span>
                 </li>
               ))}
@@ -164,11 +164,11 @@ export default function CaseStudyDetail({ params }: PageProps) {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-white">The Solution</h2>
+            <h2 className="text-lg font-semibold text-slate-900">The Solution</h2>
             <ul className="mt-3 space-y-2 text-sm leading-relaxed">
               {cs.solution.map((item) => (
                 <li key={item} className="flex gap-2">
-                  <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-white/40" />
+                  <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-slate-300" />
                   <span>{item}</span>
                 </li>
               ))}
@@ -176,11 +176,11 @@ export default function CaseStudyDetail({ params }: PageProps) {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-white">The Result</h2>
+            <h2 className="text-lg font-semibold text-slate-900">The Result</h2>
             <ul className="mt-3 space-y-2 text-sm leading-relaxed">
               {cs.result.map((item) => (
                 <li key={item} className="flex gap-2">
-                  <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-white/40" />
+                  <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-slate-300" />
                   <span>{item}</span>
                 </li>
               ))}
@@ -188,11 +188,11 @@ export default function CaseStudyDetail({ params }: PageProps) {
           </section>
         </div>
 
-        <div className="mt-12 rounded-2xl border border-white/10 bg-white/[0.03] px-6 py-8 text-center">
-          <h2 className="text-lg font-semibold text-white">
+        <div className="mt-12 rounded-2xl border border-slate-200 bg-white px-6 py-8 text-center shadow-sm">
+          <h2 className="text-lg font-semibold text-slate-900">
             Curious what Outwit could do for your brand?
           </h2>
-          <p className="mt-3 text-sm leading-relaxed text-white/80">
+          <p className="mt-3 text-sm leading-relaxed text-slate-600">
             Every engagement starts with a strategy conversation focused on your market, your offer,
             and the smartest way to outwit your competition.
           </p>
@@ -205,7 +205,7 @@ export default function CaseStudyDetail({ params }: PageProps) {
             </Link>
             <Link
               href="/solutions"
-              className="text-sm font-semibold text-white/80 transition-colors hover:text-neon-orange"
+              className="text-sm font-semibold text-slate-800 transition-colors hover:text-neon-orange"
             >
               Explore solutions
             </Link>
