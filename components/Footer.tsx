@@ -58,8 +58,23 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-neon-orange transition-colors">
-                  Twitter / LinkedIn
+                <a
+                  href="https://instagram.com/outwitdotco"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-neon-orange transition-colors"
+                >
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://x.com/outwitdotco"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-neon-orange transition-colors"
+                >
+                  X
                 </a>
               </li>
             </ul>
