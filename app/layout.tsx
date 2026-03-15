@@ -3,7 +3,6 @@ import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import HashRedirect from "@/components/HashRedirect";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -39,7 +38,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
       <body className="min-h-screen flex flex-col font-sans bg-vibe-bg text-white">
-        <HashRedirect />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

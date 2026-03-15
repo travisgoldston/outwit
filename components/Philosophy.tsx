@@ -1,15 +1,81 @@
+import Link from "next/link";
+
+const articles = [
+  {
+    title: "Why most business websites fail",
+    summary:
+      "A simple lens for spotting where your current site is losing trust, traffic, and revenue.",
+  },
+  {
+    title: "What makes a high-converting homepage",
+    summary:
+      "The first screen above the fold and the StoryBrand-inspired structure we use at Outwit.",
+  },
+  {
+    title: "How long SEO really takes",
+    summary:
+      "Setting the right expectations so you can invest with confidence instead of guessing.",
+  },
+];
+
 export default function Philosophy() {
   return (
-    <section id="blog" className="border-t border-white/10 bg-white/[0.03] px-6 py-20 lg:px-8 lg:py-28">
-      <div className="mx-auto max-w-3xl text-center">
-        <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-          Strategy beats brute force.
-        </h2>
-        <p className="mt-6 text-lg leading-relaxed text-white/90">
-          Anyone can run ads. Anyone can publish content. But lasting growth
-          comes from smart strategy, testing ideas, and learning what actually
-          works.
-        </p>
+    <section
+      id="blog"
+      className="border-t border-white/10 bg-white/[0.03] px-6 py-20 lg:px-8 lg:py-28"
+    >
+      <div className="mx-auto max-w-6xl">
+        <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
+          <div>
+            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              Insights for smarter marketing.
+            </h2>
+            <p className="mt-4 max-w-2xl text-lg leading-relaxed text-white/85">
+              Clear, no-jargon explanations that help founders and marketing leaders make better decisions.
+            </p>
+          </div>
+          <Link
+            href="/insights"
+            className="inline-flex items-center justify-center rounded-xl border border-white/20 px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-white/10"
+          >
+            View all insights
+          </Link>
+        </div>
+        <div className="mt-12 grid gap-8 md:grid-cols-3">
+          {articles.map((article) => (
+            <article
+              key={article.title}
+              className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition-all duration-300 hover:border-white/20 hover:bg-white/[0.07]"
+            >
+              <h3 className="text-lg font-semibold text-white">
+                {article.title}
+              </h3>
+              <p className="mt-3 text-sm leading-relaxed text-white/80">
+                {article.summary}
+              </p>
+              <Link
+                href="/insights"
+                className="mt-5 inline-flex items-center text-sm font-semibold text-neon-orange transition-colors hover:text-neon-orange/80"
+              >
+                Read article
+                <svg
+                  className="ml-1 h-4 w-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  aria-hidden
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </Link>
+            </article>
+          ))}
+        </div>
       </div>
     </section>
   );

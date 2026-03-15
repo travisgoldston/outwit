@@ -1,16 +1,17 @@
 import Link from "next/link";
 
 const outwitLinks = [
-  { href: "/home", label: "About" },
-  { href: "/experiments", label: "Experiments" },
+  { href: "/", label: "Home" },
+  { href: "/solutions", label: "Solutions" },
   { href: "/services", label: "Services" },
   { href: "/case-studies", label: "Case Studies" },
-  { href: "/blog", label: "Blog" },
+  { href: "/lab", label: "Lab" },
+  { href: "/insights", label: "Insights" },
 ];
 
 const resourceLinks = [
-  { href: "/experiments", label: "Marketing Experiments" },
-  { href: "/blog", label: "SEO Insights" },
+  { href: "/lab", label: "Marketing Experiments" },
+  { href: "/insights", label: "SEO & Strategy Insights" },
   { href: "/services", label: "Growth Strategy" },
 ];
 

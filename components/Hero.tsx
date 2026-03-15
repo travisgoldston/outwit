@@ -10,23 +10,23 @@ export default function Hero() {
       <div className="relative mx-auto grid max-w-6xl gap-12 lg:grid-cols-2 lg:gap-16 lg:items-center">
         <div className="animate-fade-in-up">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl xl:text-7xl">
-            Outwit the ordinary<span className="text-neon-orange">.</span>
+            Outsmart your competition<span className="text-neon-orange">.</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/80 sm:text-xl">
-            A creative playground for vibe coding, digital experiments, and sharp design. No KPIs, just craft.
+            Websites and marketing systems designed to attract customers, rank on Google, and convert traffic into revenue.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Link
-              href="/experiments"
+              href="/case-studies"
               className="inline-flex items-center justify-center rounded-lg bg-neon-orange px-6 py-3.5 text-base font-semibold text-white shadow-lg shadow-neon-orange/25 transition-all hover:bg-neon-orange/90 hover:shadow-[0_0_20px_rgba(255,95,31,0.4)]"
             >
-              Explore Experiments
+              View Case Studies
             </Link>
             <Link
-              href="/case-studies"
+              href="/contact"
               className="inline-flex items-center justify-center rounded-lg border border-white bg-transparent px-6 py-3.5 text-base font-semibold text-white transition-all hover:border-neon-orange"
             >
-              See the work
+              Start a Project
             </Link>
           </div>
         </div>

@@ -1,42 +1,79 @@
+import Link from "next/link";
+
 const cases = [
   {
-    title: "Growing organic traffic for a SaaS company",
-    label: "Case Study",
+    slug: "b2b-saas-organic-growth",
+    title: "B2B SaaS: Turning a brochure site into an SEO growth engine",
+    metric: "4x organic demo requests in 6 months",
   },
   {
-    title: "Improving conversions for a service business",
-    label: "Case Study",
+    slug: "services-conversion-lift",
+    title: "Professional services: Rebuilding the website as a sales script",
+    metric: "2.3x increase in booked consultations",
   },
   {
-    title: "Scaling lead generation through SEO",
-    label: "Case Study",
+    slug: "local-search-dominance",
+    title: "Local brand: Owning page one for high-intent keywords",
+    metric: "+187% calls from Google Business",
   },
 ];
 
 export default function CaseStudies() {
   return (
-    <section id="case-studies" className="border-t border-white/10 bg-vibe-bg px-6 py-20 lg:px-8 lg:py-28">
+    <section
+      id="case-studies"
+      className="border-t border-white/10 bg-vibe-bg px-6 py-20 lg:px-8 lg:py-28"
+    >
       <div className="mx-auto max-w-6xl">
         <h2 className="text-center text-3xl font-bold tracking-tight text-white sm:text-4xl">
-          Proof beats promises.
+          Case studies from the Outwit lab.
         </h2>
+        <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-relaxed text-white/80">
+          A sample of how smarter strategy, websites, and SEO turn into real pipeline and revenue.
+        </p>
         <div className="mt-16 grid gap-8 sm:grid-cols-3">
           {cases.map((c) => (
-            <article
-              key={c.title}
-              className="rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm transition-all duration-300 hover:border-white/20 hover:bg-white/[0.07]"
+            <Link
+              key={c.slug}
+              href={`/case-studies/${c.slug}`}
+              className="group rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm transition-all duration-300 hover:border-neon-orange/60 hover:bg-white/[0.08]"
             >
               <span className="font-mono text-xs font-semibold uppercase tracking-wider text-neon-orange">
-                {c.label}
+                Case Study
               </span>
               <h3 className="mt-3 text-xl font-bold text-white">
                 {c.title}
               </h3>
-              <p className="mt-4 text-white/70">
-                Full story coming soon.
+              <p className="mt-4 text-sm font-medium text-white/80">
+                {c.metric}
               </p>
-            </article>
+              <span className="mt-6 inline-flex items-center text-sm font-semibold text-neon-orange group-hover:text-neon-orange/80">
+                View case study
+                <svg
+                  className="ml-1 h-4 w-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  aria-hidden
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </span>
+            </Link>
           ))}
+        </div>
+        <div className="mt-12 text-center">
+          <Link
+            href="/case-studies"
+            className="inline-flex items-center justify-center rounded-xl border border-white/20 px-6 py-3.5 text-base font-semibold text-white transition-all hover:bg-white/10"
+          >
+            View all case studies
+          </Link>
         </div>
       </div>
     </section>

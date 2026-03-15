@@ -5,10 +5,10 @@ export default function FinalCta() {
     <section id="contact" className="bg-neon-orange px-6 py-20 lg:px-8 lg:py-28">
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-          Ready to outsmart your competition?
+          Ready to Outwit your competition?
         </h2>
         <p className="mt-6 text-lg leading-relaxed text-white/95">
-          Let&apos;s find the growth opportunities your competitors are missing.
+          Tell us about your business, and we&apos;ll map the smartest way to turn your website and marketing into a growth system.
         </p>
         <Link
           href="/contact"
