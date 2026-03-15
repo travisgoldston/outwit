@@ -9,13 +9,11 @@ export default function Hero() {
     >
       <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-2 lg:gap-16 lg:items-center">
         <div className="animate-fade-in-up">
-          <h1 className="text-4xl font-bold tracking-tight text-deep-gray sm:text-5xl lg:text-6xl">
+          <h1 className="text-4xl font-bold tracking-tight text-deep-gray sm:text-5xl lg:text-6xl xl:text-7xl">
             Outsmart Your Growth.
           </h1>
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-deep-gray/90">
-            Smart marketing isn&apos;t about doing more. It&apos;s about doing the
-            right things. Outwit helps companies grow through strategy,
-            experiments, and smarter digital marketing.
+          <p className="mt-6 max-w-xl text-lg leading-relaxed text-deep-gray/90 sm:text-xl">
+            Smart marketing isn&apos;t about doing more. It&apos;s about doing the right things. We help companies grow through strategy, experiments, and clearer thinking—not more ads.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Link

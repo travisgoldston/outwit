@@ -1,15 +1,15 @@
 const cases = [
   {
-    title: "Case Study 1",
-    description: "Growing organic traffic for a SaaS company",
+    title: "Growing organic traffic for a SaaS company",
+    label: "Case Study",
   },
   {
-    title: "Case Study 2",
-    description: "Improving conversions for a service business",
+    title: "Improving conversions for a service business",
+    label: "Case Study",
   },
   {
-    title: "Case Study 3",
-    description: "Scaling lead generation through SEO",
+    title: "Scaling lead generation through SEO",
+    label: "Case Study",
   },
 ];
 
@@ -24,13 +24,16 @@ export default function CaseStudies() {
           {cases.map((c) => (
             <article
               key={c.title}
-              className="rounded-2xl border border-strategy-navy/10 bg-cream/50 p-8 transition-all duration-300 hover:border-fox-orange/30 hover:shadow-md"
+              className="group rounded-2xl border border-strategy-navy/10 bg-cream/40 p-8 shadow-sm transition-all duration-300 hover:border-fox-orange/20 hover:shadow-md"
             >
-              <h3 className="text-xl font-bold text-strategy-navy">
+              <span className="text-xs font-semibold uppercase tracking-wider text-fox-orange">
+                {c.label}
+              </span>
+              <h3 className="mt-3 text-xl font-bold text-strategy-navy">
                 {c.title}
               </h3>
-              <p className="mt-4 leading-relaxed text-deep-gray/85">
-                {c.description}
+              <p className="mt-4 text-deep-gray/80">
+                Full story coming soon.
               </p>
             </article>
           ))}

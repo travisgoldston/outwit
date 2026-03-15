@@ -21,13 +21,12 @@ export default function Approach() {
           Our approach is simple.
         </h2>
         <div className="mt-16 grid gap-8 sm:grid-cols-3">
-          {cards.map((card, i) => (
+          {cards.map((card) => (
             <div
               key={card.title}
-              className="group rounded-2xl border border-strategy-navy/10 bg-white p-8 shadow-sm transition-all duration-300 hover:border-fox-orange/30 hover:shadow-md"
-              style={{ animationDelay: `${i * 80}ms` }}
+              className="rounded-2xl border border-strategy-navy/10 bg-white p-8 shadow-sm transition-all duration-300 hover:border-fox-orange/20 hover:shadow-md"
             >
-              <h3 className="text-xl font-bold text-strategy-navy group-hover:text-fox-orange transition-colors">
+              <h3 className="text-xl font-bold text-strategy-navy">
                 {card.title}
               </h3>
               <p className="mt-4 leading-relaxed text-deep-gray/85">

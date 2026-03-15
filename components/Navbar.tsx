@@ -63,7 +63,7 @@ export default function Navbar() {
         <div className="hidden items-center gap-4 md:flex">
           <Link
             href="#contact"
-            className="rounded-lg bg-strategy-navy px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-strategy-navy/90 hover:shadow-md"
+            className="rounded-lg bg-fox-orange px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-fox-orange/90 hover:shadow-md"
           >
             Get a Strategy Call
           </Link>
@@ -100,7 +100,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="#contact"
-                className="inline-block rounded-lg bg-strategy-navy px-5 py-2.5 text-sm font-semibold text-white"
+                className="inline-block rounded-lg bg-fox-orange px-5 py-2.5 text-sm font-semibold text-white"
                 onClick={() => setMobileOpen(false)}
               >
                 Get a Strategy Call

@@ -17,8 +17,8 @@ const resourceLinks = [
 export default function Footer() {
   return (
     <footer className="border-t border-strategy-navy/10 bg-deep-gray text-white">
-      <div className="mx-auto max-w-6xl px-6 py-16 lg:px-8">
-        <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mx-auto max-w-6xl px-6 py-14 lg:px-8 lg:py-16">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <h3 className="text-lg font-bold text-white">Outwit</h3>
             <ul className="mt-4 space-y-3">
@@ -65,21 +65,23 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <p className="mt-12 border-t border-white/10 pt-8 text-center text-sm text-white/70">
-          Outwit — Smarter marketing through strategy and experimentation.
-        </p>
-        <p className="mt-4 text-center text-sm text-white/60">
-          a thought project by{" "}
-          <a
-            href="https://boldspark.co"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white/80 transition-colors hover:text-fox-orange"
-          >
-            boldspark
-          </a>{" "}
-          ⚡
-        </p>
+        <div className="mt-12 border-t border-white/10 pt-8 text-center">
+          <p className="text-sm text-white/70">
+            Outwit — Smarter marketing through strategy and experimentation.
+          </p>
+          <p className="mt-3 text-sm text-white/60">
+            a thought project by{" "}
+            <a
+              href="https://boldspark.co"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/80 transition-colors hover:text-fox-orange"
+            >
+              boldspark
+            </a>{" "}
+            ⚡
+          </p>
+        </div>
       </div>
     </footer>
   );
