@@ -68,6 +68,18 @@ export default function Footer() {
         <p className="mt-12 border-t border-white/10 pt-8 text-center text-sm text-white/70">
           Outwit — Smarter marketing through strategy and experimentation.
         </p>
+        <p className="mt-4 text-center text-sm text-white/60">
+          a thought project by{" "}
+          <a
+            href="https://boldspark.co"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white/80 transition-colors hover:text-fox-orange"
+          >
+            boldspark
+          </a>{" "}
+          ⚡
+        </p>
       </div>
     </footer>
   );
