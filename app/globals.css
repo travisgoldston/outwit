@@ -4,10 +4,28 @@
 
 :root {
   --fox-orange: #E86A1D;
+  --neon-orange: #FF5F1F;
   --cream: #FDF7F0;
   --deep-gray: #2C2C2C;
   --strategy-navy: #1F3A5F;
   --white: #FFFFFF;
+  --vibe-bg: #0f1115;
+}
+
+/* Neon sign flicker animation */
+@keyframes neon-flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    filter: drop-shadow(0 0 5px #FF5F1F) drop-shadow(0 0 15px #FF5F1F) drop-shadow(0 0 30px #FF5F1F);
+    opacity: 1;
+  }
+  20%, 24%, 55% {
+    filter: none;
+    opacity: 0.7;
+  }
+}
+
+.neon-flicker {
+  animation: neon-flicker 6s ease-in-out infinite;
 }
 
 html {
@@ -15,10 +33,10 @@ html {
 }
 
 body {
-  @apply antialiased text-deep-gray bg-cream;
+  @apply antialiased text-white bg-[#0f1115];
 }
 
-/* Subtle selection color */
+/* Selection on dark theme */
 ::selection {
-  background-color: rgba(232, 106, 29, 0.2);
+  background-color: rgba(255, 95, 31, 0.25);
 }

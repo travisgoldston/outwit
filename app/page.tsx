@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import VibeMonitor from "@/components/VibeMonitor";
 import Problem from "@/components/Problem";
 import Approach from "@/components/Approach";
 import Experiments from "@/components/Experiments";
@@ -11,6 +12,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <VibeMonitor />
       <Problem />
       <Approach />
       <Experiments />

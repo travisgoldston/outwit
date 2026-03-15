@@ -1,6 +1,6 @@
 export default function Philosophy() {
   return (
-    <section className="bg-strategy-navy px-6 py-20 lg:px-8 lg:py-28">
+    <section className="border-t border-white/10 bg-white/[0.03] px-6 py-20 lg:px-8 lg:py-28">
       <div className="mx-auto max-w-3xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
           Strategy beats brute force.

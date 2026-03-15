@@ -26,7 +26,7 @@ export default function Navbar() {
   return (
     <header
       className={`sticky top-0 z-50 w-full transition-all duration-300 ${
-        scrolled ? "bg-cream/95 backdrop-blur-sm shadow-sm" : "bg-cream"
+        scrolled ? "bg-vibe-bg/95 backdrop-blur-md border-b border-white/5" : "bg-vibe-bg"
       }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-4 lg:px-8">
@@ -42,7 +42,7 @@ export default function Navbar() {
             height={44}
             className="h-10 w-10 object-contain lg:h-11 lg:w-11"
           />
-          <span className="text-xl font-bold tracking-tight text-strategy-navy lg:text-2xl">
+          <span className="text-xl font-bold tracking-tight text-white lg:text-2xl">
             Outwit
           </span>
         </Link>
@@ -52,7 +52,7 @@ export default function Navbar() {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className="text-sm font-medium text-deep-gray transition-colors hover:text-fox-orange"
+                className="text-sm font-medium text-white/80 transition-colors hover:text-neon-orange"
               >
                 {link.label}
               </Link>
@@ -63,16 +63,15 @@ export default function Navbar() {
         <div className="hidden items-center gap-4 md:flex">
           <Link
             href="#contact"
-            className="rounded-lg bg-fox-orange px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-fox-orange/90 hover:shadow-md"
+            className="rounded-lg bg-neon-orange px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-neon-orange/90 shadow-lg shadow-neon-orange/20"
           >
             Get a Strategy Call
           </Link>
         </div>
 
-        {/* Mobile menu button */}
         <button
           type="button"
-          className="flex flex-col gap-1.5 rounded p-2 text-deep-gray md:hidden"
+          className="flex flex-col gap-1.5 rounded p-2 text-white md:hidden"
           onClick={() => setMobileOpen((o) => !o)}
           aria-expanded={mobileOpen}
           aria-label="Toggle menu"
@@ -84,13 +83,13 @@ export default function Navbar() {
       </nav>
 
       {mobileOpen && (
-        <div className="border-t border-strategy-navy/10 bg-cream px-6 py-4 md:hidden">
+        <div className="border-t border-white/10 bg-vibe-bg px-6 py-4 md:hidden">
           <ul className="flex flex-col gap-4">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="block text-sm font-medium text-deep-gray hover:text-fox-orange"
+                  className="block text-sm font-medium text-white/80 hover:text-neon-orange"
                   onClick={() => setMobileOpen(false)}
                 >
                   {link.label}
@@ -100,7 +99,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="#contact"
-                className="inline-block rounded-lg bg-fox-orange px-5 py-2.5 text-sm font-semibold text-white"
+                className="inline-block rounded-lg bg-neon-orange px-5 py-2.5 text-sm font-semibold text-white"
                 onClick={() => setMobileOpen(false)}
               >
                 Get a Strategy Call

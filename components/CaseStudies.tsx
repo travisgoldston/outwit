@@ -15,24 +15,24 @@ const cases = [
 
 export default function CaseStudies() {
   return (
-    <section id="case-studies" className="border-t border-strategy-navy/10 bg-white px-6 py-20 lg:px-8 lg:py-28">
+    <section id="case-studies" className="border-t border-white/10 bg-vibe-bg px-6 py-20 lg:px-8 lg:py-28">
       <div className="mx-auto max-w-6xl">
-        <h2 className="text-center text-3xl font-bold tracking-tight text-deep-gray sm:text-4xl">
+        <h2 className="text-center text-3xl font-bold tracking-tight text-white sm:text-4xl">
           Proof beats promises.
         </h2>
         <div className="mt-16 grid gap-8 sm:grid-cols-3">
           {cases.map((c) => (
             <article
               key={c.title}
-              className="group rounded-2xl border border-strategy-navy/10 bg-cream/40 p-8 shadow-sm transition-all duration-300 hover:border-fox-orange/20 hover:shadow-md"
+              className="rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm transition-all duration-300 hover:border-white/20 hover:bg-white/[0.07]"
             >
-              <span className="text-xs font-semibold uppercase tracking-wider text-fox-orange">
+              <span className="font-mono text-xs font-semibold uppercase tracking-wider text-neon-orange">
                 {c.label}
               </span>
-              <h3 className="mt-3 text-xl font-bold text-strategy-navy">
+              <h3 className="mt-3 text-xl font-bold text-white">
                 {c.title}
               </h3>
-              <p className="mt-4 text-deep-gray/80">
+              <p className="mt-4 text-white/70">
                 Full story coming soon.
               </p>
             </article>

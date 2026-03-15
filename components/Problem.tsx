@@ -28,28 +28,28 @@ const bullets = [
 
 export default function Problem() {
   return (
-    <section className="border-t border-strategy-navy/10 bg-white px-6 py-20 lg:px-8 lg:py-28">
+    <section className="border-t border-white/10 bg-vibe-bg px-6 py-20 lg:px-8 lg:py-28">
       <div className="mx-auto max-w-5xl">
-        <h2 className="text-center text-3xl font-bold tracking-tight text-deep-gray sm:text-4xl">
+        <h2 className="text-center text-3xl font-bold tracking-tight text-white sm:text-4xl">
           Most marketing wastes time and money.
         </h2>
-        <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-relaxed text-deep-gray/85">
+        <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-relaxed text-white/80">
           Businesses are told to post more, run more ads, and produce more content. Growth rarely comes from doing more. It comes from understanding what actually works.
         </p>
         <div className="mt-14 grid gap-6 sm:grid-cols-3">
           {bullets.map((item) => (
             <div
               key={item.title}
-              className="flex flex-col items-center rounded-2xl border border-strategy-navy/10 bg-cream/40 p-8 text-center shadow-sm transition-shadow hover:shadow-md"
+              className="flex flex-col items-center rounded-2xl border border-white/10 bg-white/5 p-8 text-center backdrop-blur-sm transition-all hover:border-white/20 hover:bg-white/[0.07]"
             >
-              <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-fox-orange/10 text-fox-orange">
+              <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-neon-orange/20 text-neon-orange">
                 {item.icon}
               </span>
-              <p className="mt-4 font-medium text-deep-gray">{item.title}</p>
+              <p className="mt-4 font-medium text-white/90">{item.title}</p>
             </div>
           ))}
         </div>
-        <p className="mt-14 text-center text-xl font-semibold text-strategy-navy">
+        <p className="mt-14 text-center text-xl font-semibold text-white/90">
           Winning companies don&apos;t outspend competitors. They outthink them.
         </p>
       </div>

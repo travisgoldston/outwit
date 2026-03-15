@@ -16,7 +16,7 @@ const resourceLinks = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-strategy-navy/10 bg-deep-gray text-white">
+    <footer className="border-t border-white/10 bg-vibe-bg text-white">
       <div className="mx-auto max-w-6xl px-6 py-14 lg:px-8 lg:py-16">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
@@ -26,7 +26,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-white/80 transition-colors hover:text-fox-orange"
+                    className="text-white/80 transition-colors hover:text-neon-orange"
                   >
                     {link.label}
                   </Link>
@@ -41,7 +41,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-white/80 transition-colors hover:text-fox-orange"
+                    className="text-white/80 transition-colors hover:text-neon-orange"
                   >
                     {link.label}
                   </Link>
@@ -53,12 +53,12 @@ export default function Footer() {
             <h3 className="text-lg font-bold text-white">Contact</h3>
             <ul className="mt-4 space-y-3 text-white/80">
               <li>
-                <a href="mailto:hello@outwit.com" className="hover:text-fox-orange transition-colors">
+                <a href="mailto:hello@outwit.com" className="hover:text-neon-orange transition-colors">
                   Email
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-fox-orange transition-colors">
+                <a href="#" className="hover:text-neon-orange transition-colors">
                   Twitter / LinkedIn
                 </a>
               </li>
@@ -75,7 +75,7 @@ export default function Footer() {
               href="https://boldspark.co"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white/80 transition-colors hover:text-fox-orange"
+              className="text-white/80 transition-colors hover:text-neon-orange"
             >
               boldspark
             </a>{" "}
