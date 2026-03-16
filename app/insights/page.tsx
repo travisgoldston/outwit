@@ -1,61 +1,12 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import { INSIGHTS_LIST } from "@/content/insights";
 
 export const metadata: Metadata = {
   title: "Outwit — Marketing Insights",
   description:
     "Clear, no-jargon articles on websites, SEO, and marketing systems to help you make smarter decisions and outwit your competition.",
 };
-
-type Insight = {
-  title: string;
-  summary: string;
-  readTime: string;
-};
-
-const insights: Insight[] = [
-  {
-    title: "Why most business websites fail",
-    summary:
-      "Most sites look fine—but fail at one job: turning the right visitors into conversations. Here’s how to spot the leaks.",
-    readTime: "7 min read",
-  },
-  {
-    title: "How much should a website cost in 2026?",
-    summary:
-      "A grounded way to think about website budgets, from simple builds to strategy-led redesigns.",
-    readTime: "9 min read",
-  },
-  {
-    title: "How long does SEO really take?",
-    summary:
-      "What you can expect in the first 3, 6, and 12+ months—and how to know if your investment is working.",
-    readTime: "8 min read",
-  },
-  {
-    title: "What makes a high-converting website",
-    summary:
-      "The structure, messaging, and proof we look for when we rebuild a homepage to actually sell.",
-    readTime: "10 min read",
-  },
-  {
-    title: "Local SEO: The complete guide",
-    summary:
-      "How local brands can use Google Business, on-site content, and reviews to own their market.",
-    readTime: "12 min read",
-  },
-  {
-    title: "Marketing funnels explained for small businesses",
-    summary:
-      "A simple, non-academic way to understand funnels—and how to build one without 20 tools.",
-    readTime: "6 min read",
-  },
-  {
-    title: "SEO vs paid ads: which one should you choose?",
-    summary:
-      "When to invest in search, when to lean on ads, and how the two can work together instead of competing.",
-    readTime: "7 min read",
-  },
-];
 
 export default function InsightsPage() {
   return (
@@ -71,9 +22,10 @@ export default function InsightsPage() {
       </div>
 
       <div className="mx-auto mt-16 max-w-5xl grid gap-6 md:grid-cols-2">
-        {insights.map((article) => (
-          <article
-            key={article.title}
+        {INSIGHTS_LIST.map((article) => (
+          <Link
+            key={article.slug}
+            href={`/insights/${article.slug}`}
             className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-7 shadow-sm transition-all duration-300 hover:border-neon-orange/60 hover:shadow-md"
           >
             <div>
@@ -84,10 +36,22 @@ export default function InsightsPage() {
               <p className="mt-3 text-sm leading-relaxed text-slate-600">{article.summary}</p>
             </div>
             <p className="mt-5 text-xs font-medium text-slate-500">{article.readTime}</p>
-          </article>
+            <span className="mt-4 inline-flex items-center text-sm font-semibold text-neon-orange">
+              Read article
+              <svg
+                className="ml-1 h-4 w-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+                aria-hidden
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </span>
+          </Link>
         ))}
       </div>
     </div>
   );
 }
-
