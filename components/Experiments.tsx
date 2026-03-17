@@ -31,7 +31,7 @@ export default function Experiments() {
     >
       <div className="mx-auto max-w-6xl">
         <h2 className="text-center text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-          From the Outwit Lab.
+          Inside the Outwit Lab.
         </h2>
         <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-relaxed text-slate-600">
           Experiments in websites, SEO, and conversion that keep your marketing ahead of the curve.

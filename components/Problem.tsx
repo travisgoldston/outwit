@@ -31,7 +31,7 @@ export default function Problem() {
           {bullets.map((item) => (
             <div
               key={item.title}
-              className="flex flex-col rounded-2xl border border-slate-200 bg-white p-6 text-left shadow-sm transition-all hover:border-slate-300"
+              className="flex flex-col rounded-2xl border border-slate-200 bg-white p-6 text-left shadow-sm transition-all hover:border-neon-orange/60"
             >
               <h3 className="text-sm font-semibold uppercase tracking-wide text-slate-700">
                 {item.title}

@@ -26,7 +26,7 @@ export default function CaseStudies() {
     >
       <div className="mx-auto max-w-6xl">
         <h2 className="text-center text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-          Case studies from the Outwit lab.
+          Proof that strategy beats spend.
         </h2>
         <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-relaxed text-slate-600">
           A sample of how smarter strategy, websites, and SEO turn into real pipeline and revenue.
