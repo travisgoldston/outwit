@@ -2,16 +2,19 @@ import Link from "next/link";
 
 const experiments = [
   {
+    slug: "can-ai-content-rank-on-google",
     title: "Can AI content rank on Google?",
     summary: "We tested publishing AI-generated content on a brand new site.",
     status: "Complete" as const,
   },
   {
+    slug: "how-fast-can-a-new-domain-rank",
     title: "How fast can a new domain rank?",
     summary: "A real-world test launching and growing a site from zero.",
     status: "In Progress" as const,
   },
   {
+    slug: "can-a-200-niche-site-make-money",
     title: "Can a $200 niche site make money?",
     summary: "A small budget experiment testing niche SEO.",
     status: "Complete" as const,
@@ -57,7 +60,7 @@ export default function Experiments() {
                 {exp.summary}
               </p>
               <Link
-                href="/lab"
+                href={`/lab/${exp.slug}`}
                 className="mt-6 inline-flex items-center text-sm font-semibold text-neon-orange transition-colors hover:text-neon-orange/80"
               >
                 Read experiment

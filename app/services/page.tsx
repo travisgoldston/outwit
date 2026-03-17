@@ -20,13 +20,13 @@ const services: Service[] = [
   {
     id: "websites",
     name: "Website Design",
-    summary: "Modern, conversion-focused websites built to sell, not just look good.",
+    summary: "Modern, conversion-focused websites that pull their weight in sales.",
     description:
-      "We design and build websites that feel premium, load fast, and read like a clear sales narrative instead of a generic brochure.",
+      "We plan and build sites that feel premium, load quickly, and walk visitors through a clear story instead of leaving them to piece things together.",
     benefits: [
-      "StoryBrand-inspired messaging that explains what you do, who it’s for, and why it matters in seconds.",
-      "High-performance builds on modern stacks so pages feel snappy on desktop and mobile.",
-      "Layouts that guide visitors from curiosity to clarity to a clear next step.",
+      "Messaging rooted in StoryBrand principles so people immediately see what you do, who you help, and why it matters.",
+      "Fast, reliable builds on modern stacks so your site feels sharp on both desktop and mobile.",
+      "Page structures that steadily move visitors from first glance to a confident next step.",
     ],
     links: [
       { href: "/case-studies", label: "See websites we’ve transformed" },
@@ -36,13 +36,13 @@ const services: Service[] = [
   {
     id: "seo",
     name: "SEO Strategy",
-    summary: "Search strategies that make the right customers find you first.",
+    summary: "Search strategies that help the right people discover you first.",
     description:
-      "We treat SEO as a growth channel, not a checklist—combining technical health, content strategy, and on-page clarity.",
+      "We approach SEO as a revenue channel, not a collection of tasks—combining solid technical foundations, focused content, and clear on-page messaging.",
     benefits: [
-      "Technical audits that fix crawling, indexing, and performance issues holding rankings back.",
-      "Search-focused content strategy that targets real buying intent and builds topical authority.",
-      "Clear reporting that ties rankings and traffic back to leads, pipeline, and revenue.",
+      "Technical reviews that surface and fix crawl, index, and performance issues that quietly cap your potential.",
+      "Search-driven content plans that lean into real purchase intent rather than chasing vanity keywords.",
+      "Simple reporting that connects rankings and visits to real outcomes like inquiries, pipeline, and revenue.",
     ],
     links: [
       { href: "/services#generate-more-leads", label: "See how we use SEO to drive leads" },
@@ -52,13 +52,13 @@ const services: Service[] = [
   {
     id: "systems",
     name: "Marketing Systems",
-    summary: "Landing pages, funnels, and analytics working together as one growth engine.",
+    summary: "Landing pages, funnels, and analytics working together as a single growth engine.",
     description:
-      "We design the paths that turn strangers into leads and customers—then wire the tooling so nothing falls through the cracks.",
+      "We map and build the paths that move strangers to customers—and wire up the tools so every step is tracked and followed through.",
     benefits: [
-      "Landing pages and lead magnets mapped to each stage of the buying journey.",
-      "CRM, forms, and automation wired so every lead is captured, routed, and followed up.",
-      "Testing plans that steadily improve conversion rates instead of guessing.",
+      "Landing pages and offers matched to each stage of the buying journey rather than a single generic page.",
+      "CRM, forms, and automation connected so every lead is captured, routed, and nurtured instead of slipping away.",
+      "Deliberate testing plans that nudge conversion rates up over time instead of guessing what might work.",
     ],
     links: [
       { href: "/services#website-as-sales-machine", label: "See how we build sales-ready systems" },
@@ -73,13 +73,13 @@ const outcomes = [
     eyebrow: "Outcome 01",
     title: "Generate more qualified leads.",
     problem:
-      "You&apos;re investing in marketing, but the right people still aren&apos;t finding you—or taking the next step when they do.",
+      "You’re putting real effort into marketing, but the people who reach you aren’t quite the right fit—or never raise their hand at all.",
     explanation:
-      "We combine high-performing websites with SEO strategy so your ideal customers can actually find you, understand what you do, and feel confident reaching out.",
+      "We pair search strategy with conversion-focused pages so your ideal customers can discover you, quickly understand the value, and feel comfortable starting a conversation.",
     bullets: [
-      "Search-focused website structure that matches how people actually look for what you do.",
-      "SEO strategy that targets real buying intent, not just vanity keywords.",
-      "Educational content and lead magnets that turn visitors into conversations.",
+      "Site architecture that reflects how people actually search for and evaluate what you offer.",
+      "SEO plans that lean into high-intent queries instead of chasing broad, low-value phrases.",
+      "Helpful content and offers that turn casual visitors into real conversations.",
     ],
     services: ["websites", "seo"] as const,
   },
@@ -88,13 +88,13 @@ const outcomes = [
     eyebrow: "Outcome 02",
     title: "Turn your website into a sales machine.",
     problem:
-      "Your site looks fine—but it reads like a brochure instead of a clear, confident sales conversation.",
+      "Your site looks polished, but it doesn’t sound like the way you sell—or guide visitors toward a confident yes.",
     explanation:
-      "We use StoryBrand-inspired messaging, modern design, and UX best practices to build websites that guide visitors from curiosity to clarity to action.",
+      "We use clear, StoryBrand-inspired messaging, modern design, and thoughtful UX so your website behaves more like a skilled salesperson than a static brochure.",
     bullets: [
-      "Positioning and messaging that explains what you do in plain language.",
-      "Conversion-focused layouts that remove friction and highlight the right next step.",
-      "Integrated CTAs, lead forms, and booking flows that fit your sales process.",
+      "Positioning and copy that explain your offer in straightforward language your buyers already use.",
+      "Layouts that reduce friction, answer key objections, and shine a light on the next best step.",
+      "CTAs, forms, and booking flows that mirror the way you actually run sales today.",
     ],
     services: ["websites", "systems"] as const,
   },
@@ -103,13 +103,13 @@ const outcomes = [
     eyebrow: "Outcome 03",
     title: "Dominate local search.",
     problem:
-      "Competitors keep showing up ahead of you on Google—even when customers are clearly searching for what you do in your area.",
+      "Competitors keep appearing above you on Google when nearby customers search for services you offer.",
     explanation:
-      "We pair local SEO, Google Business optimization, and focused landing pages so you own the searches that matter in your market.",
+      "We connect local SEO, Google Business optimization, and focused local pages so you show up where it matters most in your market.",
     bullets: [
-      "Google Business profile tuned to show up for high-intent local searches.",
-      "Location and service pages that answer real questions and build trust.",
-      "Reviews, schema, and content that send all the right signals to Google.",
+      "Google Business profiles tuned to appear for the most valuable, location-driven searches.",
+      "Location and service pages that address real questions and build confidence to contact you.",
+      "Reviews, schema, and supporting content that send strong, consistent trust signals to Google.",
     ],
     services: ["seo", "systems"] as const,
   },
