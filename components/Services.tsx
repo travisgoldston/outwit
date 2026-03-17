@@ -4,17 +4,17 @@ const solutions = [
   {
     title: "Generate more qualified leads",
     description: "Smart websites and SEO that consistently bring the right customers to you.",
-    href: "/solutions#generate-more-leads",
+    href: "/services#generate-more-leads",
   },
   {
     title: "Turn your website into a sales machine",
     description: "Conversion-focused design and StoryBrand-inspired messaging that moves visitors to act.",
-    href: "/solutions#website-as-sales-machine",
+    href: "/services#website-as-sales-machine",
   },
   {
     title: "Dominate local search",
     description: "Local SEO, Google Business optimization, and location pages that win your market.",
-    href: "/solutions#dominate-local-search",
+    href: "/services#dominate-local-search",
   },
 ];
 

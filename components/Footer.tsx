@@ -2,7 +2,6 @@ import Link from "next/link";
 
 const outwitLinks = [
   { href: "/", label: "Home" },
-  { href: "/solutions", label: "Solutions" },
   { href: "/services", label: "Services" },
   { href: "/case-studies", label: "Case Studies" },
   { href: "/lab", label: "Lab" },
@@ -86,7 +85,7 @@ export default function Footer() {
             Outwit — Smarter marketing through strategy and experimentation.
           </p>
           <p className="mt-3 text-sm text-white/60">
-            a thought project by{" "}
+            🦊 Made with <span className="inline-block align-middle">♥</span> by{" "}
             <a
               href="https://travisgoldston.com"
               target="_blank"
@@ -94,8 +93,7 @@ export default function Footer() {
               className="text-white/80 transition-colors hover:text-neon-orange"
             >
               Travis Goldston
-            </a>{" "}
-            ⚡
+            </a>
           </p>
         </div>
       </div>

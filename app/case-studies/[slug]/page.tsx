@@ -204,10 +204,10 @@ export default function CaseStudyDetail({ params }: PageProps) {
               Start your project
             </Link>
             <Link
-              href="/solutions"
+              href="/services"
               className="text-sm font-semibold text-slate-800 transition-colors hover:text-neon-orange"
             >
-              Explore solutions
+              Explore services
             </Link>
           </div>
         </div>

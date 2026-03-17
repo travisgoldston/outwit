@@ -333,8 +333,8 @@ export const INSIGHTS: Record<InsightSlug, InsightEntry> = {
             rankings. It’s whether search is sending the right visitors and
             whether those visitors are turning into leads or customers. If
             you’d like a strategy that’s built for that outcome, our{" "}
-            <ArticleLink href="/solutions#generate-more-leads">
-              lead generation solution
+            <ArticleLink href="/services#generate-more-leads">
+              lead generation services
             </ArticleLink>{" "}
             and{" "}
             <ArticleLink href="/services#seo">SEO strategy</ArticleLink> work
@@ -452,8 +452,8 @@ export const INSIGHTS: Record<InsightSlug, InsightEntry> = {
             </ArticleLink>
             . If you’re ready to turn your site into a conversion asset, our{" "}
             <ArticleLink href="/services">website design</ArticleLink> and{" "}
-            <ArticleLink href="/solutions#website-as-sales-machine">
-              sales-machine solution
+            <ArticleLink href="/services#website-as-sales-machine">
+              website-as-sales-machine services
             </ArticleLink>{" "}
             are built for that.{" "}
             <ArticleLink href="/contact">Start a project</ArticleLink> and we’ll
@@ -563,10 +563,10 @@ export const INSIGHTS: Record<InsightSlug, InsightEntry> = {
           </p>
           <p className="mt-8 leading-relaxed text-slate-700">
             If you want to own your local market, we can help. Our{" "}
-            <ArticleLink href="/solutions#dominate-local-search">
-              dominate local search
+            <ArticleLink href="/services#dominate-local-search">
+              dominate local search services
             </ArticleLink>{" "}
-            solution and{" "}
+            and{" "}
             <ArticleLink href="/services#seo">SEO strategy</ArticleLink> work
             include Google Business optimization, location content, and a
             repeatable process for reviews.{" "}
@@ -670,10 +670,10 @@ export const INSIGHTS: Record<InsightSlug, InsightEntry> = {
               marketing systems
             </ArticleLink>{" "}
             and{" "}
-            <ArticleLink href="/solutions#website-as-sales-machine">
-              website-as-sales-machine
+            <ArticleLink href="/services#website-as-sales-machine">
+              website-as-sales-machine services
             </ArticleLink>{" "}
-            work are built around that.{" "}
+            are built around that.{" "}
             <ArticleLink href="/contact">Start your project</ArticleLink> and
             we’ll map a funnel that fits your business.
           </p>
@@ -770,8 +770,8 @@ export const INSIGHTS: Record<InsightSlug, InsightEntry> = {
           </p>
           <p className="mt-8 leading-relaxed text-slate-700">
             If you’re not sure which lever to pull first, we can help. Our{" "}
-            <ArticleLink href="/solutions#generate-more-leads">
-              lead generation solution
+            <ArticleLink href="/services#generate-more-leads">
+              lead generation services
             </ArticleLink>{" "}
             and{" "}
             <ArticleLink href="/services#seo">SEO strategy</ArticleLink> work
