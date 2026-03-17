@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Reveal from "./Reveal";
 
 const cases = [
   {
@@ -24,7 +25,7 @@ export default function CaseStudies() {
       id="case-studies"
       className="border-t border-white/5 bg-[#FAFAFA] px-6 py-20 text-slate-900 lg:px-8 lg:py-28"
     >
-      <div className="mx-auto max-w-6xl">
+      <Reveal className="mx-auto max-w-6xl rounded-3xl border border-slate-200 bg-white p-8 sm:p-10">
         <h2 className="text-center text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
           Proof that strategy beats spend.
         </h2>
@@ -32,39 +33,40 @@ export default function CaseStudies() {
           A sample of how smarter strategy, websites, and SEO turn into real pipeline and revenue.
         </p>
         <div className="mt-16 grid gap-8 sm:grid-cols-3">
-          {cases.map((c) => (
-            <Link
-              key={c.slug}
-              href={`/case-studies/${c.slug}`}
-              className="group rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition-all duration-300 hover:border-neon-orange/60 hover:shadow-md"
-            >
-              <span className="font-mono text-xs font-semibold uppercase tracking-wider text-neon-orange">
-                Case Study
-              </span>
-              <h3 className="mt-3 text-xl font-bold text-slate-900">
-                {c.title}
-              </h3>
-              <p className="mt-4 text-sm font-medium text-slate-600">
-                {c.metric}
-              </p>
-              <span className="mt-6 inline-flex items-center text-sm font-semibold text-neon-orange group-hover:text-neon-orange/80">
-                View case study
-                <svg
-                  className="ml-1 h-4 w-4"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                  aria-hidden
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-              </span>
-            </Link>
+          {cases.map((c, idx) => (
+            <Reveal key={c.slug} delayMs={80 * idx}>
+              <Link
+                href={`/case-studies/${c.slug}`}
+                className="group block rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition-all duration-300 hover:border-neon-orange/60 hover:shadow-md"
+              >
+                <span className="font-mono text-xs font-semibold uppercase tracking-wider text-neon-orange">
+                  Case Study
+                </span>
+                <h3 className="mt-3 text-xl font-bold text-slate-900">
+                  {c.title}
+                </h3>
+                <p className="mt-4 text-sm font-medium text-slate-600">
+                  {c.metric}
+                </p>
+                <span className="mt-6 inline-flex items-center text-sm font-semibold text-neon-orange group-hover:text-neon-orange/80">
+                  View case study
+                  <svg
+                    className="ml-1 h-4 w-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                    aria-hidden
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </span>
+              </Link>
+            </Reveal>
           ))}
         </div>
         <div className="mt-12 text-center">
@@ -75,7 +77,7 @@ export default function CaseStudies() {
             View all case studies
           </Link>
         </div>
-      </div>
+      </Reveal>
     </section>
   );
 }
