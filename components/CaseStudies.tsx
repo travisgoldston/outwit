@@ -22,7 +22,7 @@ export default function CaseStudies() {
   return (
     <section
       id="case-studies"
-      className="border-t border-white/5 bg-[#FAFAFA] px-6 py-20 text-slate-900 lg:px-8 lg:py-28"
+      className="border-t border-white/5 bg-white px-6 py-20 text-slate-900 lg:px-8 lg:py-28"
     >
       <div className="mx-auto max-w-6xl">
         <h2 className="text-center text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">

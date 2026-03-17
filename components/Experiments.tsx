@@ -27,7 +27,7 @@ export default function Experiments() {
   return (
     <section
       id="experiments"
-      className="border-t border-white/5 bg-[#FAFAFA] px-6 py-20 text-slate-900 lg:px-8 lg:py-28"
+      className="border-t border-white/5 bg-[#F7F7F7] px-6 py-20 text-slate-900 lg:px-8 lg:py-28"
     >
       <div className="mx-auto max-w-6xl">
         <h2 className="text-center text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
@@ -40,7 +40,7 @@ export default function Experiments() {
           {experiments.map((exp) => (
             <article
               key={exp.title}
-              className="flex flex-col rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition-all duration-300 hover:border-neon-orange/60 hover:shadow-md"
+              className="flex flex-col rounded-2xl border border-slate-200/90 bg-white p-8 shadow-[0_14px_30px_rgba(15,17,21,0.06)] transition-all duration-300 hover:border-neon-orange/65 hover:shadow-[0_18px_40px_rgba(15,17,21,0.08)]"
             >
               <span
                 className={`font-mono inline-flex w-fit items-center gap-1.5 rounded px-3 py-1 text-xs font-semibold uppercase tracking-wider ${statusStyles[exp.status] ?? "bg-white/10 text-white/80"}`}

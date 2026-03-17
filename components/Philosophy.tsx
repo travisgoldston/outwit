@@ -22,7 +22,7 @@ export default function Philosophy() {
   return (
     <section
       id="blog"
-      className="border-t border-white/5 bg-[#FAFAFA] px-6 py-20 text-slate-900 lg:px-8 lg:py-28"
+      className="border-t border-white/5 bg-white px-6 py-20 text-slate-900 lg:px-8 lg:py-28"
     >
       <div className="mx-auto max-w-6xl">
         <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
@@ -45,7 +45,7 @@ export default function Philosophy() {
           {articles.map((article) => (
             <article
               key={article.title}
-              className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:border-neon-orange/60 hover:shadow-md"
+              className="rounded-2xl border border-slate-200/90 bg-white p-6 shadow-[0_14px_30px_rgba(15,17,21,0.06)] transition-all duration-300 hover:border-neon-orange/65 hover:shadow-[0_18px_40px_rgba(15,17,21,0.08)]"
             >
               <h3 className="text-lg font-semibold text-slate-900">
                 {article.title}

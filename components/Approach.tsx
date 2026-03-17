@@ -21,7 +21,7 @@ const steps = [
 
 export default function Approach() {
   return (
-    <section className="border-t border-white/5 bg-[#FAFAFA] px-6 py-20 text-slate-900 lg:px-8 lg:py-28">
+    <section className="border-t border-white/5 bg-white px-6 py-20 text-slate-900 lg:px-8 lg:py-28">
       <div className="mx-auto max-w-6xl">
         <h2 className="text-center text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
           The Outwit Method.
@@ -33,7 +33,7 @@ export default function Approach() {
           {steps.map((card) => (
             <div
               key={card.title}
-              className="relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition-all duration-300 hover:border-neon-orange/60 hover:shadow-md"
+              className="relative overflow-hidden rounded-2xl border border-slate-200 border-l-4 border-l-neon-orange/80 bg-[#F9FAFB] p-6 shadow-sm transition-all duration-300 hover:border-neon-orange/70"
             >
               <span className="text-sm font-mono uppercase tracking-[0.2em] text-neon-orange">
                 {card.step}

@@ -22,7 +22,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="border-t border-white/5 bg-[#FAFAFA] px-6 py-20 text-slate-900 lg:px-8 lg:py-28"
+      className="border-t border-white/5 bg-[#F7F7F7] px-6 py-20 text-slate-900 lg:px-8 lg:py-28"
     >
       <div className="mx-auto max-w-6xl">
         <h2 className="text-center text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
