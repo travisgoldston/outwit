@@ -1,3 +1,4 @@
+import Link from "next/link";
 import HeroVisual from "./HeroVisual";
 
 export default function Hero() {
@@ -18,6 +19,20 @@ export default function Hero() {
             My creative playground for vibe coding, digital marketing experiments, and insights
             from inside my brain. No KPIs, just craft.
           </p>
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-4 lg:justify-start">
+            <Link
+              href="/lab"
+              className="inline-flex items-center justify-center rounded-lg bg-neon-orange px-6 py-3.5 text-base font-semibold text-white shadow-lg shadow-neon-orange/25 transition-all hover:bg-neon-orange/90 hover:shadow-[0_0_20px_rgba(255,95,31,0.4)]"
+            >
+              Explore experiments
+            </Link>
+            <Link
+              href="/case-studies"
+              className="inline-flex items-center justify-center rounded-lg border border-white bg-transparent px-6 py-3.5 text-base font-semibold text-white transition-all hover:border-neon-orange"
+            >
+              See the work
+            </Link>
+          </div>
         </div>
         <div className="relative flex justify-center lg:justify-end">
           <HeroVisual />

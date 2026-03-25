@@ -79,22 +79,23 @@ export default function Footer() {
                   X
                 </a>
               </li>
-              <li>
-                <a
-                  href="https://travisgoldston.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="transition-colors hover:text-neon-orange"
-                >
-                  travisgoldston.com
-                </a>
-              </li>
             </ul>
           </div>
         </div>
         <div className="mt-12 border-t border-white/10 pt-8 text-center">
           <p className="text-sm text-white/70">
-            Outwit — writing, experiments, and marketing notes from Travis Goldston.
+            <span className="mr-1.5" aria-hidden>
+              🦊
+            </span>
+            Made with {"<3"} by{" "}
+            <a
+              href="https://travisgoldston.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/90 transition-colors hover:text-neon-orange"
+            >
+              Travis Goldston
+            </a>
           </p>
         </div>
       </div>
