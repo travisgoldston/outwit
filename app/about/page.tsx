@@ -36,19 +36,16 @@ export default function AboutPage() {
             think out loud about what&apos;s working (and what isn&apos;t) in modern marketing.
           </p>
           <p>
-            This site isn&apos;t a pitch deck. I publish on the{" "}
-            <Link href="/blog" className="font-semibold text-neon-orange hover:underline">
-              blog
+            This site isn&apos;t a pitch deck. I publish{" "}
+            <Link href="/insights" className="font-semibold text-neon-orange hover:underline">
+              insights
             </Link>
             , share tests in the{" "}
             <Link href="/lab" className="font-semibold text-neon-orange hover:underline">
               Lab
             </Link>
-            , and keep a running list of what I&apos;m building on{" "}
-            <Link href="/projects" className="font-semibold text-neon-orange hover:underline">
-              Projects
-            </Link>
-            . If something here helps you make a smarter decision, that&apos;s the whole point.
+            , and link out to what I&apos;m building elsewhere from the home page. If something here
+            helps you make a smarter decision, that&apos;s the whole point.
           </p>
         </div>
 

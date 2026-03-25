@@ -43,24 +43,24 @@ export default function Home() {
           <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-                Recent from the blog
+                Recent insights
               </h2>
               <p className="mt-2 text-slate-600">
                 Strategy, SEO, and lessons from the work.
               </p>
             </div>
             <Link
-              href="/blog"
+              href="/insights"
               className="text-sm font-semibold text-neon-orange hover:underline"
             >
-              All posts →
+              All insights →
             </Link>
           </div>
           <div className="mt-12 grid gap-8 md:grid-cols-3">
             {recentPosts.map((post) => (
               <Link
                 key={post.slug}
-                href={`/blog/${post.slug}`}
+                href={`/insights/${post.slug}`}
                 className="group flex flex-col rounded-2xl border border-slate-200 bg-white p-7 shadow-sm transition-all hover:border-neon-orange/60 hover:shadow-md"
               >
                 <p className="text-xs font-mono uppercase tracking-[0.2em] text-neon-orange/80">
@@ -117,7 +117,7 @@ export default function Home() {
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-xl font-semibold text-slate-900 sm:text-2xl">Elsewhere</h2>
           <p className="mt-3 text-sm text-slate-600">
-            Brands and projects I&apos;m building—outside this site.
+            Brands and things I&apos;m building—outside this site.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             {projectLinks.map((p) => (
@@ -131,12 +131,6 @@ export default function Home() {
                 {p.label}
               </a>
             ))}
-            <Link
-              href="/projects"
-              className="rounded-full border border-slate-200 bg-white px-5 py-2.5 text-sm font-medium text-slate-800 transition-colors hover:border-neon-orange hover:text-neon-orange"
-            >
-              All projects
-            </Link>
           </div>
         </div>
       </section>

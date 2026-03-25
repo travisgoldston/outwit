@@ -37,8 +37,8 @@ export default function LabPage() {
         <p className="mt-6 text-lg leading-relaxed text-slate-600">
           Before I bet big on a tactic, I test it. These experiments are where I validate what
           actually moves the needle—then I write about it here and on the{" "}
-          <Link href="/blog" className="font-semibold text-neon-orange hover:underline">
-            blog
+          <Link href="/insights" className="font-semibold text-neon-orange hover:underline">
+            insights
           </Link>
           .
         </p>

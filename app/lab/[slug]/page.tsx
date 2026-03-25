@@ -107,12 +107,12 @@ export default async function LabExperimentPage({ params }: PageProps) {
         <div className="mt-12 rounded-2xl border border-slate-200 bg-white px-6 py-8 shadow-sm">
           <p className="text-sm leading-relaxed text-slate-600">
             More:{" "}
-            <Link href="/blog" className="font-semibold text-neon-orange hover:underline">
-              Blog
+            <Link href="/insights" className="font-semibold text-neon-orange hover:underline">
+              Insights
             </Link>
             {" · "}
-            <Link href="/projects" className="font-semibold text-neon-orange hover:underline">
-              Projects
+            <Link href="/about" className="font-semibold text-neon-orange hover:underline">
+              About
             </Link>
             {" · "}
             <a

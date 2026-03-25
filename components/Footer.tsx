@@ -3,9 +3,8 @@ import Link from "next/link";
 const outwitLinks = [
   { href: "/", label: "Home" },
   { href: "/lab", label: "Lab" },
-  { href: "/blog", label: "Blog" },
+  { href: "/insights", label: "Insights" },
   { href: "/about", label: "About" },
-  { href: "/projects", label: "Projects" },
 ];
 
 export default function Footer() {

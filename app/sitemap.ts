@@ -8,10 +8,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     "/",
     "/lab",
-    "/blog",
+    "/insights",
     "/about",
-    "/projects",
-    ...BLOG_SLUGS.map((slug) => `/blog/${slug}`),
+    ...BLOG_SLUGS.map((slug) => `/insights/${slug}`),
     ...LAB_SLUGS.map((slug) => `/lab/${slug}`),
   ];
 
