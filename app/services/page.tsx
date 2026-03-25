@@ -2,227 +2,257 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Outwit — Website, SEO & Marketing Services",
+  title: "Outwit — Growth Engine",
   description:
-    "Strategy-first services that generate more leads, turn your website into a sales asset, and help you dominate local search.",
+    "Outwit is a growth intelligence system for HVAC, plumbing, and electrical companies in North Dallas—built to win high-intent search and turn it into booked jobs.",
 };
-
-type Service = {
-  id: "websites" | "seo" | "systems";
-  name: string;
-  summary: string;
-  description: string;
-  benefits: string[];
-  links: { href: string; label: string }[];
-};
-
-const services: Service[] = [
-  {
-    id: "websites",
-    name: "Website Design",
-    summary: "Modern, conversion-focused websites that pull their weight in sales.",
-    description:
-      "We plan and build sites that feel premium, load quickly, and walk visitors through a clear story instead of leaving them to piece things together.",
-    benefits: [
-      "Messaging rooted in StoryBrand principles so people immediately see what you do, who you help, and why it matters.",
-      "Fast, reliable builds on modern stacks so your site feels sharp on both desktop and mobile.",
-      "Page structures that steadily move visitors from first glance to a confident next step.",
-    ],
-    links: [
-      { href: "/case-studies", label: "See websites we’ve transformed" },
-      { href: "/insights", label: "Read about high-converting websites" },
-    ],
-  },
-  {
-    id: "seo",
-    name: "SEO Strategy",
-    summary: "Search strategies that help the right people discover you first.",
-    description:
-      "We approach SEO as a revenue channel, not a collection of tasks—combining solid technical foundations, focused content, and clear on-page messaging.",
-    benefits: [
-      "Technical reviews that surface and fix crawl, index, and performance issues that quietly cap your potential.",
-      "Search-driven content plans that lean into real purchase intent rather than chasing vanity keywords.",
-      "Simple reporting that connects rankings and visits to real outcomes like inquiries, pipeline, and revenue.",
-    ],
-    links: [
-      { href: "/services#generate-more-leads", label: "See how we use SEO to drive leads" },
-      { href: "/lab", label: "See SEO experiments from the Lab" },
-    ],
-  },
-  {
-    id: "systems",
-    name: "Marketing Systems",
-    summary: "Landing pages, funnels, and analytics working together as a single growth engine.",
-    description:
-      "We map and build the paths that move strangers to customers—and wire up the tools so every step is tracked and followed through.",
-    benefits: [
-      "Landing pages and offers matched to each stage of the buying journey rather than a single generic page.",
-      "CRM, forms, and automation connected so every lead is captured, routed, and nurtured instead of slipping away.",
-      "Deliberate testing plans that nudge conversion rates up over time instead of guessing what might work.",
-    ],
-    links: [
-      { href: "/services#website-as-sales-machine", label: "See how we build sales-ready systems" },
-      { href: "/insights", label: "Explore funnels and conversion articles" },
-    ],
-  },
-];
-
-const outcomes = [
-  {
-    id: "generate-more-leads",
-    eyebrow: "Outcome 01",
-    title: "Generate more qualified leads.",
-    problem:
-      "You’re putting real effort into marketing, but the people who reach you aren’t quite the right fit—or never raise their hand at all.",
-    explanation:
-      "We pair search strategy with conversion-focused pages so your ideal customers can discover you, quickly understand the value, and feel comfortable starting a conversation.",
-    bullets: [
-      "Site architecture that reflects how people actually search for and evaluate what you offer.",
-      "SEO plans that lean into high-intent queries instead of chasing broad, low-value phrases.",
-      "Helpful content and offers that turn casual visitors into real conversations.",
-    ],
-    services: ["websites", "seo"] as const,
-  },
-  {
-    id: "website-as-sales-machine",
-    eyebrow: "Outcome 02",
-    title: "Turn your website into a sales machine.",
-    problem:
-      "Your site looks polished, but it doesn’t sound like the way you sell—or guide visitors toward a confident yes.",
-    explanation:
-      "We use clear, StoryBrand-inspired messaging, modern design, and thoughtful UX so your website behaves more like a skilled salesperson than a static brochure.",
-    bullets: [
-      "Positioning and copy that explain your offer in straightforward language your buyers already use.",
-      "Layouts that reduce friction, answer key objections, and shine a light on the next best step.",
-      "CTAs, forms, and booking flows that mirror the way you actually run sales today.",
-    ],
-    services: ["websites", "systems"] as const,
-  },
-  {
-    id: "dominate-local-search",
-    eyebrow: "Outcome 03",
-    title: "Dominate local search.",
-    problem:
-      "Competitors keep appearing above you on Google when nearby customers search for services you offer.",
-    explanation:
-      "We connect local SEO, Google Business optimization, and focused local pages so you show up where it matters most in your market.",
-    bullets: [
-      "Google Business profiles tuned to appear for the most valuable, location-driven searches.",
-      "Location and service pages that address real questions and build confidence to contact you.",
-      "Reviews, schema, and supporting content that send strong, consistent trust signals to Google.",
-    ],
-    services: ["seo", "systems"] as const,
-  },
-];
 
 export default function ServicesPage() {
   return (
     <div className="bg-[#FAFAFA] px-6 py-16 text-slate-900 lg:px-8 lg:py-24">
       <div className="mx-auto max-w-4xl text-center">
         <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
-          Services for strategy-driven teams.
+          The Outwit Growth Engine.
         </h1>
         <p className="mt-6 text-lg leading-relaxed text-slate-600">
-          Outwit blends strategy, design, and SEO into a focused set of services that generate more
-          qualified leads, turn your website into a sales asset, and help you own the searches that
-          matter.
+          A growth intelligence system for HVAC, plumbing, and electrical companies in North Dallas.
+          We help you win high-intent search—and turn it into calls, booked jobs, and predictable
+          inbound demand.
         </p>
+        <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+          <Link
+            href="/growth-plan"
+            className="inline-flex items-center justify-center rounded-lg bg-neon-orange px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-neon-orange/25 transition-all hover:bg-neon-orange/90"
+          >
+            Get the Growth Plan
+          </Link>
+          <Link
+            href="#growth-engine"
+            className="text-sm font-semibold text-slate-800 transition-colors hover:text-neon-orange"
+          >
+            See how the engine works
+          </Link>
+        </div>
       </div>
 
-      <div className="mx-auto mt-16 max-w-5xl space-y-16">
-        {outcomes.map((outcome) => {
-          const outcomeServices = outcome.services
-            .map((id) => services.find((s) => s.id === id))
-            .filter(Boolean) as Service[];
-
-          return (
-            <section
-              key={outcome.id}
-              id={outcome.id}
-              className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm sm:p-10"
+      <div className="mx-auto mt-16 max-w-5xl space-y-10">
+        <section
+          id="growth-engine"
+          className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm sm:p-10"
+        >
+          <p className="text-xs font-mono uppercase tracking-[0.25em] text-neon-orange">
+            The System
+          </p>
+          <h2 className="mt-3 text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">
+            Most agencies ship tasks. Outwit builds unfair advantages.
+          </h2>
+          <p className="mt-4 text-base leading-relaxed text-slate-600">
+            The Growth Engine is designed to do three things exceptionally well: outrank competitors
+            for high-intent searches, earn the click with trust and clarity, and turn that demand
+            into calls and booked jobs.
+          </p>
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            {[
+              {
+                title: "Intelligence",
+                body: "We map demand, job economics, and competitor weaknesses across North Dallas so we know exactly what to build.",
+              },
+              {
+                title: "Search capture",
+                body: "We build pages and content that deserve to rank for service + city and problem searches that signal a ready buyer.",
+              },
+              {
+                title: "Conversion",
+                body: "We tighten messaging, proof, and CTAs so the path to call or book feels obvious—especially on mobile.",
+              },
+            ].map((card) => (
+              <div
+                key={card.title}
+                className="rounded-2xl border border-slate-200 bg-[#FAFAFA] p-6 text-sm leading-relaxed text-slate-700"
+              >
+                <p className="text-xs font-mono uppercase tracking-[0.25em] text-neon-orange">
+                  {card.title}
+                </p>
+                <p className="mt-3 font-semibold text-slate-900">{card.body}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-10 flex flex-wrap items-center gap-4">
+            <Link
+              href="/growth-plan"
+              className="inline-flex items-center justify-center rounded-lg bg-neon-orange px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-neon-orange/25 transition-all hover:bg-neon-orange/90"
             >
-              <p className="text-xs font-mono uppercase tracking-[0.25em] text-neon-orange">
-                {outcome.eyebrow}
-              </p>
-              <h2 className="mt-3 text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">
-                {outcome.title}
-              </h2>
-              <p className="mt-4 text-sm font-medium text-slate-600">{outcome.problem}</p>
-              <p className="mt-4 text-base leading-relaxed text-slate-600">
-                {outcome.explanation}
-              </p>
-              <ul className="mt-6 space-y-3 text-sm leading-relaxed text-slate-600">
-                {outcome.bullets.map((point) => (
-                  <li key={point} className="flex gap-2">
-                    <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-neon-orange" />
-                    <span>{point}</span>
-                  </li>
-                ))}
-              </ul>
+              Start with the Growth Plan
+            </Link>
+            <Link
+              href="/local-seo/north-dallas"
+              className="text-sm font-semibold text-slate-800 transition-colors hover:text-neon-orange"
+            >
+              See our geo strategy
+            </Link>
+          </div>
+        </section>
 
-              <div className="mt-10 space-y-8 border-t border-slate-200 pt-8">
-                <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-700">
-                  How we do it
-                </h3>
-                <div className="grid gap-6 md:grid-cols-2">
-                  {outcomeServices.map((service) => (
-                    <div
-                      key={service.id}
-                      className="rounded-2xl border border-slate-200 bg-[#FAFAFA] p-6 text-sm leading-relaxed text-slate-700"
+        <section className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm sm:p-10">
+          <p className="text-xs font-mono uppercase tracking-[0.25em] text-neon-orange">
+            Who it’s for
+          </p>
+          <h2 className="mt-3 text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">
+            Built for home service owners who care about calls, not dashboards.
+          </h2>
+          <p className="mt-4 text-base leading-relaxed text-slate-600">
+            Outwit is designed for HVAC, plumbing, and electrical companies serving McKinney,
+            Frisco, Plano, Allen, and Prosper—especially teams that have tried agencies and walked
+            away skeptical.
+          </p>
+          <div className="mt-8 grid gap-6 md:grid-cols-3">
+            {[
+              {
+                title: "HVAC",
+                links: [
+                  { href: "/hvac-seo/mckinney", label: "McKinney" },
+                  { href: "/hvac-seo/frisco", label: "Frisco" },
+                  { href: "/hvac-seo/plano", label: "Plano" },
+                ],
+              },
+              {
+                title: "Plumbing",
+                links: [
+                  { href: "/plumbing-seo/mckinney", label: "McKinney" },
+                  { href: "/plumbing-seo/frisco", label: "Frisco" },
+                  { href: "/plumbing-seo/plano", label: "Plano" },
+                ],
+              },
+              {
+                title: "Electrical",
+                links: [
+                  { href: "/electrical-seo/mckinney", label: "McKinney" },
+                  { href: "/electrical-seo/frisco", label: "Frisco" },
+                  { href: "/electrical-seo/plano", label: "Plano" },
+                ],
+              },
+            ].map((col) => (
+              <div key={col.title} className="rounded-2xl border border-slate-200 bg-[#FAFAFA] p-6">
+                <p className="text-xs font-mono uppercase tracking-[0.25em] text-neon-orange">
+                  {col.title}
+                </p>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {col.links.map((l) => (
+                    <Link
+                      key={l.href}
+                      href={l.href}
+                      className="inline-flex items-center justify-center rounded-full border border-slate-200 bg-white px-4 py-2 text-xs font-semibold text-slate-800 transition-colors hover:border-neon-orange/70 hover:text-neon-orange"
                     >
-                      <p className="text-xs font-mono uppercase tracking-[0.25em] text-neon-orange">
-                        {service.name}
-                      </p>
-                      <p className="mt-3 font-semibold text-slate-900">{service.summary}</p>
-                      <p className="mt-3 text-slate-700">{service.description}</p>
-                      <ul className="mt-4 space-y-2 text-xs leading-relaxed text-slate-700">
-                        {service.benefits.map((benefit) => (
-                          <li key={benefit} className="flex gap-2">
-                            <span className="mt-1 h-1 w-1 shrink-0 rounded-full bg-neon-orange" />
-                            <span>{benefit}</span>
-                          </li>
-                        ))}
-                      </ul>
-                      <div className="mt-5 flex flex-wrap gap-2">
-                        {service.links.map((link) => (
-                          <Link
-                            key={link.href + link.label}
-                            href={link.href}
-                            className="inline-flex items-center justify-center rounded-full border border-slate-200 px-3 py-1.5 text-[11px] font-semibold text-slate-800 transition-colors hover:border-neon-orange/70 hover:text-neon-orange"
-                          >
-                            {link.label}
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
+                      {l.label}
+                    </Link>
                   ))}
                 </div>
               </div>
-            </section>
-          );
-        })}
+            ))}
+          </div>
+        </section>
+
+        <section id="offers" className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm sm:p-10">
+          <p className="text-xs font-mono uppercase tracking-[0.25em] text-neon-orange">
+            The Offer
+          </p>
+          <h2 className="mt-3 text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">
+            Two ways to start. One system end-to-end.
+          </h2>
+          <div className="mt-10 grid gap-6 md:grid-cols-2">
+            <div className="rounded-2xl border border-slate-200 bg-[#FAFAFA] p-6">
+              <h3 className="text-lg font-semibold text-slate-900">Growth Plan (one-time)</h3>
+              <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                A focused audit + competitor breakdown + 90-day roadmap that tells you exactly what
+                to fix and build next.
+              </p>
+              <ul className="mt-4 space-y-2 text-sm leading-relaxed text-slate-700">
+                {[
+                  "SEO audit and local visibility diagnosis",
+                  "Keyword + page map built around high-intent demand",
+                  "Competitor breakdown (why they win, where they’re weak)",
+                  "90-day roadmap with priorities in order",
+                ].map((item) => (
+                  <li key={item} className="flex gap-2">
+                    <span className="mt-1 h-1 w-1 shrink-0 rounded-full bg-neon-orange" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-6 flex flex-wrap items-center gap-4">
+                <Link
+                  href="/growth-plan"
+                  className="inline-flex items-center justify-center rounded-lg bg-neon-orange px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-neon-orange/25 transition-all hover:bg-neon-orange/90"
+                >
+                  Get the Growth Plan
+                </Link>
+                <Link
+                  href="/contact"
+                  className="text-sm font-semibold text-slate-800 transition-colors hover:text-neon-orange"
+                >
+                  Ask a question
+                </Link>
+              </div>
+            </div>
+
+            <div className="rounded-2xl border border-slate-200 bg-[#FAFAFA] p-6">
+              <h3 className="text-lg font-semibold text-slate-900">Outwit Growth Engine (monthly)</h3>
+              <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                We execute the system: search capture, on-site optimization, conversion improvements,
+                and reporting tied to leads.
+              </p>
+              <ul className="mt-4 space-y-2 text-sm leading-relaxed text-slate-700">
+                {[
+                  "SEO + content system designed for job intent",
+                  "On-site optimization and internal linking that supports rankings",
+                  "Conversion upgrades that turn demand into calls",
+                  "Reporting centered on leads (calls/forms) and booked-job signals where available",
+                ].map((item) => (
+                  <li key={item} className="flex gap-2">
+                    <span className="mt-1 h-1 w-1 shrink-0 rounded-full bg-neon-orange" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-6 flex flex-wrap items-center gap-4">
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center justify-center rounded-lg bg-neon-orange px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-neon-orange/25 transition-all hover:bg-neon-orange/90"
+                >
+                  Talk about the Engine
+                </Link>
+                <Link
+                  href="/lab"
+                  className="text-sm font-semibold text-slate-800 transition-colors hover:text-neon-orange"
+                >
+                  See what we test in the Lab
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
 
       <div className="mx-auto mt-20 max-w-3xl rounded-3xl border border-slate-200 bg-white px-8 py-10 text-center shadow-sm">
         <h2 className="text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">
-          Ready to turn strategy into revenue?
+          Want a plan you can actually trust?
         </h2>
         <p className="mt-4 text-base leading-relaxed text-slate-600">
-          Share a bit about your business and we&apos;ll recommend the mix of services that gives
-          you the most leverage—without unnecessary extras.
+          Start with the Growth Plan. If it’s a fit, we’ll run the Growth Engine and keep it
+          compounding.
         </p>
         <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
           <Link
-            href="/contact"
+            href="/growth-plan"
             className="inline-flex items-center justify-center rounded-lg bg-neon-orange px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-neon-orange/25 transition-all hover:bg-neon-orange/90"
           >
-            Start your project
+            Get the Growth Plan
           </Link>
           <Link
-            href="/case-studies"
+            href="/hvac-seo/mckinney"
             className="text-sm font-semibold text-slate-800 transition-colors hover:text-neon-orange"
           >
-            View case studies
+            See an HVAC example
           </Link>
         </div>
       </div>

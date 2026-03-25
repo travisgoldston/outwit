@@ -333,12 +333,9 @@ export const INSIGHTS: Record<InsightSlug, InsightEntry> = {
             rankings. It’s whether search is sending the right visitors and
             whether those visitors are turning into leads or customers. If
             you’d like a strategy that’s built for that outcome, our{" "}
-            <ArticleLink href="/services#generate-more-leads">
-              lead generation services
-            </ArticleLink>{" "}
+            <ArticleLink href="/growth-plan">Growth Plan</ArticleLink>{" "}
             and{" "}
-            <ArticleLink href="/services#seo">SEO strategy</ArticleLink> work
-            are built around it.{" "}
+            <ArticleLink href="/services">the Growth Engine</ArticleLink> are built around it.{" "}
             <ArticleLink href="/contact">Tell us about your goals</ArticleLink>{" "}
             and we’ll outline a realistic timeline and plan.
           </p>
@@ -452,9 +449,7 @@ export const INSIGHTS: Record<InsightSlug, InsightEntry> = {
             </ArticleLink>
             . If you’re ready to turn your site into a conversion asset, our{" "}
             <ArticleLink href="/services">website design</ArticleLink> and{" "}
-            <ArticleLink href="/services#website-as-sales-machine">
-              website-as-sales-machine services
-            </ArticleLink>{" "}
+            <ArticleLink href="/services">the Growth Engine</ArticleLink>{" "}
             are built for that.{" "}
             <ArticleLink href="/contact">Start a project</ArticleLink> and we’ll
             map the changes that will move the needle.
@@ -563,13 +558,10 @@ export const INSIGHTS: Record<InsightSlug, InsightEntry> = {
           </p>
           <p className="mt-8 leading-relaxed text-slate-700">
             If you want to own your local market, we can help. Our{" "}
-            <ArticleLink href="/services#dominate-local-search">
-              dominate local search services
-            </ArticleLink>{" "}
+            <ArticleLink href="/local-seo/north-dallas">North Dallas local SEO strategy</ArticleLink>{" "}
             and{" "}
-            <ArticleLink href="/services#seo">SEO strategy</ArticleLink> work
-            include Google Business optimization, location content, and a
-            repeatable process for reviews.{" "}
+            <ArticleLink href="/services">the Growth Engine</ArticleLink> include Google Business
+            optimization, location content, and a repeatable process for reviews.{" "}
             <ArticleLink href="/contact">Start your project</ArticleLink> and
             we’ll outline a plan tailored to your market.
           </p>
@@ -666,14 +658,7 @@ export const INSIGHTS: Record<InsightSlug, InsightEntry> = {
           <p className="mt-8 leading-relaxed text-slate-700">
             If you want to turn your website and marketing into a funnel that
             actually generates leads, we can help. Our{" "}
-            <ArticleLink href="/services#systems">
-              marketing systems
-            </ArticleLink>{" "}
-            and{" "}
-            <ArticleLink href="/services#website-as-sales-machine">
-              website-as-sales-machine services
-            </ArticleLink>{" "}
-            are built around that.{" "}
+            <ArticleLink href="/services">the Growth Engine</ArticleLink> is built around that.{" "}
             <ArticleLink href="/contact">Start your project</ArticleLink> and
             we’ll map a funnel that fits your business.
           </p>
@@ -770,12 +755,9 @@ export const INSIGHTS: Record<InsightSlug, InsightEntry> = {
           </p>
           <p className="mt-8 leading-relaxed text-slate-700">
             If you’re not sure which lever to pull first, we can help. Our{" "}
-            <ArticleLink href="/services#generate-more-leads">
-              lead generation services
-            </ArticleLink>{" "}
+            <ArticleLink href="/growth-plan">Growth Plan</ArticleLink>{" "}
             and{" "}
-            <ArticleLink href="/services#seo">SEO strategy</ArticleLink> work
-            are built to grow organic demand, and we often pair that with a
+            <ArticleLink href="/services">the Growth Engine</ArticleLink> are built to grow organic demand, and we often pair that with a
             clear plan for when and how to use paid. We also run experiments in
             the{" "}
             <ArticleLink href="/lab">Outwit Lab</ArticleLink> that inform how we

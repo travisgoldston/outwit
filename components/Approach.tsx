@@ -1,21 +1,21 @@
 const steps = [
   {
     step: "01",
-    title: "Diagnose",
+    title: "Intelligence",
     description:
-      "We dig into your business, market, and positioning to understand what&apos;s blocking growth and where the real leverage is.",
+      "We map how homeowners search in your market, identify the terms that produce booked jobs, and pinpoint where competitors are vulnerable.",
   },
   {
     step: "02",
-    title: "Build",
+    title: "Capture",
     description:
-      "We design and develop high-performance websites, clear StoryBrand-inspired messaging, and the right SEO foundations.",
+      "We build pages and content around high-intent demand—so you show up when people need HVAC, plumbing, or electrical help now.",
   },
   {
     step: "03",
-    title: "Grow",
+    title: "Convert",
     description:
-      "We drive qualified traffic through SEO and optimize every step of the journey so more visitors become customers.",
+      "We tighten messaging, CTAs, and the path to call or book—turning rankings into real leads you can answer and schedule.",
   },
 ];
 
@@ -24,10 +24,10 @@ export default function Approach() {
     <section className="border-t border-white/5 bg-[#FAFAFA] px-6 py-20 text-slate-900 lg:px-8 lg:py-28">
       <div className="mx-auto max-w-6xl">
         <h2 className="text-center text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-          The Outwit Method.
+          The Outwit Growth Engine.
         </h2>
         <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-relaxed text-slate-600">
-          A simple, strategy-first framework for turning your website and marketing into a growth system.
+          A strategic SEO system designed for home service companies that want more inbound calls—not more marketing noise.
         </p>
         <div className="mt-16 grid gap-8 md:grid-cols-3">
           {steps.map((card) => (

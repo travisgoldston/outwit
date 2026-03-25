@@ -62,10 +62,10 @@ export default function Navbar() {
 
         <div className="hidden items-center gap-4 md:flex">
           <Link
-            href="/contact"
+            href="/growth-plan"
             className="rounded-lg bg-neon-orange px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-neon-orange/90 shadow-lg shadow-neon-orange/20"
           >
-            Get a Strategy Call
+            Get the Growth Plan
           </Link>
         </div>
 
@@ -98,11 +98,11 @@ export default function Navbar() {
             ))}
             <li>
               <Link
-                href="/contact"
+                href="/growth-plan"
                 className="inline-block rounded-lg bg-neon-orange px-5 py-2.5 text-sm font-semibold text-white"
                 onClick={() => setMobileOpen(false)}
               >
-                Get a Strategy Call
+                Get the Growth Plan
               </Link>
             </li>
           </ul>

@@ -218,10 +218,10 @@ export default function LabExperimentPage({ params }: PageProps) {
               Talk about your experiment
             </Link>
             <Link
-              href="/services#generate-more-leads"
+              href="/growth-plan"
               className="text-sm font-semibold text-slate-800 transition-colors hover:text-neon-orange"
             >
-              See how we turn experiments into leads
+              Start with the Growth Plan
             </Link>
           </div>
         </div>

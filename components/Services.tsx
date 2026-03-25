@@ -1,20 +1,20 @@
 import Link from "next/link";
 
-const solutions = [
+const entryPoints = [
   {
-    title: "Generate more qualified leads",
-    description: "Smart websites and SEO that consistently bring the right customers to you.",
-    href: "/services#generate-more-leads",
+    title: "HVAC SEO in McKinney",
+    description: "Outrank competitors and turn high-intent searches into calls.",
+    href: "/hvac-seo/mckinney",
   },
   {
-    title: "Turn your website into a sales machine",
-    description: "Conversion-focused design and StoryBrand-inspired messaging that moves visitors to act.",
-    href: "/services#website-as-sales-machine",
+    title: "Plumbing SEO in Frisco",
+    description: "Capture urgent demand and make it easy for homeowners to call.",
+    href: "/plumbing-seo/frisco",
   },
   {
-    title: "Dominate local search",
-    description: "Local SEO, Google Business optimization, and location pages that win your market.",
-    href: "/services#dominate-local-search",
+    title: "Electrical SEO in Plano",
+    description: "Win local searches for high-value jobs and convert them into appointments.",
+    href: "/electrical-seo/plano",
   },
 ];
 
@@ -26,26 +26,27 @@ export default function Services() {
     >
       <div className="mx-auto max-w-6xl">
         <h2 className="text-center text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-          Solutions built to outsmart, not outspend.
+          Start where your market is already searching.
         </h2>
         <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-relaxed text-slate-600">
-          Outwit combines strategy, design, and SEO to solve the business problems that actually matter.
+          These pages show how Outwit builds search advantage for HVAC, plumbing, and electrical
+          companies in North Dallas.
         </p>
         <div className="mt-16 grid gap-8 sm:grid-cols-3">
-          {solutions.map((solution) => (
+          {entryPoints.map((item) => (
             <Link
-              key={solution.title}
-              href={solution.href}
+              key={item.title}
+              href={item.href}
               className="group rounded-2xl border border-slate-200 bg-white p-8 text-left shadow-sm transition-all duration-300 hover:border-neon-orange/60 hover:shadow-md"
             >
               <h3 className="text-xl font-bold text-slate-900">
-                {solution.title}
+                {item.title}
               </h3>
               <p className="mt-4 leading-relaxed text-slate-600">
-                {solution.description}
+                {item.description}
               </p>
               <span className="mt-6 inline-flex items-center text-sm font-semibold text-neon-orange group-hover:text-neon-orange/80">
-                Explore solution
+                View page
                 <svg
                   className="ml-1 h-4 w-4"
                   fill="none"

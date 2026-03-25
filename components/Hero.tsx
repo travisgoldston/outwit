@@ -13,20 +13,20 @@ export default function Hero() {
             Outsmart your competition<span className="text-neon-orange">.</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/80 sm:text-xl">
-            Websites and marketing systems designed to attract customers, rank on Google, and convert traffic into revenue.
+            Outwit is a growth intelligence system for HVAC, plumbing, and electrical companies in North Dallas—built to win high-intent search and turn it into booked jobs.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Link
-              href="/case-studies"
+              href="/growth-plan"
               className="inline-flex items-center justify-center rounded-lg bg-neon-orange px-6 py-3.5 text-base font-semibold text-white shadow-lg shadow-neon-orange/25 transition-all hover:bg-neon-orange/90 hover:shadow-[0_0_20px_rgba(255,95,31,0.4)]"
             >
-              View Case Studies
+              Get the Growth Plan
             </Link>
             <Link
               href="/contact"
               className="inline-flex items-center justify-center rounded-lg border border-white bg-transparent px-6 py-3.5 text-base font-semibold text-white transition-all hover:border-neon-orange"
             >
-              Start a Project
+              Talk to Outwit
             </Link>
           </div>
         </div>
