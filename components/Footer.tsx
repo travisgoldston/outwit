@@ -13,6 +13,7 @@ const outwitLinks = [
 const resourceLinks = [
   { href: "/lab", label: "Marketing Experiments" },
   { href: "/insights", label: "SEO & Strategy Insights" },
+  { href: "/who-we-help/cities", label: "North Texas City Guides" },
   { href: "/local-seo/north-dallas", label: "North Dallas Geo Strategy" },
 ];
 

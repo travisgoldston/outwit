@@ -8,6 +8,7 @@ import {
   cityDisplayName,
   type WhoHelpNiche,
 } from "@/content/who-we-help";
+import { cityLandingPath } from "@/content/who-we-help-cities";
 
 type Props = { params: Promise<{ niche: string }> };
 
@@ -126,7 +127,22 @@ export default async function WhoWeHelpNichePage({ params }: Props) {
             {nicheLabel[niche]} by city
           </h2>
           <p className="mt-4 text-base leading-relaxed text-slate-600">
-            Local pages for North Texas markets—each links back here and to core offers.
+            Local pages for North Texas markets—each links back here and to core offers. For a
+            city-first view (all trades + digital marketing context), use the city guides below.
+          </p>
+          <p className="mt-4 text-sm leading-relaxed text-slate-600">
+            <span className="font-semibold text-slate-800">City guides: </span>
+            {WHO_HELP_CITY_SLUGS.map((slug, i) => (
+              <span key={slug}>
+                {i > 0 ? " · " : null}
+                <Link
+                  href={cityLandingPath(slug)}
+                  className="font-medium text-neon-orange hover:underline"
+                >
+                  {cityDisplayName[slug]}
+                </Link>
+              </span>
+            ))}
           </p>
           <ul className="mt-6 grid gap-3 sm:grid-cols-2">
             {WHO_HELP_CITY_SLUGS.map((city) => (
@@ -135,7 +151,7 @@ export default async function WhoWeHelpNichePage({ params }: Props) {
                   href={`/who-we-help/${niche}/${city}`}
                   className="flex items-center justify-between rounded-2xl border border-slate-200 bg-[#FAFAFA] px-5 py-4 text-sm font-semibold text-slate-900 transition-colors hover:border-neon-orange hover:text-neon-orange"
                 >
-                  {cityDisplayName[city]}, TX
+                  {cityDisplayName[city]}, TX — {nicheLabel[niche]}
                   <span aria-hidden>→</span>
                 </Link>
               </li>

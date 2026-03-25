@@ -7,7 +7,10 @@ import {
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://outwit.digital";
 
-  const whoWeHelpRoutes: string[] = ["/who-we-help"];
+  const whoWeHelpRoutes: string[] = ["/who-we-help", "/who-we-help/cities"];
+  for (const city of WHO_HELP_CITY_SLUGS) {
+    whoWeHelpRoutes.push(`/who-we-help/cities/${city}`);
+  }
   for (const niche of WHO_HELP_NICHES) {
     whoWeHelpRoutes.push(`/who-we-help/${niche}`);
     for (const city of WHO_HELP_CITY_SLUGS) {

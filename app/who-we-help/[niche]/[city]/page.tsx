@@ -14,6 +14,7 @@ import {
   type WhoHelpNiche,
   type WhoHelpCitySlug,
 } from "@/content/who-we-help";
+import { cityLandingPath } from "@/content/who-we-help-cities";
 
 type Props = { params: Promise<{ niche: string; city: string }> };
 
@@ -70,11 +71,13 @@ export default async function WhoWeHelpCityPage({ params }: Props) {
             Who we help
           </Link>
           {" · "}
+          <Link href={cityLandingPath(city)} className="hover:underline">
+            {cityName}, TX
+          </Link>
+          {" · "}
           <Link href={`/who-we-help/${niche}`} className="hover:underline">
             {nicheLabel[niche]}
           </Link>
-          {" · "}
-          {cityName}, TX
         </p>
         <h1 className="mt-4 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
           {getCityH1(niche, city)}
@@ -137,6 +140,12 @@ export default async function WhoWeHelpCityPage({ params }: Props) {
               className="inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-5 py-2.5 text-sm font-semibold text-slate-900 transition-colors hover:border-neon-orange hover:text-neon-orange"
             >
               {nicheLabel[niche]} hub
+            </Link>
+            <Link
+              href={cityLandingPath(city)}
+              className="inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-5 py-2.5 text-sm font-semibold text-slate-900 transition-colors hover:border-neon-orange hover:text-neon-orange"
+            >
+              {cityName} city guide
             </Link>
             <Link
               href="/services"

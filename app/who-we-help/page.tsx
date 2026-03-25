@@ -7,6 +7,7 @@ import {
   cityDisplayName,
   type WhoHelpNiche,
 } from "@/content/who-we-help";
+import { cityLandingPath } from "@/content/who-we-help-cities";
 
 export const metadata: Metadata = {
   title: "Who We Help — HVAC, Plumbing & Electrical | Outwit",
@@ -79,15 +80,31 @@ export default function WhoWeHelpIndexPage() {
           Cities we cover
         </h2>
         <p className="mt-4 text-base leading-relaxed text-slate-600">
-          Each trade hub links to dedicated pages for these North Texas markets:
+          Each city has a dedicated guide—digital marketing context for that market, links to HVAC,
+          plumbing, and electrical pages, and paths to our services and insights. Browse all city
+          hubs on the{" "}
+          <Link href="/who-we-help/cities" className="font-semibold text-neon-orange hover:underline">
+            cities index
+          </Link>
+          .
         </p>
-        <ul className="mt-6 flex flex-wrap gap-3">
+        <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {WHO_HELP_CITY_SLUGS.map((slug) => (
-            <li
-              key={slug}
-              className="rounded-full border border-slate-200 bg-[#FAFAFA] px-4 py-2 text-sm font-medium text-slate-800"
-            >
-              {cityDisplayName[slug]}, TX
+            <li key={slug}>
+              <Link
+                href={cityLandingPath(slug)}
+                className="block rounded-2xl border border-slate-200 bg-[#FAFAFA] p-5 transition-all hover:border-neon-orange/40 hover:shadow-sm"
+              >
+                <span className="text-base font-semibold text-slate-900 hover:text-neon-orange">
+                  {cityDisplayName[slug]}, TX
+                </span>
+                <span className="mt-2 block text-sm leading-relaxed text-slate-600">
+                  City guide: strategy, trades, and internal links for {cityDisplayName[slug]}.
+                </span>
+                <span className="mt-3 inline-block text-sm font-semibold text-neon-orange">
+                  Open city guide →
+                </span>
+              </Link>
             </li>
           ))}
         </ul>
@@ -95,8 +112,12 @@ export default function WhoWeHelpIndexPage() {
           Also see{" "}
           <Link href="/local-seo/north-dallas" className="font-semibold text-neon-orange hover:underline">
             North Dallas geo strategy
-          </Link>{" "}
-          and{" "}
+          </Link>
+          ,{" "}
+          <Link href="/insights" className="font-semibold text-neon-orange hover:underline">
+            insights
+          </Link>
+          , and{" "}
           <Link href="/pricing" className="font-semibold text-neon-orange hover:underline">
             pricing
           </Link>
