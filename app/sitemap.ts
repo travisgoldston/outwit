@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/insights",
     "/contact",
     "/local-seo/north-dallas",
+    "/insights/hvac-seo-mckinney-that-converts",
     "/hvac-seo/mckinney",
     "/hvac-seo/frisco",
     "/hvac-seo/plano",

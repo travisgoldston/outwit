@@ -121,6 +121,42 @@ export default function HvacSeoMcKinneyPage() {
           </p>
         </section>
 
+        <section className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm sm:p-10">
+          <h2 className="text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">
+            Related insight for McKinney HVAC owners
+          </h2>
+          <p className="mt-4 text-base leading-relaxed text-slate-600">
+            If you want the full “rankings to calls” framework, this walkthrough breaks down intent,
+            local signals, and the conversion layer in one place.
+          </p>
+          <div className="mt-6 rounded-2xl border border-slate-200 bg-[#FAFAFA] p-6">
+            <p className="text-xs font-mono uppercase tracking-[0.25em] text-neon-orange">
+              Insight
+            </p>
+            <h3 className="mt-3 text-lg font-semibold text-slate-900">
+              HVAC SEO in McKinney that converts (not just ranks)
+            </h3>
+            <p className="mt-3 text-sm leading-relaxed text-slate-600">
+              Most HVAC “SEO” fails at the last step: turning high-intent searches into calls. Here’s
+              the system to win McKinney demand and convert it into booked jobs.
+            </p>
+            <div className="mt-5 flex flex-wrap items-center gap-4">
+              <Link
+                href="/insights/hvac-seo-mckinney-that-converts"
+                className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-slate-900 transition-colors hover:border-neon-orange/70 hover:text-neon-orange"
+              >
+                Read the insight
+              </Link>
+              <Link
+                href="/growth-plan"
+                className="text-sm font-semibold text-slate-800 transition-colors hover:text-neon-orange"
+              >
+                Get the Growth Plan
+              </Link>
+            </div>
+          </div>
+        </section>
+
         <section className="rounded-3xl border border-slate-200 bg-white px-8 py-10 text-center shadow-sm">
           <h2 className="text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">
             Want more McKinney HVAC calls without paying for busywork?

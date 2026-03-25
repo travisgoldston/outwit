@@ -6,6 +6,7 @@ export const INSIGHT_SLUGS = [
   "how-much-should-a-website-cost-in-2026",
   "how-long-does-seo-take",
   "what-makes-a-high-converting-website",
+  "hvac-seo-mckinney-that-converts",
   "local-seo-complete-guide",
   "marketing-funnels-explained-small-businesses",
   "seo-vs-paid-ads-which-to-choose",
@@ -454,6 +455,182 @@ export const INSIGHTS: Record<InsightSlug, InsightEntry> = {
             <ArticleLink href="/contact">Start a project</ArticleLink> and we’ll
             map the changes that will move the needle.
           </p>
+        </>
+      );
+    },
+  },
+
+  "hvac-seo-mckinney-that-converts": {
+    slug: "hvac-seo-mckinney-that-converts",
+    title: "HVAC SEO in McKinney that converts (not just ranks)",
+    summary:
+      "Most HVAC “SEO” fails at the last step: turning high-intent searches into calls. Here’s the system to win McKinney demand and convert it into booked jobs.",
+    readTime: "9 min read",
+    metaDescription:
+      "A practical guide to HVAC SEO in McKinney focused on calls and booked jobs: intent targeting, local signals, conversion path, and a clear plan.",
+    body: function HvacSeoMcKinneyThatConvertsBody() {
+      return (
+        <>
+          <p className="leading-relaxed text-slate-700">
+            McKinney homeowners don’t search for “best HVAC marketing.” They search for relief.
+            Their AC stops cooling, their thermostat won’t cooperate, or a strange smell shows up
+            right before guests arrive. In that moment, they open Google, type a problem, and call
+            the company that feels like the safest bet.
+          </p>
+
+          <p className="mt-6 leading-relaxed text-slate-700">
+            That’s why most HVAC SEO conversations are missing the point. Rankings matter, but the
+            actual job is simpler: show up for high-intent searches in McKinney, earn the click,
+            and make the next step obvious on mobile. If any link breaks, your “SEO” turns into a
+            report instead of booked jobs.
+          </p>
+
+          <h2 className="mt-10 text-xl font-semibold text-slate-900">
+            The mistake that keeps HVAC companies stuck
+          </h2>
+          <p className="mt-4 leading-relaxed text-slate-700">
+            Most vendors optimize for activity. They publish a few posts, tweak a few titles, and
+            send a dashboard full of impressions. The problem is that impressions don’t pay for
+            trucks, techs, or overtime. Leads do.
+          </p>
+          <p className="mt-4 leading-relaxed text-slate-700">
+            The most common failure mode we see in McKinney is this: a company ranks for something,
+            but it’s the wrong something. Broad keywords bring browsers. High-intent searches bring
+            homeowners ready to schedule. If you want more calls, you don’t need more content. You
+            need a keyword map tied to booked-job intent and pages designed to convert.
+          </p>
+
+          <h2 className="mt-10 text-xl font-semibold text-slate-900">
+            What “high-intent HVAC SEO” actually means in McKinney
+          </h2>
+          <p className="mt-4 leading-relaxed text-slate-700">
+            High intent shows up in the language. People include urgency, location, and specific
+            problems. They’re not learning. They’re hiring. A strong McKinney strategy covers three
+            buckets of demand and treats each differently.
+          </p>
+          <ul className="mt-6 space-y-3 text-sm leading-relaxed text-slate-600">
+            {[
+              "Service + city searches (AC repair McKinney, furnace repair McKinney) where homeowners compare options quickly.",
+              "Problem searches (AC not cooling, thermostat not working) where the right page earns trust before the call.",
+              "Emergency intent (24/7, same-day, no cold air) where clarity and speed matter more than clever copy.",
+            ].map((point) => (
+              <li key={point} className="flex gap-2">
+                <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-neon-orange" />
+                <span>{point}</span>
+              </li>
+            ))}
+          </ul>
+
+          <h2 className="mt-10 text-xl font-semibold text-slate-900">
+            The conversion layer: where SEO turns into calls
+          </h2>
+          <p className="mt-4 leading-relaxed text-slate-700">
+            Even when you win the ranking, you can still lose the lead. HVAC traffic is
+            disproportionately mobile and disproportionately urgent. If a homeowner can’t confirm
+            “you do this,” “you serve McKinney,” and “you’re trustworthy” in the first screen, they
+            back out and tap the next result.
+          </p>
+          <p className="mt-4 leading-relaxed text-slate-700">
+            The conversion layer is not a redesign for aesthetics. It’s a set of decisions that
+            remove friction: a clear promise, proof that feels real, and a primary action that’s
+            visible without scrolling. If you want the deeper framework we use for this, see{" "}
+            <ArticleLink href="/insights/what-makes-a-high-converting-website">
+              what makes a high-converting website
+            </ArticleLink>
+            .
+          </p>
+
+          <h2 className="mt-10 text-xl font-semibold text-slate-900">
+            Local signals that matter (and the ones that waste time)
+          </h2>
+          <p className="mt-4 leading-relaxed text-slate-700">
+            Local SEO isn’t magic. It’s alignment. Your Google Business profile, your service pages,
+            and your trust signals have to tell the same story. When they don’t, Google gets mixed
+            signals and homeowners get hesitant.
+          </p>
+          <p className="mt-4 leading-relaxed text-slate-700">
+            In McKinney, the fastest improvements usually come from tightening fundamentals before
+            you chase anything fancy: consistency, relevance, and proof. If you want a full local
+            checklist with context, start with{" "}
+            <ArticleLink href="/insights/local-seo-complete-guide">
+              Local SEO: the complete guide
+            </ArticleLink>{" "}
+            and the geo approach we use in{" "}
+            <ArticleLink href="/local-seo/north-dallas">
+              North Dallas local SEO strategy
+            </ArticleLink>
+            .
+          </p>
+
+          <h2 className="mt-10 text-xl font-semibold text-slate-900">
+            The Outwit approach for McKinney HVAC (a practical plan)
+          </h2>
+          <p className="mt-4 leading-relaxed text-slate-700">
+            If you want HVAC SEO that converts, you need a plan that tells you what to build, in
+            what order, and how you’ll measure whether it’s working. Here’s the simplified version
+            of how we run it.
+          </p>
+          <ul className="mt-6 space-y-3 text-sm leading-relaxed text-slate-600">
+            {[
+              "Intelligence: map demand and job economics, then audit competitors to find the fastest wins.",
+              "Capture: build the pages that should win service + city and problem intent in McKinney.",
+              "Conversion: tighten the first screen, proof, and CTA so clicks become calls.",
+              "Compounding: expand coverage, internal links, and measurement so results grow month after month.",
+            ].map((point) => (
+              <li key={point} className="flex gap-2">
+                <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-neon-orange" />
+                <span>{point}</span>
+              </li>
+            ))}
+          </ul>
+
+          <p className="mt-6 leading-relaxed text-slate-700">
+            If you want to see how we frame this specifically for McKinney, start here:{" "}
+            <ArticleLink href="/hvac-seo/mckinney">HVAC SEO in McKinney</ArticleLink>. That page is
+            designed to be practical and local, not generic.
+          </p>
+
+          <h2 className="mt-10 text-xl font-semibold text-slate-900">
+            What to do next (if you’ve been burned before)
+          </h2>
+          <p className="mt-4 leading-relaxed text-slate-700">
+            Skepticism is healthy. If you’ve paid retainers and watched nothing change, you don’t
+            need another promise. You need clarity: what’s broken, what’s missing, and the exact
+            path to more calls.
+          </p>
+          <p className="mt-4 leading-relaxed text-slate-700">
+            That’s what the{" "}
+            <ArticleLink href="/growth-plan">Growth Plan</ArticleLink> is for. You get a keyword map,
+            competitor breakdown, and a 90-day roadmap tied to booked-job intent. If you want the
+            numbers up front, see{" "}
+            <ArticleLink href="/pricing">pricing</ArticleLink>. If you want to talk through your
+            market first,{" "}
+            <ArticleLink href="/contact">tell us what you’re trying to win</ArticleLink>.
+          </p>
+
+          <div className="mt-10 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 className="text-lg font-semibold text-slate-900">
+              Want more McKinney HVAC calls from search?
+            </h3>
+            <p className="mt-3 text-sm leading-relaxed text-slate-600">
+              Start with the Growth Plan. If it’s a fit, we’ll run the Growth Engine and keep it
+              compounding.
+            </p>
+            <div className="mt-5 flex flex-wrap items-center gap-4">
+              <Link
+                href="/growth-plan"
+                className="inline-flex items-center justify-center rounded-lg bg-neon-orange px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-neon-orange/25 transition-all hover:bg-neon-orange/90"
+              >
+                Get Your Growth Plan
+              </Link>
+              <Link
+                href="/hvac-seo/mckinney"
+                className="text-sm font-semibold text-slate-800 transition-colors hover:text-neon-orange"
+              >
+                See the McKinney HVAC page
+              </Link>
+            </div>
+          </div>
         </>
       );
     },
