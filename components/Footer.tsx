@@ -87,12 +87,12 @@ export default function Footer() {
             <span className="mr-1.5" aria-hidden>
               🦊
             </span>
-            Made with {"<3"} by{" "}
+            Made with <span aria-hidden>❤️</span> by{" "}
             <a
               href="https://travisgoldston.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white/90 transition-colors hover:text-neon-orange"
+              className="text-white/90 decoration-neon-orange decoration-2 underline-offset-[6px] transition-all hover:underline focus-visible:underline focus-visible:outline-none"
             >
               Travis Goldston
             </a>

@@ -12,6 +12,9 @@ const navLinks = [
   { href: "/about", label: "About" },
 ];
 
+const navLinkClass =
+  "text-sm font-medium text-white/80 decoration-neon-orange decoration-2 underline-offset-[6px] transition-all hover:underline focus-visible:underline focus-visible:outline-none";
+
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -31,7 +34,7 @@ export default function Navbar() {
       <nav className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-4 lg:px-8">
         <Link
           href="/"
-          className="flex items-center gap-2 transition-opacity hover:opacity-90"
+          className="flex shrink-0 items-center gap-2 transition-opacity hover:opacity-90"
           aria-label="Outwit home"
         >
           <Image
@@ -46,23 +49,19 @@ export default function Navbar() {
           </span>
         </Link>
 
-        <ul className="hidden items-center gap-8 md:flex">
-          {navLinks.map((link) => (
-            <li key={link.href}>
-              <Link
-                href={link.href}
-                className="text-sm font-medium text-white/80 transition-colors hover:text-neon-orange"
-              >
-                {link.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
-
-        <div className="hidden items-center gap-4 md:flex">
+        <div className="hidden items-center gap-8 md:flex">
+          <ul className="flex items-center gap-8">
+            {navLinks.map((link) => (
+              <li key={link.href}>
+                <Link href={link.href} className={navLinkClass}>
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
           <Link
             href="/contact"
-            className="rounded-lg bg-neon-orange px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-neon-orange/20 transition-all hover:bg-neon-orange/90"
+            className="shrink-0 rounded-lg bg-neon-orange px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-neon-orange/20 transition-all hover:bg-neon-orange/90"
           >
             Get a Strategy Call
           </Link>
@@ -88,7 +87,7 @@ export default function Navbar() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="block text-sm font-medium text-white/80 hover:text-neon-orange"
+                  className={`block w-fit ${navLinkClass}`}
                   onClick={() => setMobileOpen(false)}
                 >
                   {link.label}
