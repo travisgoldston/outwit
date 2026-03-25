@@ -115,11 +115,11 @@ export const BLOG_POSTS: Record<BlogSlug, BlogPost> = {
             From there, a focused redesign or restructure can turn the site
             into a real growth asset. For a deeper look at what makes sites
             convert, see{" "}
-            <ArticleLink href="/blog/what-makes-a-high-converting-website">
+            <ArticleLink href="/insights/what-makes-a-high-converting-website">
               what makes a high-converting website
             </ArticleLink>
             , and for how to think about budget when you’re ready to fix it,{" "}
-            <ArticleLink href="/blog/how-much-should-a-website-cost-in-2026">
+            <ArticleLink href="/insights/how-much-should-a-website-cost-in-2026">
               how much a website should cost in 2026
             </ArticleLink>
             .
@@ -204,13 +204,13 @@ export const BLOG_POSTS: Record<BlogSlug, BlogPost> = {
             engagement (messaging, structure, conversion plan) before or as
             part of a redesign will get you further than a pure visual
             refresh. We outline this in our post on{" "}
-            <ArticleLink href="/blog/why-most-business-websites-fail">
+            <ArticleLink href="/insights/why-most-business-websites-fail">
               why most business websites fail
             </ArticleLink>
             : fix the story and the path to action first, then build. If you
             want to see what a conversion-focused site looks like in practice,
             read{" "}
-            <ArticleLink href="/blog/what-makes-a-high-converting-website">
+            <ArticleLink href="/insights/what-makes-a-high-converting-website">
               what makes a high-converting website
             </ArticleLink>
             .
@@ -292,7 +292,7 @@ export const BLOG_POSTS: Record<BlogSlug, BlogPost> = {
             UX. This is also when you can start tying SEO to business outcomes:
             which rankings drive form fills, calls, or demo requests. For
             local businesses, progress can be faster; our{" "}
-            <ArticleLink href="/blog/local-seo-complete-guide">
+            <ArticleLink href="/insights/local-seo-complete-guide">
               local SEO guide
             </ArticleLink>{" "}
             goes deeper on that.
@@ -309,7 +309,7 @@ export const BLOG_POSTS: Record<BlogSlug, BlogPost> = {
             paid ads, the difference is timing: ads can drive traffic
             immediately, while SEO builds an asset that pays off over time.
             We break that tradeoff down in{" "}
-            <ArticleLink href="/blog/seo-vs-paid-ads-which-to-choose">
+            <ArticleLink href="/insights/seo-vs-paid-ads-which-to-choose">
               SEO vs paid ads: which one should you choose?
             </ArticleLink>
           </p>
@@ -419,7 +419,7 @@ export const BLOG_POSTS: Record<BlogSlug, BlogPost> = {
             link, a short form, or a clear “Talk to us” that goes to a
             dedicated page. We also look at how the rest of the site supports
             that path: for example, a{" "}
-            <ArticleLink href="/blog/marketing-funnels-explained-small-businesses">
+            <ArticleLink href="/insights/marketing-funnels-explained-small-businesses">
               marketing funnel
             </ArticleLink>{" "}
             that nurtures leads without overwhelming them.
@@ -438,7 +438,7 @@ export const BLOG_POSTS: Record<BlogSlug, BlogPost> = {
             and UX to reduce friction. The result is a site that looks
             professional and converts, without unnecessary complexity. If you
             want to see how we think about the full picture, our post on{" "}
-            <ArticleLink href="/blog/why-most-business-websites-fail">
+            <ArticleLink href="/insights/why-most-business-websites-fail">
               why most business websites fail
             </ArticleLink>{" "}
             ties this back to the bigger story.
@@ -447,7 +447,7 @@ export const BLOG_POSTS: Record<BlogSlug, BlogPost> = {
             If your site has traffic but few conversions, the fix usually
             isn’t a new theme. It’s tightening the message, the CTA, and the
             path. We cover the “why” behind underperforming sites in{" "}
-            <ArticleLink href="/blog/why-most-business-websites-fail">
+            <ArticleLink href="/insights/why-most-business-websites-fail">
               why most business websites fail
             </ArticleLink>
             . If you’re ready to turn your site into a conversion asset, our{" "}
@@ -511,7 +511,7 @@ export const BLOG_POSTS: Record<BlogSlug, BlogPost> = {
             review (e.g. a short follow-up email or text with a direct link).
             How long SEO takes for local can be shorter than for national
             topics; we cover timelines in{" "}
-            <ArticleLink href="/blog/how-long-does-seo-take">
+            <ArticleLink href="/insights/how-long-does-seo-take">
               how long does SEO take?
             </ArticleLink>
           </p>
@@ -537,7 +537,7 @@ export const BLOG_POSTS: Record<BlogSlug, BlogPost> = {
             Local SEO works alongside paid search and other channels. If you’re
             deciding where to put budget, the tradeoffs are similar to the
             broader question we tackle in{" "}
-            <ArticleLink href="/blog/seo-vs-paid-ads-which-to-choose">
+            <ArticleLink href="/insights/seo-vs-paid-ads-which-to-choose">
               SEO vs paid ads
             </ArticleLink>
             : SEO builds a long-term asset; ads can fill the gap while you
@@ -628,7 +628,7 @@ export const BLOG_POSTS: Record<BlogSlug, BlogPost> = {
             is that the path is intentional and that you’re not asking for too
             much too soon. A high-converting site supports that; we break down
             what that looks like in{" "}
-            <ArticleLink href="/blog/what-makes-a-high-converting-website">
+            <ArticleLink href="/insights/what-makes-a-high-converting-website">
               what makes a high-converting website
             </ArticleLink>
             .
@@ -659,7 +659,7 @@ export const BLOG_POSTS: Record<BlogSlug, BlogPost> = {
             a full-time marketing team. We tie it to your website so the
             experience is consistent and the data is in one place. For more
             on making the site itself convert, see{" "}
-            <ArticleLink href="/blog/what-makes-a-high-converting-website">
+            <ArticleLink href="/insights/what-makes-a-high-converting-website">
               what makes a high-converting website
             </ArticleLink>.
           </p>
@@ -712,13 +712,13 @@ export const BLOG_POSTS: Record<BlogSlug, BlogPost> = {
             people are actively searching for what you offer; your job is to
             show up and convert. The downside is delay: results typically show
             in three to six months or more. We spell that out in{" "}
-            <ArticleLink href="/blog/how-long-does-seo-take">
+            <ArticleLink href="/insights/how-long-does-seo-take">
               how long does SEO take?
             </ArticleLink>{" "}
             If you can wait and you’re in a space where search demand exists,
             SEO is often the best foundation. For local businesses, that demand
             is often “near me” and category searches; our{" "}
-            <ArticleLink href="/blog/local-seo-complete-guide">
+            <ArticleLink href="/insights/local-seo-complete-guide">
               local SEO guide
             </ArticleLink>{" "}
             covers how to capture it.
@@ -748,7 +748,7 @@ export const BLOG_POSTS: Record<BlogSlug, BlogPost> = {
             goals and margin. The key is that both feed the same destination: a
             site and offer that convert. If your site doesn’t convert, neither
             channel will perform well. That’s why we focus on{" "}
-            <ArticleLink href="/blog/what-makes-a-high-converting-website">
+            <ArticleLink href="/insights/what-makes-a-high-converting-website">
               high-converting websites
             </ArticleLink>{" "}
             and clear funnels before scaling traffic.
