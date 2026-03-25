@@ -20,15 +20,11 @@ export default function Home() {
             Outwit
           </p>
           <h1 className="mt-6 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-            I&apos;m Travis Goldston<span className="text-neon-orange">.</span>
+            Outwit the ordinary<span className="text-neon-orange">.</span>
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white/80 sm:text-xl">
-            I build brands, break marketing, and write about what I learn. Outwit is where I
-            publish—experiments, essays, and the occasional sharp opinion.
-          </p>
-          <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-white/65">
-            No agency pitch here. Just a personal corner of the internet with a fox logo and a
-            dark background.
+            My creative playground for vibe coding, digital marketing experiments, and insights from
+            inside my brain. No KPIs, just craft.
           </p>
         </div>
       </section>
