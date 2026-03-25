@@ -3,6 +3,7 @@ import Link from "next/link";
 const outwitLinks = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
+  { href: "/who-we-help", label: "Who We Help" },
   { href: "/pricing", label: "Pricing" },
   { href: "/case-studies", label: "Case Studies" },
   { href: "/lab", label: "Lab" },
