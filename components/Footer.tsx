@@ -13,6 +13,8 @@ const workLinks = [
   { href: "/contact", label: "Contact" },
 ];
 
+const footerLinkClass = "link-underline-ltr text-white/80";
+
 export default function Footer() {
   return (
     <footer className="border-t border-white/10 bg-vibe-bg text-white">
@@ -23,10 +25,7 @@ export default function Footer() {
             <ul className="mt-4 space-y-3">
               {outwitLinks.map((link) => (
                 <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-white/80 transition-colors hover:text-neon-orange"
-                  >
+                  <Link href={link.href} className={footerLinkClass}>
                     {link.label}
                   </Link>
                 </li>
@@ -38,10 +37,7 @@ export default function Footer() {
             <ul className="mt-4 space-y-3">
               {workLinks.map((link) => (
                 <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-white/80 transition-colors hover:text-neon-orange"
-                  >
+                  <Link href={link.href} className={footerLinkClass}>
                     {link.label}
                   </Link>
                 </li>
@@ -50,12 +46,9 @@ export default function Footer() {
           </div>
           <div>
             <h3 className="text-lg font-bold text-white">Connect</h3>
-            <ul className="mt-4 space-y-3 text-white/80">
+            <ul className="mt-4 space-y-3">
               <li>
-                <a
-                  href="mailto:hello@outwit.digital"
-                  className="transition-colors hover:text-neon-orange"
-                >
+                <a href="mailto:hello@outwit.digital" className={footerLinkClass}>
                   hello@outwit.digital
                 </a>
               </li>
@@ -64,7 +57,7 @@ export default function Footer() {
                   href="https://instagram.com/outwitdotco"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="transition-colors hover:text-neon-orange"
+                  className={footerLinkClass}
                 >
                   Instagram
                 </a>
@@ -74,7 +67,7 @@ export default function Footer() {
                   href="https://x.com/outwitdotco"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="transition-colors hover:text-neon-orange"
+                  className={footerLinkClass}
                 >
                   X
                 </a>
@@ -92,7 +85,7 @@ export default function Footer() {
               href="https://travisgoldston.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white/90 decoration-neon-orange decoration-2 underline-offset-[6px] transition-all hover:underline focus-visible:underline focus-visible:outline-none"
+              className="link-underline-ltr text-white/90"
             >
               Travis Goldston
             </a>

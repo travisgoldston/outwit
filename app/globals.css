@@ -40,3 +40,29 @@ body {
 ::selection {
   background-color: rgba(255, 95, 31, 0.25);
 }
+
+@layer components {
+  /* Orange line grows left → right on hover/focus */
+  .link-underline-ltr {
+    @apply relative inline-block pb-0.5 focus-visible:outline-none;
+  }
+
+  .link-underline-ltr::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--neon-orange);
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.3s ease-out;
+    pointer-events: none;
+  }
+
+  .link-underline-ltr:hover::after,
+  .link-underline-ltr:focus-visible::after {
+    transform: scaleX(1);
+  }
+}

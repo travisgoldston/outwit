@@ -13,7 +13,7 @@ const navLinks = [
 ];
 
 const navLinkClass =
-  "text-sm font-medium text-white/80 decoration-neon-orange decoration-2 underline-offset-[6px] transition-all hover:underline focus-visible:underline focus-visible:outline-none";
+  "link-underline-ltr text-sm font-medium text-white/80";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -87,7 +87,7 @@ export default function Navbar() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className={`block w-fit ${navLinkClass}`}
+                  className={`w-fit ${navLinkClass}`}
                   onClick={() => setMobileOpen(false)}
                 >
                   {link.label}
