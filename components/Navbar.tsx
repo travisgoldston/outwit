@@ -6,11 +6,10 @@ import { useState, useEffect } from "react";
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/services", label: "Services" },
-  { href: "/case-studies", label: "Case Studies" },
   { href: "/lab", label: "Lab" },
-  { href: "/insights", label: "Insights" },
-  { href: "/contact", label: "Contact" },
+  { href: "/blog", label: "Blog" },
+  { href: "/about", label: "About" },
+  { href: "/projects", label: "Projects" },
 ];
 
 export default function Navbar() {
@@ -60,15 +59,6 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <div className="hidden items-center gap-4 md:flex">
-          <Link
-            href="/contact"
-            className="rounded-lg bg-neon-orange px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-neon-orange/90 shadow-lg shadow-neon-orange/20"
-          >
-            Get a Strategy Call
-          </Link>
-        </div>
-
         <button
           type="button"
           className="flex flex-col gap-1.5 rounded p-2 text-white md:hidden"
@@ -96,15 +86,6 @@ export default function Navbar() {
                 </Link>
               </li>
             ))}
-            <li>
-              <Link
-                href="/contact"
-                className="inline-block rounded-lg bg-neon-orange px-5 py-2.5 text-sm font-semibold text-white"
-                onClick={() => setMobileOpen(false)}
-              >
-                Get a Strategy Call
-              </Link>
-            </li>
           </ul>
         </div>
       )}

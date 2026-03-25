@@ -17,16 +17,16 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Outwit — Smarter Marketing Through Strategy and Experimentation",
+  title: "Outwit — Travis Goldston",
   description:
-    "A clever digital marketing strategy lab that helps companies outsmart growth problems. Smart strategy, experiments, and growth systems — not brute force.",
+    "I build brands, break marketing, and write about what I learn. Essays, experiments, and a sharp corner of the internet.",
   icons: {
     icon: "/icon.png",
   },
   openGraph: {
-    title: "Outwit — Outsmart Your Growth",
+    title: "Outwit — Travis Goldston",
     description:
-      "Smart marketing isn't about doing more. It's about doing the right things. Strategy, experiments, and smarter digital marketing.",
+      "Personal site: writing, experiments, and marketing notes. Not an agency.",
   },
 };
 
