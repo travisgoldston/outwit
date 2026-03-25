@@ -3,6 +3,7 @@ import Link from "next/link";
 const outwitLinks = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
+  { href: "/pricing", label: "Pricing" },
   { href: "/case-studies", label: "Case Studies" },
   { href: "/lab", label: "Lab" },
   { href: "/insights", label: "Insights" },
@@ -11,7 +12,7 @@ const outwitLinks = [
 const resourceLinks = [
   { href: "/lab", label: "Marketing Experiments" },
   { href: "/insights", label: "SEO & Strategy Insights" },
-  { href: "/services", label: "Growth Strategy" },
+  { href: "/local-seo/north-dallas", label: "North Dallas Geo Strategy" },
 ];
 
 export default function Footer() {
