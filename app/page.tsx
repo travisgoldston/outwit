@@ -1,5 +1,25 @@
-import Home from "@/components/Home";
+import Hero from "@/components/Hero";
+import VibeMonitor from "@/components/VibeMonitor";
+import Problem from "@/components/Problem";
+import Approach from "@/components/Approach";
+import Experiments from "@/components/Experiments";
+import Services from "@/components/Services";
+import CaseStudies from "@/components/CaseStudies";
+import Philosophy from "@/components/Philosophy";
+import FinalCta from "@/components/FinalCta";
 
 export default function Page() {
-  return <Home />;
+  return (
+    <>
+      <Hero />
+      <VibeMonitor />
+      <Problem />
+      <Approach />
+      <Experiments />
+      <Services />
+      <CaseStudies />
+      <Philosophy />
+      <FinalCta />
+    </>
+  );
 }

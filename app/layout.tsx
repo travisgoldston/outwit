@@ -19,14 +19,14 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Outwit — Travis Goldston",
   description:
-    "I build brands, break marketing, and write about what I learn. Essays, experiments, and a sharp corner of the internet.",
+    "Outwit the ordinary—strategy, experiments, and marketing craft. Websites, SEO, and growth systems from Travis Goldston.",
   icons: {
     icon: "/icon.png",
   },
   openGraph: {
     title: "Outwit — Travis Goldston",
     description:
-      "Personal site: writing, experiments, and marketing notes. Not an agency.",
+      "Creative playground for vibe coding, digital marketing experiments, and insights—plus the full Outwit growth story.",
   },
 };
 
