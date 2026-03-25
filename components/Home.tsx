@@ -2,6 +2,7 @@ import Link from "next/link";
 import { BLOG_LIST, BLOG_PUBLISHED } from "@/content/blog";
 import { LAB_EXPERIMENTS, LAB_SLUGS } from "@/content/lab";
 import HeroVisual from "@/components/HeroVisual";
+import VibeMonitor from "@/components/VibeMonitor";
 
 const projectLinks = [
   { href: "https://boldspark.co", label: "Boldspark" },
@@ -34,6 +35,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <VibeMonitor />
 
       <section className="border-t border-white/5 bg-[#FAFAFA] px-6 py-20 text-slate-900 lg:px-8 lg:py-28">
         <div className="mx-auto max-w-6xl">
