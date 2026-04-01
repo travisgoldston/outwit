@@ -5,7 +5,7 @@ import { BLOG_LIST, BLOG_PUBLISHED } from "@/content/blog";
 export const metadata: Metadata = {
   title: "Outwit — Insights",
   description:
-    "Marketing strategy, SEO observations, and lessons from building businesses—written by Travis Goldston.",
+    "Notes on SEO, websites, and marketing from someone who tests everything on real sites first.",
 };
 
 export default function InsightsPage() {
@@ -16,8 +16,8 @@ export default function InsightsPage() {
           Insights
         </h1>
         <p className="mt-6 text-lg leading-relaxed text-slate-600">
-          Strategy, SEO, and how I think about growing things on the internet. No fluff, no
-          funnel—just notes worth keeping.
+          Notes on SEO, websites, and marketing from someone who tests everything on real sites
+          first.
         </p>
       </div>
 

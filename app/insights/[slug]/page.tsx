@@ -39,10 +39,30 @@ export default async function InsightArticlePage({ params }: PageProps) {
   if (!article) notFound();
 
   const Body = article.body;
+  const published = article.published;
+  const canonicalUrl = `https://outwit.digital/insights/${article.slug}`;
 
   return (
     <article className="bg-[#FAFAFA] px-6 py-16 text-slate-900 lg:px-8 lg:py-24">
       <div className="mx-auto max-w-3xl">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              headline: article.title,
+              description: article.metaDescription,
+              datePublished: published.iso,
+              dateModified: published.iso,
+              author: [{ "@type": "Person", name: "Travis Goldston" }],
+              publisher: { "@type": "Organization", name: "Outwit" },
+              mainEntityOfPage: { "@type": "WebPage", "@id": canonicalUrl },
+              url: canonicalUrl,
+            }),
+          }}
+        />
+
         <Link
           href="/insights"
           className="text-sm font-medium text-slate-600 transition-colors hover:text-neon-orange"
@@ -61,7 +81,7 @@ export default async function InsightArticlePage({ params }: PageProps) {
             {article.summary}
           </p>
           <p className="mt-3 text-sm font-medium text-slate-500">
-            {article.readTime}
+            {published.label} · {article.readTime}
           </p>
         </header>
 
@@ -84,17 +104,16 @@ export default async function InsightArticlePage({ params }: PageProps) {
             </Link>
           </p>
           <p className="mt-4 text-sm leading-relaxed text-slate-600">
-            If you&apos;re a local business in North Texas looking for hands-on marketing help, my
-            team at{" "}
+            Looking for hands-on marketing help?{" "}
             <a
-              href="https://boldspark.co"
+              href="https://bluebonnetgrowth.com"
               className="font-semibold text-neon-orange hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Boldspark
-            </a>{" "}
-            does that work.
+              Visit Bluebonnet Growth
+            </a>
+            .
           </p>
         </footer>
       </div>

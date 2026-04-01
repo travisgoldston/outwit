@@ -13,12 +13,20 @@ export const BLOG_SLUGS = [
 
 export type BlogSlug = (typeof BLOG_SLUGS)[number];
 
+type Published = {
+  /** ISO-8601 date (YYYY-MM-DD recommended) */
+  iso: string;
+  /** Human-friendly label for indexes/headers */
+  label: string;
+};
+
 export type BlogPost = {
   slug: BlogSlug;
   title: string;
   summary: string;
   readTime: string;
   metaDescription: string;
+  published: Published;
   body: () => ReactNode;
 };
 
@@ -48,6 +56,7 @@ export const BLOG_POSTS: Record<BlogSlug, BlogPost> = {
     readTime: "7 min read",
     metaDescription:
       "Why most business websites fail at lead generation and trust, and how to fix the strategy before you redesign.",
+    published: { iso: "2025-01-15", label: "January 2025" },
     body: function WhyMostBusinessWebsitesFailBody() {
       return (
         <>
@@ -126,13 +135,9 @@ export const BLOG_POSTS: Record<BlogSlug, BlogPost> = {
           </p>
 
           <p className="mt-8 leading-relaxed text-slate-700">
-            If you’d like to turn your current site into one that consistently
-            generates leads, we can help. Our{" "}
-            <ArticleLink href="https://boldspark.co">website design</ArticleLink> work
-            starts with strategy and messaging, then builds a site that’s built
-            to sell.{" "}
-            <ArticleLink href="mailto:hello.digital">Start a conversation</ArticleLink> and
-            we’ll map the smartest path forward.
+            If you want to see this thinking applied with real data, start in the{" "}
+            <ArticleLink href="/lab">Outwit Lab</ArticleLink>—that&apos;s where I document experiments
+            and results in public.
           </p>
         </>
       );
@@ -147,6 +152,7 @@ export const BLOG_POSTS: Record<BlogSlug, BlogPost> = {
     readTime: "9 min read",
     metaDescription:
       "How to think about website cost in 2026: what you get at different budget levels and when to invest in strategy.",
+    published: { iso: "2025-02-10", label: "February 2025" },
     body: function HowMuchWebsiteCostBody() {
       return (
         <>
@@ -232,13 +238,12 @@ export const BLOG_POSTS: Record<BlogSlug, BlogPost> = {
 
           <p className="mt-8 leading-relaxed text-slate-700">
             There’s no single “right” number for 2026. There’s only the right
-            scope for your goals. If you’d like to talk through what your
-            business actually needs and what that might cost, we’re happy to
-            have that conversation. Our{" "}
-            <ArticleLink href="https://boldspark.co">website design</ArticleLink> and
-            strategy work is built around that clarity.{" "}
-            <ArticleLink href="mailto:hello.digital">Start your project</ArticleLink> and
-            we’ll give you a clear scope and investment.
+            scope for your goals. If you&apos;re building and want to see how I think about site
+            strategy in the wild, the{" "}
+            <ArticleLink href="/lab/how-fast-can-a-new-domain-rank">
+              new domain ranking experiment
+            </ArticleLink>{" "}
+            is the closest thing to a public play-by-play.
           </p>
         </>
       );
@@ -253,6 +258,7 @@ export const BLOG_POSTS: Record<BlogSlug, BlogPost> = {
     readTime: "8 min read",
     metaDescription:
       "Realistic timelines for SEO: what to expect at 3, 6, and 12 months and how to measure progress.",
+    published: { iso: "2025-02-22", label: "February 2025" },
     body: function HowLongSeoTakeBody() {
       return (
         <>
@@ -355,6 +361,7 @@ export const BLOG_POSTS: Record<BlogSlug, BlogPost> = {
     readTime: "10 min read",
     metaDescription:
       "What makes a website convert: clear messaging, a single primary CTA, proof, and a simple path to action.",
+    published: { iso: "2025-03-08", label: "March 2025" },
     body: function WhatMakesHighConvertingBody() {
       return (
         <>
@@ -444,20 +451,9 @@ export const BLOG_POSTS: Record<BlogSlug, BlogPost> = {
             ties this back to the bigger story.
           </p>
           <p className="mt-6 leading-relaxed text-slate-700">
-            If your site has traffic but few conversions, the fix usually
-            isn’t a new theme. It’s tightening the message, the CTA, and the
-            path. We cover the “why” behind underperforming sites in{" "}
-            <ArticleLink href="/insights/why-most-business-websites-fail">
-              why most business websites fail
-            </ArticleLink>
-            . If you’re ready to turn your site into a conversion asset, our{" "}
-            <ArticleLink href="https://boldspark.co">website design</ArticleLink> and{" "}
-            <ArticleLink href="https://boldspark.co">
-              website-as-sales-machine services
-            </ArticleLink>{" "}
-            are built for that.{" "}
-            <ArticleLink href="mailto:hello.digital">Start a project</ArticleLink> and we’ll
-            map the changes that will move the needle.
+            If you want to see conversion thinking in the context of SEO (not just CRO), I document
+            the trade-offs and results in the{" "}
+            <ArticleLink href="/lab">Outwit Lab</ArticleLink>.
           </p>
         </>
       );
@@ -472,6 +468,7 @@ export const BLOG_POSTS: Record<BlogSlug, BlogPost> = {
     readTime: "12 min read",
     metaDescription:
       "A complete guide to local SEO: Google Business, location pages, reviews, and on-site content for local visibility.",
+    published: { iso: "2025-03-20", label: "March 2025" },
     body: function LocalSeoCompleteGuideBody() {
       return (
         <>
@@ -562,16 +559,9 @@ export const BLOG_POSTS: Record<BlogSlug, BlogPost> = {
             fastest for most local brands.
           </p>
           <p className="mt-8 leading-relaxed text-slate-700">
-            If you want to own your local market, we can help. Our{" "}
-            <ArticleLink href="https://boldspark.co">
-              dominate local search services
-            </ArticleLink>{" "}
-            and{" "}
-            <ArticleLink href="https://boldspark.co">SEO strategy</ArticleLink> work
-            include Google Business optimization, location content, and a
-            repeatable process for reviews.{" "}
-            <ArticleLink href="mailto:hello.digital">Start your project</ArticleLink> and
-            we’ll outline a plan tailored to your market.
+            I&apos;m currently testing location page strategy in public. See{" "}
+            <ArticleLink href="/lab">the Lab</ArticleLink> for what actually gets indexed and what
+            ranks (with screenshots and timestamps).
           </p>
         </>
       );
@@ -586,6 +576,7 @@ export const BLOG_POSTS: Record<BlogSlug, BlogPost> = {
     readTime: "6 min read",
     metaDescription:
       "Marketing funnels for small businesses: what they are, why they matter, and how to build one simply.",
+    published: { iso: "2025-04-05", label: "April 2025" },
     body: function MarketingFunnelsExplainedBody() {
       return (
         <>
@@ -664,18 +655,9 @@ export const BLOG_POSTS: Record<BlogSlug, BlogPost> = {
             </ArticleLink>.
           </p>
           <p className="mt-8 leading-relaxed text-slate-700">
-            If you want to turn your website and marketing into a funnel that
-            actually generates leads, we can help. Our{" "}
-            <ArticleLink href="https://boldspark.co">
-              marketing systems
-            </ArticleLink>{" "}
-            and{" "}
-            <ArticleLink href="https://boldspark.co">
-              website-as-sales-machine services
-            </ArticleLink>{" "}
-            are built around that.{" "}
-            <ArticleLink href="mailto:hello.digital">Start your project</ArticleLink> and
-            we’ll map a funnel that fits your business.
+            I treat funnels like experiments: define the hypothesis, run the test, publish the
+            results. That&apos;s the whole point of{" "}
+            <ArticleLink href="/lab">the Lab</ArticleLink>.
           </p>
         </>
       );
@@ -690,6 +672,7 @@ export const BLOG_POSTS: Record<BlogSlug, BlogPost> = {
     readTime: "7 min read",
     metaDescription:
       "SEO vs paid ads: when to use each, how they work together, and how to decide for your business.",
+    published: { iso: "2025-04-18", label: "April 2025" },
     body: function SeoVsPaidAdsBody() {
       return (
         <>
@@ -769,19 +752,8 @@ export const BLOG_POSTS: Record<BlogSlug, BlogPost> = {
             we learn so our recommendations stay grounded in results.
           </p>
           <p className="mt-8 leading-relaxed text-slate-700">
-            If you’re not sure which lever to pull first, we can help. Our{" "}
-            <ArticleLink href="https://boldspark.co">
-              lead generation services
-            </ArticleLink>{" "}
-            and{" "}
-            <ArticleLink href="https://boldspark.co">SEO strategy</ArticleLink> work
-            are built to grow organic demand, and we often pair that with a
-            clear plan for when and how to use paid. We also run experiments in
-            the{" "}
-            <ArticleLink href="/lab">Outwit Lab</ArticleLink> that inform how we
-            recommend both.{" "}
-            <ArticleLink href="mailto:hello.digital">Start a conversation</ArticleLink> and
-            we’ll outline a mix that fits your budget and goals.
+            I run this tradeoff on real sites and publish what happens in the{" "}
+            <ArticleLink href="/lab">Outwit Lab</ArticleLink>.
           </p>
         </>
       );

@@ -8,19 +8,6 @@ export const metadata: Metadata = {
     "Marketing experiments I run with real data and real projects—published here so you can see what actually moves the needle.",
 };
 
-const comingSoon = [
-  {
-    title: "Testing AI landing page copy",
-    summary:
-      "Comparing human-written vs. AI-assisted landing pages to see what lifts conversions—and where AI breaks trust.",
-  },
-  {
-    title: "How page speed impacts conversion",
-    summary:
-      "Measuring what shaving seconds off load time does to engagement and sign-ups across real sites.",
-  },
-];
-
 const statusStyles: Record<string, string> = {
   Complete: "bg-white/10 text-white/90",
   "In Progress": "bg-neon-orange/20 text-neon-orange",
@@ -62,6 +49,9 @@ export default function LabPage() {
               </span>
               <h2 className="mt-4 text-lg font-semibold text-slate-900">{exp.title}</h2>
               <p className="mt-3 flex-1 text-sm leading-relaxed text-slate-600">{exp.summary}</p>
+              <p className="mt-5 text-xs font-medium text-slate-500">
+                Last updated: {exp.lastUpdated.label}
+              </p>
               <span className="mt-6 inline-flex items-center text-xs font-semibold text-neon-orange">
                 Read experiment
                 <svg
@@ -78,20 +68,6 @@ export default function LabPage() {
             </Link>
           );
         })}
-        {comingSoon.map((exp) => (
-          <article
-            key={exp.title}
-            className="flex flex-col rounded-2xl border border-dashed border-slate-300 bg-slate-50/80 p-7"
-          >
-            <span
-              className={`inline-flex w-fit items-center gap-1.5 rounded-full px-3 py-1 text-[11px] font-mono uppercase tracking-[0.18em] ${statusStyles.Coming}`}
-            >
-              Coming soon
-            </span>
-            <h2 className="mt-4 text-lg font-semibold text-slate-700">{exp.title}</h2>
-            <p className="mt-3 flex-1 text-sm leading-relaxed text-slate-500">{exp.summary}</p>
-          </article>
-        ))}
       </div>
     </div>
   );

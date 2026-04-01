@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Outwit — About",
   description:
-    "Travis Goldston — brands, marketing experiments, and building a portfolio of businesses from North Texas.",
+    "Travis Goldston — Outwit is my personal marketing lab where I publish SEO and marketing experiments with real data.",
 };
 
 export default function AboutPage() {
@@ -18,22 +18,17 @@ export default function AboutPage() {
 
         <div className="prose prose-slate mt-10 max-w-none space-y-6 text-base leading-relaxed text-slate-700">
           <p>
-            I grew up in North Texas. My dad is a master electrician—the spark behind{" "}
-            <a
-              href="https://boldspark.co"
-              className="font-semibold text-neon-orange hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Boldspark
-            </a>
-            , where we help local businesses show up online. I built my career in digital
-            marketing: strategy, SEO, content, and the messy middle where data meets judgment.
+            I grew up in North Texas. I built my career in digital marketing: strategy, SEO,
+            content, and the messy middle where data meets judgment.
           </p>
           <p>
             These days I&apos;m building a portfolio of brands and businesses—not just advising from
-            the sidelines. Outwit is my personal digital home: a place to write, run experiments, and
-            think out loud about what&apos;s working (and what isn&apos;t) in modern marketing.
+            the sidelines.
+          </p>
+          <p>
+            <strong>Outwit is my personal marketing lab.</strong> I run SEO and marketing
+            experiments on real sites, publish the data, and write down what I learned—so the work
+            is visible and the conclusions are earned.
           </p>
           <p>
             This site isn&apos;t a pitch deck. I publish{" "}
@@ -44,20 +39,20 @@ export default function AboutPage() {
             <Link href="/lab" className="font-semibold text-neon-orange hover:underline">
               Lab
             </Link>
-            , and link out to what I&apos;m building elsewhere from the home page. If something here
-            helps you make a smarter decision, that&apos;s the whole point.
+            , and link out to what I&apos;m building elsewhere from the home page. I believe in
+            showing your work. That&apos;s what this site is for.
           </p>
         </div>
 
         <p className="mt-14 border-t border-slate-200 pt-10 text-base leading-relaxed text-slate-600">
-          If you&apos;re a local business looking for marketing help, check out{" "}
+          If you&apos;re a local business looking for marketing help, visit{" "}
           <a
-            href="https://boldspark.co"
+            href="https://bluebonnetgrowth.com"
             className="font-semibold text-neon-orange hover:underline"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Boldspark
+            Bluebonnet Growth
           </a>
           .
         </p>

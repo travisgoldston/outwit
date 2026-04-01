@@ -5,12 +5,37 @@ const nextConfig = {
     return [
       {
         source: "/solutions",
-        destination: "/services",
+        destination: "/lab",
         permanent: true,
       },
       {
         source: "/solutions/:path*",
-        destination: "/services",
+        destination: "/lab",
+        permanent: true,
+      },
+      {
+        source: "/services",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/services/:path*",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/case-studies",
+        destination: "/lab",
+        permanent: true,
+      },
+      {
+        source: "/case-studies/:path*",
+        destination: "/lab",
+        permanent: true,
+      },
+      {
+        source: "/contact",
+        destination: "https://bluebonnetgrowth.com/contact",
         permanent: true,
       },
       {

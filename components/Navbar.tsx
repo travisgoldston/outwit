@@ -6,7 +6,6 @@ import { useState, useEffect } from "react";
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/services", label: "Services" },
   { href: "/lab", label: "Lab" },
   { href: "/insights", label: "Insights" },
   { href: "/about", label: "About" },
@@ -59,12 +58,14 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
-          <Link
-            href="/contact"
+          <a
+            href="https://bluebonnetgrowth.com/contact"
             className="shrink-0 rounded-lg bg-neon-orange px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-neon-orange/20 transition-all hover:bg-neon-orange/90"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Get a Strategy Call
-          </Link>
+            Business inquiries
+          </a>
         </div>
 
         <button
@@ -95,13 +96,15 @@ export default function Navbar() {
               </li>
             ))}
             <li>
-              <Link
-                href="/contact"
+              <a
+                href="https://bluebonnetgrowth.com/contact"
                 className="inline-block rounded-lg bg-neon-orange px-5 py-2.5 text-sm font-semibold text-white"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setMobileOpen(false)}
               >
-                Get a Strategy Call
-              </Link>
+                Business inquiries
+              </a>
             </li>
           </ul>
         </div>

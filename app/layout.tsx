@@ -17,16 +17,16 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Outwit — Smarter Marketing Through Strategy and Experimentation",
+  title: "Outwit — Marketing experiments with real data",
   description:
-    "A clever digital marketing strategy lab that helps companies outsmart growth problems. Smart strategy, experiments, and growth systems — not brute force.",
+    "I build sites, run SEO experiments, and document what actually works. No theory. No fluff. Just tested, shown-in-public proof.",
   icons: {
     icon: "/icon.png",
   },
   openGraph: {
-    title: "Outwit — Outsmart Your Growth",
+    title: "Outwit — Marketing experiments with real data",
     description:
-      "Smart marketing isn't about doing more. It's about doing the right things. Strategy, experiments, and smarter digital marketing.",
+      "I build sites, run SEO experiments, and document what actually works. No theory. No fluff. Just tested, shown-in-public proof.",
   },
 };
 

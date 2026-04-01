@@ -7,10 +7,10 @@ const outwitLinks = [
   { href: "/about", label: "About" },
 ];
 
-const workLinks = [
-  { href: "/services", label: "Services" },
-  { href: "/case-studies", label: "Case studies" },
-  { href: "/contact", label: "Contact" },
+const externalLinks = [
+  { href: "https://bluebonnetgrowth.com", label: "Bluebonnet Growth" },
+  { href: "https://bluebonnetgrowth.com/contact", label: "Bluebonnet Growth contact" },
+  { href: "https://budgetocity.com", label: "Budgetocity" },
 ];
 
 const footerLinkClass = "link-underline-ltr text-white/80";
@@ -33,13 +33,30 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="text-lg font-bold text-white">Work</h3>
+            <h3 className="text-lg font-bold text-white">Elsewhere</h3>
             <ul className="mt-4 space-y-3">
-              {workLinks.map((link) => (
+              <li className="text-sm leading-relaxed text-white/70">
+                Looking for marketing help?{" "}
+                <a
+                  href="https://bluebonnetgrowth.com"
+                  className="link-underline-ltr text-white/90"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Visit Bluebonnet Growth
+                </a>
+                .
+              </li>
+              {externalLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className={footerLinkClass}>
+                  <a
+                    href={link.href}
+                    className={footerLinkClass}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     {link.label}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
