@@ -59,12 +59,10 @@ export default function Navbar() {
             ))}
           </ul>
           <a
-            href="https://bluebonnetgrowth.com/contact"
+            href="mailto:hello@outwit.digital"
             className="shrink-0 rounded-lg bg-neon-orange px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-neon-orange/20 transition-all hover:bg-neon-orange/90"
-            target="_blank"
-            rel="noopener noreferrer"
           >
-            Business inquiries
+            Say hello
           </a>
         </div>
 
@@ -97,13 +95,11 @@ export default function Navbar() {
             ))}
             <li>
               <a
-                href="https://bluebonnetgrowth.com/contact"
+                href="mailto:hello@outwit.digital"
                 className="inline-block rounded-lg bg-neon-orange px-5 py-2.5 text-sm font-semibold text-white"
-                target="_blank"
-                rel="noopener noreferrer"
                 onClick={() => setMobileOpen(false)}
               >
-                Business inquiries
+                Say hello
               </a>
             </li>
           </ul>

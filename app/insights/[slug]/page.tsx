@@ -104,14 +104,12 @@ export default async function InsightArticlePage({ params }: PageProps) {
             </Link>
           </p>
           <p className="mt-4 text-sm leading-relaxed text-slate-600">
-            Looking for hands-on marketing help?{" "}
+            Want to talk? Email{" "}
             <a
-              href="https://bluebonnetgrowth.com"
+              href="mailto:hello@outwit.digital"
               className="font-semibold text-neon-orange hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
             >
-              Visit Bluebonnet Growth
+              hello@outwit.digital
             </a>
             .
           </p>

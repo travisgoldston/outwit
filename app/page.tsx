@@ -39,16 +39,7 @@ export default function Page() {
               </Link>
             </div>
             <p className="mt-6 text-sm leading-relaxed text-white/70">
-              Looking for hands-on marketing help?{" "}
-              <a
-                href="https://bluebonnetgrowth.com"
-                className="link-underline-ltr text-white/90"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Visit Bluebonnet Growth
-              </a>
-              .
+              This is a public lab and portfolio—not a services business.
             </p>
           </div>
 
@@ -174,48 +165,39 @@ export default function Page() {
         <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-3 lg:gap-12">
           <div className="lg:col-span-2">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-              Sites I&apos;ve built and grown
+              Sites I&apos;ve built (brands to be revealed soon)
             </h2>
             <p className="mt-5 max-w-2xl text-lg leading-relaxed text-white/80">
-              This is the portfolio side of the lab—real sites, real constraints, and the ongoing
-              work.
+              I&apos;m gradually making more of my portfolio public. For now, I&apos;m sharing the
+              experiments and outcomes—without turning this into a client pitch.
             </p>
 
             <div className="mt-10 grid gap-6 sm:grid-cols-2">
-              <a
-                href="https://bluebonnetgrowth.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-2xl border border-white/10 bg-white/5 p-6 transition-colors hover:border-neon-orange/50 hover:bg-white/7"
-              >
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
                 <p className="text-xs font-mono uppercase tracking-[0.25em] text-neon-orange/90">
-                  Bluebonnet Growth
+                  Brand (soon)
                 </p>
                 <p className="mt-3 text-base font-semibold text-white">
-                  Local SEO agency site (rebuild + transparent Search Console updates)
+                  Local SEO build log
                 </p>
                 <p className="mt-3 text-sm leading-relaxed text-white/70">
-                  A public rebuild and growth log—indexation, impressions, clicks, and rankings
-                  shared every two weeks.
+                  Search Console screenshots, indexation notes, and ranking movement—posted on a
+                  schedule.
                 </p>
-              </a>
+              </div>
 
-              <a
-                href="https://budgetocity.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-2xl border border-white/10 bg-white/5 p-6 transition-colors hover:border-neon-orange/50 hover:bg-white/7"
-              >
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
                 <p className="text-xs font-mono uppercase tracking-[0.25em] text-neon-orange/90">
-                  Budgetocity
+                  Brand (soon)
                 </p>
                 <p className="mt-3 text-base font-semibold text-white">
-                  Fractional CMO SEO growth experiment
+                  SEO growth experiment
                 </p>
                 <p className="mt-3 text-sm leading-relaxed text-white/70">
-                  YoY organic growth, content strategy decisions, and what worked (and didn&apos;t).
+                  YoY comparisons, content strategy decisions, and honest takeaways—without
+                  client-speak.
                 </p>
-              </a>
+              </div>
             </div>
           </div>
 

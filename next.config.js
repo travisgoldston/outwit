@@ -35,7 +35,7 @@ const nextConfig = {
       },
       {
         source: "/contact",
-        destination: "https://bluebonnetgrowth.com/contact",
+        destination: "/about",
         permanent: true,
       },
       {

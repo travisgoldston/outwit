@@ -7,12 +7,6 @@ const outwitLinks = [
   { href: "/about", label: "About" },
 ];
 
-const externalLinks = [
-  { href: "https://bluebonnetgrowth.com", label: "Bluebonnet Growth" },
-  { href: "https://bluebonnetgrowth.com/contact", label: "Bluebonnet Growth contact" },
-  { href: "https://budgetocity.com", label: "Budgetocity" },
-];
-
 const footerLinkClass = "link-underline-ltr text-white/80";
 
 export default function Footer() {
@@ -36,29 +30,9 @@ export default function Footer() {
             <h3 className="text-lg font-bold text-white">Elsewhere</h3>
             <ul className="mt-4 space-y-3">
               <li className="text-sm leading-relaxed text-white/70">
-                Looking for marketing help?{" "}
-                <a
-                  href="https://bluebonnetgrowth.com"
-                  className="link-underline-ltr text-white/90"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Visit Bluebonnet Growth
-                </a>
-                .
+                Brands to be revealed soon. For now, Outwit is the public lab where I share what I
+                test and what the data says.
               </li>
-              {externalLinks.map((link) => (
-                <li key={link.href}>
-                  <a
-                    href={link.href}
-                    className={footerLinkClass}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
             </ul>
           </div>
           <div>

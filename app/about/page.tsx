@@ -45,14 +45,9 @@ export default function AboutPage() {
         </div>
 
         <p className="mt-14 border-t border-slate-200 pt-10 text-base leading-relaxed text-slate-600">
-          If you&apos;re a local business looking for marketing help, visit{" "}
-          <a
-            href="https://bluebonnetgrowth.com"
-            className="font-semibold text-neon-orange hover:underline"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Bluebonnet Growth
+          Want to talk? Email{" "}
+          <a href="mailto:hello@outwit.digital" className="font-semibold text-neon-orange hover:underline">
+            hello@outwit.digital
           </a>
           .
         </p>

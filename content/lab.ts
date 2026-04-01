@@ -3,7 +3,7 @@ export type LabSlug =
   | "how-fast-can-a-new-domain-rank"
   | "can-a-200-niche-site-make-money"
   | "building-a-local-seo-agency-site-from-scratch"
-  | "fractional-cmo-seo-growing-budgetocity-organic-traffic"
+  | "fractional-cmo-seo-growing-a-brand-organic-traffic"
   | "testing-city-pages-for-local-seo";
 
 export const LAB_SLUGS: LabSlug[] = [
@@ -11,7 +11,7 @@ export const LAB_SLUGS: LabSlug[] = [
   "how-fast-can-a-new-domain-rank",
   "can-a-200-niche-site-make-money",
   "building-a-local-seo-agency-site-from-scratch",
-  "fractional-cmo-seo-growing-budgetocity-organic-traffic",
+  "fractional-cmo-seo-growing-a-brand-organic-traffic",
   "testing-city-pages-for-local-seo",
 ];
 
@@ -29,7 +29,7 @@ export type LabDataBlock =
       type: "screenshot";
       title: string;
       caption?: string;
-      /** Path under /public, e.g. /lab/bluebonnet/2026-04-01-gsc.png */
+      /** Path under /public, e.g. /lab/brand-tbd/2026-04-01-gsc.png */
       src: string;
       alt: string;
     }
@@ -188,7 +188,7 @@ export const LAB_EXPERIMENTS: Record<LabSlug, LabExperiment> = {
     title: "Building a local SEO agency site from scratch",
     status: "In Progress",
     summary:
-      "A public rebuild of Bluebonnet Growth with Search Console screenshots every two weeks: indexed pages, impressions, clicks, and rankings.",
+      "A public rebuild and growth log with Search Console screenshots every two weeks: indexed pages, impressions, clicks, and rankings.",
     problem:
       "Most marketing sites claim results, but rarely show the timeline and messy details. I want a transparent growth log from a clean rebuild.",
     hypothesis:
@@ -216,25 +216,22 @@ export const LAB_EXPERIMENTS: Record<LabSlug, LabExperiment> = {
         type: "screenshot",
         title: "Google Search Console snapshot (baseline)",
         caption: "Replace with a real screenshot from GSC. Update every 2 weeks.",
-        src: "/lab/bluebonnetgrowth/gsc-baseline.png",
-        alt: "Google Search Console performance screenshot for Bluebonnet Growth (baseline)",
+        src: "/lab/brand-tbd/gsc-baseline.png",
+        alt: "Google Search Console performance screenshot (baseline)",
       },
     ],
     findings: ["Early notes will appear here as data comes in."],
     whatItMeans: ["This will be updated as results accumulate."],
     whatIdDoDifferently: ["TBD"],
-    links: [
-      { label: "Bluebonnet Growth", href: "https://bluebonnetgrowth.com" },
-      { label: "Bluebonnet Growth contact", href: "https://bluebonnetgrowth.com/contact" },
-    ],
+    links: [{ label: "More experiments", href: "/lab" }],
   },
 
-  "fractional-cmo-seo-growing-budgetocity-organic-traffic": {
-    slug: "fractional-cmo-seo-growing-budgetocity-organic-traffic",
-    title: "Fractional CMO SEO: Growing Budgetocity's organic traffic",
+  "fractional-cmo-seo-growing-a-brand-organic-traffic": {
+    slug: "fractional-cmo-seo-growing-a-brand-organic-traffic",
+    title: "Fractional CMO SEO: Growing a brand’s organic traffic",
     status: "In Progress",
     summary:
-      "Documenting the SEO work on Budgetocity with YoY data, position changes, content strategy decisions, and honest takeaways.",
+      "Documenting the SEO work with YoY data, position changes, content strategy decisions, and honest takeaways.",
     problem:
       "SEO advice is cheap. What matters is the decision-making: what we tried, what moved, and what didn’t.",
     hypothesis:
@@ -267,7 +264,7 @@ export const LAB_EXPERIMENTS: Record<LabSlug, LabExperiment> = {
     findings: ["Early notes will appear here as data comes in."],
     whatItMeans: ["This will be updated as results accumulate."],
     whatIdDoDifferently: ["TBD"],
-    links: [{ label: "Budgetocity", href: "https://budgetocity.com" }],
+    links: [{ label: "More experiments", href: "/lab" }],
   },
 
   "testing-city-pages-for-local-seo": {
