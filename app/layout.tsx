@@ -21,7 +21,11 @@ export const metadata: Metadata = {
   description:
     "Real experiments on real sites—published with hypotheses, methodology, and Search Console data. No theory. No fluff.",
   icons: {
-    icon: "/icon.png",
+    icon: [
+      { url: "/icon.png", type: "image/png" },
+      { url: "/icon.png", sizes: "any", type: "image/png" },
+    ],
+    apple: [{ url: "/icon.png", type: "image/png" }],
   },
   openGraph: {
     title: "OUTWIT — SEO & Web That Proves Itself",
