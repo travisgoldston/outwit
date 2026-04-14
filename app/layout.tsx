@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const inter = Inter({
+const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-jakarta",
   display: "swap",
 });
 
@@ -17,16 +17,16 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Outwit — Marketing experiments with real data",
+  title: "OUTWIT — SEO & Web That Proves Itself",
   description:
-    "I build sites, run SEO experiments, and document what actually works. No theory. No fluff. Just tested, shown-in-public proof.",
+    "Real experiments on real sites—published with hypotheses, methodology, and Search Console data. No theory. No fluff.",
   icons: {
     icon: "/icon.png",
   },
   openGraph: {
-    title: "Outwit — Marketing experiments with real data",
+    title: "OUTWIT — SEO & Web That Proves Itself",
     description:
-      "I build sites, run SEO experiments, and document what actually works. No theory. No fluff. Just tested, shown-in-public proof.",
+      "Marketing experiments with real data. SEO, web, and conversion—tested in public.",
   },
 };
 
@@ -36,8 +36,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
-      <body className="min-h-screen flex flex-col font-sans bg-vibe-bg text-white">
+    <html lang="en" className={`${jakarta.variable} ${jetbrainsMono.variable}`}>
+      <body className="flex min-h-screen flex-col">
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

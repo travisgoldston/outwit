@@ -40,7 +40,7 @@ function ArticleLink({
   return (
     <Link
       href={href}
-      className="font-semibold text-neon-orange underline decoration-neon-orange/40 underline-offset-2 transition-colors hover:text-neon-orange/80 hover:decoration-neon-orange"
+      className="font-semibold text-ow-orange underline decoration-ow-orange/40 underline-offset-2 transition-colors hover:text-ow-ember hover:decoration-ow-orange"
     >
       {children}
     </Link>

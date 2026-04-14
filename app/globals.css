@@ -3,22 +3,30 @@
 @tailwind utilities;
 
 :root {
-  --fox-orange: #E86A1D;
-  --neon-orange: #FF5F1F;
-  --cream: #FDF7F0;
-  --deep-gray: #2C2C2C;
-  --strategy-navy: #1F3A5F;
-  --white: #FAFAFA;
-  --vibe-bg: #0f1115;
+  --fox-orange: #e86a1d;
+  --neon-orange: #ff5f1f;
+  --ow-orange: #f06400;
+  --ow-charcoal: #14283c;
+  --ow-cream: #fdf8f4;
 }
 
-/* Neon sign flicker animation */
+/* Legacy neon (unused on v2 light pages; kept for any dark snippets) */
 @keyframes neon-flicker {
-  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-    filter: drop-shadow(0 0 5px #FF5F1F) drop-shadow(0 0 15px #FF5F1F) drop-shadow(0 0 30px #FF5F1F);
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    filter: drop-shadow(0 0 5px #ff5f1f) drop-shadow(0 0 15px #ff5f1f)
+      drop-shadow(0 0 30px #ff5f1f);
     opacity: 1;
   }
-  20%, 24%, 55% {
+  20%,
+  24%,
+  55% {
     filter: none;
     opacity: 0.7;
   }
@@ -33,16 +41,24 @@ html {
 }
 
 body {
-  @apply antialiased text-white bg-[#0f1115];
+  @apply min-h-screen antialiased bg-ow-cream font-sans text-ow-charcoal;
 }
 
-/* Selection on dark theme */
 ::selection {
-  background-color: rgba(255, 95, 31, 0.25);
+  background-color: rgba(240, 100, 0, 0.18);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 @layer components {
-  /* Orange line grows left → right on hover/focus */
   .link-underline-ltr {
     @apply relative inline-block pb-0.5 focus-visible:outline-none;
   }
@@ -54,7 +70,7 @@ body {
     bottom: 0;
     height: 2px;
     width: 100%;
-    background-color: var(--neon-orange);
+    background-color: var(--ow-orange);
     transform: scaleX(0);
     transform-origin: left center;
     transition: transform 0.3s ease-out;
@@ -64,5 +80,14 @@ body {
   .link-underline-ltr:hover::after,
   .link-underline-ltr:focus-visible::after {
     transform: scaleX(1);
+  }
+
+  .ow-label {
+    @apply mb-4 inline-flex items-center gap-2.5 font-mono text-[0.67rem] font-semibold uppercase tracking-[0.18em] text-ow-orange;
+  }
+
+  .ow-label::before {
+    content: "";
+    @apply inline-block h-0.5 w-4 rounded-sm bg-ow-orange;
   }
 }

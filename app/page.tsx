@@ -1,232 +1,154 @@
 import Link from "next/link";
-import HeroVisual from "@/components/HeroVisual";
-import VibeMonitor from "@/components/VibeMonitor";
-import { LAB_SLUGS, LAB_EXPERIMENTS } from "@/content/lab";
-import { BLOG_LIST, BLOG_PUBLISHED } from "@/content/blog";
+import HomeHero from "@/components/home/HomeHero";
+import LabTicker from "@/components/home/LabTicker";
+import WhatOutwitIs from "@/components/home/WhatOutwitIs";
+import HomeAboutStrip from "@/components/home/HomeAboutStrip";
+import HomeCta from "@/components/home/HomeCta";
+import { LAB_SLUGS, LAB_EXPERIMENTS, type LabSlug } from "@/content/lab";
+import {
+  BLOG_LIST,
+  BLOG_PUBLISHED,
+  BLOG_POSTS,
+  type BlogSlug,
+} from "@/content/blog";
+
+const FEATURED_SLUG = "what-makes-a-high-converting-website" satisfies BlogSlug;
+
+function labCardClass(slug: LabSlug) {
+  const status = LAB_EXPERIMENTS[slug].status;
+  const isDone = status === "Complete";
+  return [
+    "group relative flex flex-col gap-3 overflow-hidden rounded-ow border border-[rgba(20,40,60,0.18)] bg-white p-6 transition hover:-translate-y-0.5 hover:border-[rgba(20,40,60,0.22)] hover:shadow-ow",
+    "after:absolute after:left-0 after:right-0 after:top-0 after:h-[3px] after:origin-left after:scale-x-0 after:rounded-t-ow after:transition after:duration-300 group-hover:after:scale-x-100",
+    isDone ? "after:bg-[#2a6b4a]" : "after:bg-ow-orange",
+  ].join(" ");
+}
+
+function chipClass(slug: LabSlug) {
+  const status = LAB_EXPERIMENTS[slug].status;
+  const isDone = status === "Complete";
+  return isDone
+    ? "inline-flex items-center gap-1.5 rounded-full border border-[rgba(42,107,74,0.2)] bg-[rgba(42,107,74,0.08)] px-2.5 py-1 font-mono text-[0.62rem] font-medium uppercase tracking-[0.1em] text-[#2a6b4a]"
+    : "inline-flex items-center gap-1.5 rounded-full border border-[rgba(240,100,0,0.22)] bg-[rgba(240,100,0,0.1)] px-2.5 py-1 font-mono text-[0.62rem] font-medium uppercase tracking-[0.1em] text-ow-orange";
+}
+
+function chipDotClass(slug: LabSlug) {
+  const status = LAB_EXPERIMENTS[slug].status;
+  const isDone = status === "Complete";
+  return isDone
+    ? "h-[5px] w-[5px] rounded-full bg-[#2a6b4a]"
+    : "h-[5px] w-[5px] animate-pulse-kicker rounded-full bg-ow-orange";
+}
 
 export default function Page() {
-  const activeExperiments = LAB_SLUGS.slice(0, 6);
-  const latestInsights = BLOG_LIST.slice(0, 4);
+  const featured = BLOG_POSTS[FEATURED_SLUG as keyof typeof BLOG_POSTS];
+  const otherInsights = BLOG_LIST.filter((a) => a.slug !== FEATURED_SLUG).slice(0, 2);
 
   return (
     <>
-      <section className="relative overflow-hidden bg-vibe-bg px-6 pt-16 pb-20 lg:px-8 lg:pt-24 lg:pb-28">
-        <div className="relative mx-auto grid max-w-6xl gap-10 lg:grid-cols-2 lg:items-center lg:gap-16">
-          <div className="text-center lg:text-left">
-            <p className="text-xs font-mono uppercase tracking-[0.25em] text-neon-orange">
-              Outwit
-            </p>
-            <h1 className="mt-6 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-              Marketing experiments with real data
-              <span className="text-neon-orange">.</span>
-            </h1>
-            <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white/80 sm:text-xl lg:mx-0">
-              I build sites, run SEO experiments, and document what actually works. No theory. No
-              fluff. Just tested, shown-in-public proof.
-            </p>
-            <div className="mt-10 flex flex-wrap items-center justify-center gap-4 lg:justify-start">
-              <Link
-                href="/lab"
-                className="inline-flex items-center justify-center rounded-lg bg-neon-orange px-6 py-3.5 text-base font-semibold text-white shadow-lg shadow-neon-orange/25 transition-all hover:bg-neon-orange/90 hover:shadow-[0_0_20px_rgba(255,95,31,0.4)]"
-              >
-                Explore the Lab
-              </Link>
-              <Link
-                href="/insights"
-                className="inline-flex items-center justify-center rounded-lg border border-white bg-transparent px-6 py-3.5 text-base font-semibold text-white transition-all hover:border-neon-orange"
-              >
-                Read insights
-              </Link>
-            </div>
-            <p className="mt-6 text-sm leading-relaxed text-white/70">
-              This is a public lab and portfolio—not a services business.
-            </p>
-          </div>
+      <HomeHero />
+      <LabTicker />
+      <WhatOutwitIs />
 
-          <div className="relative flex justify-center lg:justify-end">
-            <HeroVisual />
-          </div>
-        </div>
-      </section>
-
-      <VibeMonitor />
-
-      <section className="border-t border-white/5 bg-[#FAFAFA] px-6 py-20 text-slate-900 lg:px-8 lg:py-28">
-        <div className="mx-auto max-w-6xl">
-          <div className="mx-auto max-w-3xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-              Active experiments
+      <section id="lab" className="bg-ow-cream px-5 py-20 sm:px-8 lg:px-12 lg:py-24">
+        <div className="mb-10 flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <p className="ow-label">The Lab</p>
+            <h2 className="max-w-[680px] font-sans text-[clamp(2rem,3.8vw,3rem)] font-extrabold leading-[1.08] tracking-[-0.03em] text-ow-charcoal">
+              Active experiments.
+              <br />
+              <span className="text-ow-orange">Real data. Public.</span>
             </h2>
-            <p className="mt-5 text-lg leading-relaxed text-slate-600">
-              The Lab is where I publish hypotheses, methodology, and outcomes—plus screenshots and
-              charts as the data comes in.
-            </p>
           </div>
-
-          <div className="mx-auto mt-14 grid max-w-6xl gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {activeExperiments.map((slug) => {
-              const exp = LAB_EXPERIMENTS[slug];
-              return (
-                <Link
-                  key={slug}
-                  href={`/lab/${slug}`}
-                  className="flex flex-col rounded-2xl border border-slate-200 bg-white p-7 shadow-sm transition-all duration-300 hover:border-neon-orange/60 hover:shadow-md"
-                >
-                  <span className="inline-flex w-fit items-center gap-1.5 rounded-full bg-slate-100 px-3 py-1 text-[11px] font-mono uppercase tracking-[0.18em] text-slate-700">
-                    {exp.status}
-                  </span>
-                  <h3 className="mt-4 text-lg font-semibold text-slate-900">{exp.title}</h3>
-                  <p className="mt-3 flex-1 text-sm leading-relaxed text-slate-600">{exp.summary}</p>
-                  <span className="mt-6 inline-flex items-center text-xs font-semibold text-neon-orange">
-                    Read experiment
-                    <svg
-                      className="ml-1 h-3.5 w-3.5"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                      aria-hidden
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                    </svg>
-                  </span>
-                </Link>
-              );
-            })}
-          </div>
-
-          <div className="mt-12 flex justify-center">
-            <Link
-              href="/lab"
-              className="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-6 py-3.5 text-base font-semibold text-slate-900 shadow-sm transition-all hover:border-neon-orange/60 hover:text-neon-orange"
-            >
-              View all experiments
-            </Link>
-          </div>
+          <Link
+            href="/lab"
+            className="inline-flex items-center gap-1.5 font-mono text-[0.7rem] font-medium uppercase tracking-[0.08em] text-ow-orange transition hover:gap-2.5"
+          >
+            View all experiments →
+          </Link>
         </div>
-      </section>
 
-      <section className="border-t border-white/5 bg-[#FAFAFA] px-6 py-20 text-slate-900 lg:px-8 lg:py-28">
-        <div className="mx-auto max-w-6xl">
-          <div className="mx-auto max-w-3xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-              Latest insights
-            </h2>
-            <p className="mt-5 text-lg leading-relaxed text-slate-600">
-              Notes on SEO, websites, and marketing from someone who tests everything on real sites
-              first.
-            </p>
-          </div>
-
-          <div className="mx-auto mt-14 grid max-w-5xl gap-6 md:grid-cols-2">
-            {latestInsights.map((article) => (
-              <Link
-                key={article.slug}
-                href={`/insights/${article.slug}`}
-                className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-7 shadow-sm transition-all duration-300 hover:border-neon-orange/60 hover:shadow-md"
-              >
-                <div>
-                  <p className="text-xs font-mono uppercase tracking-[0.25em] text-neon-orange/80">
-                    {BLOG_PUBLISHED[article.slug]}
-                  </p>
-                  <h3 className="mt-3 text-lg font-semibold text-slate-900">{article.title}</h3>
-                  <p className="mt-3 text-sm leading-relaxed text-slate-600">{article.summary}</p>
+        <div className="grid gap-3.5 sm:grid-cols-2 lg:grid-cols-3">
+          {LAB_SLUGS.map((slug) => {
+            const exp = LAB_EXPERIMENTS[slug];
+            return (
+              <Link key={slug} href={`/lab/${slug}`} className={labCardClass(slug)}>
+                <div className={chipClass(slug)}>
+                  <span className={chipDotClass(slug)} />
+                  {exp.status}
                 </div>
-                <p className="mt-5 text-xs font-medium text-slate-500">{article.readTime}</p>
-                <span className="mt-4 inline-flex items-center text-sm font-semibold text-neon-orange">
-                  Read article
-                  <svg
-                    className="ml-1 h-4 w-4"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                    aria-hidden
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                  </svg>
-                </span>
+                <h3 className="text-base font-bold leading-snug tracking-tight text-ow-charcoal">
+                  {exp.title}
+                </h3>
+                <p className="flex-1 text-[0.82rem] leading-relaxed text-ow-mid">{exp.summary}</p>
+                <div className="flex items-center justify-between border-t border-[rgba(20,40,60,0.12)] pt-3 font-mono text-[0.62rem] tracking-[0.05em] text-ow-mid">
+                  <span>Updated {exp.lastUpdated.label}</span>
+                  <span className="text-ow-orange">→</span>
+                </div>
               </Link>
-            ))}
-          </div>
-
-          <div className="mt-12 flex justify-center">
-            <Link
-              href="/insights"
-              className="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-6 py-3.5 text-base font-semibold text-slate-900 shadow-sm transition-all hover:border-neon-orange/60 hover:text-neon-orange"
-            >
-              View all insights
-            </Link>
-          </div>
+            );
+          })}
         </div>
       </section>
 
-      <section className="border-t border-white/5 bg-vibe-bg px-6 py-20 text-white lg:px-8 lg:py-28">
-        <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-3 lg:gap-12">
-          <div className="lg:col-span-2">
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-              Sites I&apos;ve built (brands to be revealed soon)
+      <section className="border-t border-[rgba(20,40,60,0.12)] bg-white px-5 py-20 sm:px-8 lg:px-12 lg:py-24">
+        <div className="mb-10 flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <p className="ow-label">Insights</p>
+            <h2 className="max-w-[680px] font-sans text-[clamp(2rem,3.8vw,3rem)] font-extrabold leading-[1.08] tracking-[-0.03em] text-ow-charcoal">
+              What the data
+              <br />
+              <span className="text-ow-orange">actually says.</span>
             </h2>
-            <p className="mt-5 max-w-2xl text-lg leading-relaxed text-white/80">
-              I&apos;m gradually making more of my portfolio public. For now, I&apos;m sharing the
-              experiments and outcomes—without turning this into a client pitch.
-            </p>
-
-            <div className="mt-10 grid gap-6 sm:grid-cols-2">
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
-                <p className="text-xs font-mono uppercase tracking-[0.25em] text-neon-orange/90">
-                  Brand (soon)
-                </p>
-                <p className="mt-3 text-base font-semibold text-white">
-                  Local SEO build log
-                </p>
-                <p className="mt-3 text-sm leading-relaxed text-white/70">
-                  Search Console screenshots, indexation notes, and ranking movement—posted on a
-                  schedule.
-                </p>
-              </div>
-
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
-                <p className="text-xs font-mono uppercase tracking-[0.25em] text-neon-orange/90">
-                  Brand (soon)
-                </p>
-                <p className="mt-3 text-base font-semibold text-white">
-                  SEO growth experiment
-                </p>
-                <p className="mt-3 text-sm leading-relaxed text-white/70">
-                  YoY comparisons, content strategy decisions, and honest takeaways—without
-                  client-speak.
-                </p>
-              </div>
-            </div>
           </div>
+          <Link
+            href="/insights"
+            className="inline-flex items-center gap-1.5 font-mono text-[0.7rem] font-medium uppercase tracking-[0.08em] text-ow-orange transition hover:gap-2.5"
+          >
+            View all insights →
+          </Link>
+        </div>
 
-          <div className="rounded-2xl border border-white/10 bg-white/5 p-8">
-            <p className="text-xs font-mono uppercase tracking-[0.25em] text-neon-orange">
-              About
-            </p>
-            <h3 className="mt-3 text-xl font-semibold">I&apos;m Travis Goldston.</h3>
-            <p className="mt-4 text-sm leading-relaxed text-white/80">
-              I have way too many hobbies and vibe coding is my crack cocaine. Outwit is where I
-              show my work.
-            </p>
-            <div className="mt-6 flex flex-wrap gap-3">
-              <Link
-                href="/about"
-                className="inline-flex items-center justify-center rounded-lg bg-neon-orange px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-neon-orange/20 transition-all hover:bg-neon-orange/90"
-              >
-                Read the full story
-              </Link>
-              <a
-                href="mailto:hello@outwit.digital"
-                className="inline-flex items-center justify-center rounded-lg border border-white/20 px-5 py-2.5 text-sm font-semibold text-white/90 transition-colors hover:border-neon-orange/60 hover:text-white"
-              >
-                hello@outwit.digital
-              </a>
+        <div className="grid gap-3.5 lg:grid-cols-[2fr_1fr_1fr]">
+          <Link
+            href={`/insights/${featured.slug}`}
+            className="flex flex-col gap-2.5 rounded-ow border border-transparent bg-ow-charcoal p-7 transition hover:shadow-ow lg:min-h-[280px]"
+          >
+            <div className="font-mono text-[0.62rem] font-medium uppercase tracking-[0.1em] text-white/35">
+              {BLOG_PUBLISHED[FEATURED_SLUG]}
             </div>
-          </div>
+            <h3 className="text-xl font-bold leading-snug tracking-tight text-white">{featured.title}</h3>
+            <p className="flex-1 text-[0.82rem] leading-relaxed text-white/45">{featured.summary}</p>
+            <div className="flex items-center justify-between border-t border-white/10 pt-3 font-mono text-[0.62rem] tracking-[0.06em] text-white/30">
+              <span>{featured.readTime}</span>
+              <span className="text-ow-orange">→</span>
+            </div>
+          </Link>
+
+          {otherInsights.map((article) => (
+            <Link
+              key={article.slug}
+              href={`/insights/${article.slug}`}
+              className="flex flex-col gap-2.5 rounded-ow border border-[rgba(20,40,60,0.18)] bg-ow-cream p-7 transition hover:-translate-y-0.5 hover:shadow-ow"
+            >
+              <div className="font-mono text-[0.62rem] font-medium uppercase tracking-[0.1em] text-ow-mid">
+                {BLOG_PUBLISHED[article.slug]}
+              </div>
+              <h3 className="text-base font-bold leading-snug tracking-tight text-ow-charcoal">
+                {article.title}
+              </h3>
+              <p className="flex-1 text-[0.82rem] leading-relaxed text-ow-mid">{article.summary}</p>
+              <div className="flex items-center justify-between border-t border-[rgba(20,40,60,0.12)] pt-3 font-mono text-[0.62rem] tracking-[0.06em] text-ow-mid">
+                <span>{article.readTime}</span>
+                <span className="text-ow-orange">→</span>
+              </div>
+            </Link>
+          ))}
         </div>
       </section>
+
+      <HomeAboutStrip />
+      <HomeCta />
     </>
   );
 }

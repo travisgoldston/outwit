@@ -5,88 +5,98 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 
 const navLinks = [
-  { href: "/", label: "Home" },
   { href: "/lab", label: "Lab" },
   { href: "/insights", label: "Insights" },
   { href: "/about", label: "About" },
 ];
 
-const navLinkClass =
-  "link-underline-ltr text-sm font-medium text-white/80";
-
 export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 24);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    if (mobileOpen) document.body.style.overflow = "hidden";
+    else document.body.style.overflow = "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [mobileOpen]);
 
   return (
-    <header
-      className={`sticky top-0 z-50 w-full transition-all duration-300 ${
-        scrolled ? "bg-vibe-bg/95 backdrop-blur-md border-b border-white/5" : "bg-vibe-bg"
-      }`}
-    >
-      <nav className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-4 lg:px-8">
-        <Link
-          href="/"
-          className="flex shrink-0 items-center gap-2 transition-opacity hover:opacity-90"
-          aria-label="Outwit home"
-        >
-          <Image
-            src="/assets/logo-icon.png"
-            alt="Outwit"
-            width={44}
-            height={44}
-            className="h-10 w-10 object-contain lg:h-11 lg:w-11"
-          />
-          <span className="text-xl font-bold tracking-tight text-white lg:text-2xl">
-            Outwit
-          </span>
-        </Link>
+    <header className="fixed left-0 right-0 top-0 z-[200] flex h-[68px] items-center justify-between border-b border-[rgba(20,40,60,0.12)] bg-[rgba(253,248,244,0.95)] px-5 backdrop-blur-[18px] lg:px-12">
+      <Link href="/" className="flex items-center gap-2.5 no-underline" aria-label="Outwit home">
+        <Image
+          src="/assets/logo-icon.png"
+          alt=""
+          width={36}
+          height={36}
+          className="h-9 w-9 object-contain"
+        />
+        <span className="font-sans text-[1.2rem] font-extrabold tracking-tight text-ow-charcoal">
+          OUT<span className="text-ow-orange">WIT</span>
+        </span>
+      </Link>
 
-        <div className="hidden items-center gap-8 md:flex">
-          <ul className="flex items-center gap-8">
-            {navLinks.map((link) => (
-              <li key={link.href}>
-                <Link href={link.href} className={navLinkClass}>
-                  {link.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-          <a
-            href="mailto:hello@outwit.digital"
-            className="shrink-0 rounded-lg bg-neon-orange px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-neon-orange/20 transition-all hover:bg-neon-orange/90"
+      <ul className="hidden list-none items-center gap-8 md:flex">
+        {navLinks.map((link) => (
+          <li key={link.href}>
+            <Link
+              href={link.href}
+              className="text-[0.84rem] font-medium tracking-wide text-ow-mid transition hover:text-ow-charcoal"
+            >
+              {link.label}
+            </Link>
+          </li>
+        ))}
+        <li>
+          <Link
+            href="/#contact"
+            scroll={true}
+            className="text-[0.84rem] font-medium tracking-wide text-ow-mid transition hover:text-ow-charcoal"
           >
-            Say hello
-          </a>
-        </div>
+            Contact
+          </Link>
+        </li>
+      </ul>
 
-        <button
-          type="button"
-          className="flex flex-col gap-1.5 rounded p-2 text-white md:hidden"
-          onClick={() => setMobileOpen((o) => !o)}
-          aria-expanded={mobileOpen}
-          aria-label="Toggle menu"
+      <div className="hidden items-center gap-3 md:flex">
+        <Link
+          href="/lab"
+          className="whitespace-nowrap rounded-full border border-[rgba(240,100,0,0.22)] bg-[rgba(240,100,0,0.1)] px-3 py-1.5 font-mono text-[0.67rem] tracking-[0.06em] text-ow-orange transition hover:bg-[rgba(240,100,0,0.16)]"
         >
-          <span className={`h-0.5 w-6 bg-current transition-transform ${mobileOpen ? "translate-y-2 rotate-45" : ""}`} />
-          <span className={`h-0.5 w-6 bg-current transition-opacity ${mobileOpen ? "opacity-0" : ""}`} />
-          <span className={`h-0.5 w-6 bg-current transition-transform ${mobileOpen ? "-translate-y-2 -rotate-45" : ""}`} />
-        </button>
-      </nav>
+          🦊 Lab is open
+        </Link>
+        <a
+          href="mailto:hello@outwit.digital"
+          className="rounded-ow-sm bg-ow-charcoal px-[22px] py-2 text-[0.82rem] font-semibold tracking-wide text-white transition hover:-translate-y-px hover:bg-ow-slate"
+        >
+          Say hello →
+        </a>
+      </div>
+
+      <button
+        type="button"
+        className="flex flex-col gap-1.5 rounded p-2 text-ow-charcoal md:hidden"
+        onClick={() => setMobileOpen((o) => !o)}
+        aria-expanded={mobileOpen}
+        aria-label="Toggle menu"
+      >
+        <span
+          className={`h-0.5 w-6 bg-current transition-transform ${mobileOpen ? "translate-y-2 rotate-45" : ""}`}
+        />
+        <span className={`h-0.5 w-6 bg-current transition-opacity ${mobileOpen ? "opacity-0" : ""}`} />
+        <span
+          className={`h-0.5 w-6 bg-current transition-transform ${mobileOpen ? "-translate-y-2 -rotate-45" : ""}`}
+        />
+      </button>
 
       {mobileOpen && (
-        <div className="border-t border-white/10 bg-vibe-bg px-6 py-4 md:hidden">
-          <ul className="flex flex-col gap-4">
+        <div className="absolute left-0 right-0 top-[68px] border-b border-[rgba(20,40,60,0.12)] bg-ow-cream px-5 py-4 shadow-ow md:hidden">
+          <ul className="flex flex-col gap-3">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className={`w-fit ${navLinkClass}`}
+                  className="block text-[0.9rem] font-medium text-ow-charcoal"
                   onClick={() => setMobileOpen(false)}
                 >
                   {link.label}
@@ -94,12 +104,22 @@ export default function Navbar() {
               </li>
             ))}
             <li>
-              <a
-                href="mailto:hello@outwit.digital"
-                className="inline-block rounded-lg bg-neon-orange px-5 py-2.5 text-sm font-semibold text-white"
+              <Link
+                href="/#contact"
+                scroll
+                className="block text-[0.9rem] font-medium text-ow-charcoal"
                 onClick={() => setMobileOpen(false)}
               >
-                Say hello
+                Contact
+              </Link>
+            </li>
+            <li className="pt-2">
+              <a
+                href="mailto:hello@outwit.digital"
+                className="inline-block rounded-ow-sm bg-ow-orange px-5 py-2.5 text-sm font-semibold text-white"
+                onClick={() => setMobileOpen(false)}
+              >
+                Say hello →
               </a>
             </li>
           </ul>
