@@ -18,7 +18,7 @@ export default function HomeAboutStrip() {
         <div>
           <p className="text-2xl font-extrabold tracking-tight text-ow-charcoal">Travis Goldston.</p>
           <p className="mt-1 font-mono text-[0.68rem] font-medium uppercase tracking-[0.14em] text-ow-orange">
-            Founder · OUTWIT Digital
+            Outwit
           </p>
           <p className="mt-4 text-[0.96rem] leading-[1.82] text-ow-mid">
             I have way too many hobbies. Vibe coding is my crack cocaine.{" "}
@@ -43,18 +43,18 @@ export default function HomeAboutStrip() {
               travisgoldston.com →
             </a>
             <a
-              href="mailto:hello@outwit.digital"
+              href="mailto:hello@outwitdigital.com"
               className="inline-flex items-center gap-1.5 rounded-ow-sm border-[1.5px] border-[rgba(20,40,60,0.18)] px-3.5 py-1.5 text-[0.8rem] font-semibold text-ow-slate transition hover:border-ow-orange hover:text-ow-orange"
             >
-              hello@outwit.digital
+              hello@outwitdigital.com
             </a>
             <a
-              href="https://x.com/outwitdotco"
+              href="https://x.com/outwitdigital"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 rounded-ow-sm border-[1.5px] border-[rgba(20,40,60,0.18)] px-3.5 py-1.5 text-[0.8rem] font-semibold text-ow-slate transition hover:border-ow-orange hover:text-ow-orange"
             >
-              @outwitdotco
+              @outwitdigital
             </a>
             <Link
               href="/about"

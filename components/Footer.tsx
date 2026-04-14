@@ -169,25 +169,25 @@ export default function Footer() {
             </li>
             <li>
               <a
-                href="mailto:hello@outwit.digital"
+                href="mailto:hello@outwitdigital.com"
                 className="text-[0.84rem] text-ow-mid transition hover:text-ow-charcoal"
               >
-                hello@outwit.digital
+                hello@outwitdigital.com
               </a>
             </li>
             <li>
               <a
-                href="https://x.com/outwitdotco"
+                href="https://x.com/outwitdigital"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[0.84rem] text-ow-mid transition hover:text-ow-charcoal"
               >
-                @outwitdotco
+                @outwitdigital
               </a>
             </li>
             <li>
               <a
-                href="https://instagram.com/outwitdotco"
+                href="https://instagram.com/outwitdigital"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[0.84rem] text-ow-mid transition hover:text-ow-charcoal"

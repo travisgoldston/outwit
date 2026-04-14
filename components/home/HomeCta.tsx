@@ -27,7 +27,7 @@ export default function HomeCta() {
         </div>
         <div className="flex shrink-0 flex-col items-start gap-3">
           <a
-            href="mailto:hello@outwit.digital"
+            href="mailto:hello@outwitdigital.com"
             className="inline-flex items-center gap-2 rounded-ow-sm bg-ow-orange px-8 py-[15px] text-[0.92rem] font-bold text-white whitespace-nowrap transition hover:-translate-y-0.5 hover:bg-ow-ember hover:shadow-[0_8px_28px_rgba(240,100,0,0.35)]"
           >
             Say hello →

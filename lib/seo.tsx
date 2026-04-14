@@ -4,7 +4,7 @@ export const SITE = {
   name: "Outwit",
   baseUrl: "https://outwit.digital",
   titleSuffix: "Outwit — North Texas SEO & Web Design",
-  email: "hello@outwit.digital",
+  email: "hello@outwitdigital.com",
 } as const;
 
 export function buildTitle(pageTitle: string) {
@@ -64,7 +64,7 @@ export function localBusinessJsonLd() {
     url: SITE.baseUrl,
     areaServed: "North Texas",
     email: SITE.email,
-    sameAs: ["https://x.com/outwitdotco", "https://instagram.com/outwitdotco"],
+    sameAs: ["https://x.com/outwitdigital", "https://instagram.com/outwitdigital"],
   };
 }
 

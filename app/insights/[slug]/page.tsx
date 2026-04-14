@@ -119,10 +119,10 @@ export default async function InsightArticlePage({ params }: PageProps) {
           <p className="mt-4 text-sm leading-relaxed text-ow-mid">
             Want to talk? Email{" "}
             <a
-              href="mailto:hello@outwit.digital"
+              href="mailto:hello@outwitdigital.com"
               className="font-semibold text-ow-orange hover:underline"
             >
-              hello@outwit.digital
+              hello@outwitdigital.com
             </a>
             .
           </p>

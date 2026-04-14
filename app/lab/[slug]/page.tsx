@@ -301,7 +301,7 @@ export default async function LabExperimentPage({ params }: PageProps) {
             </Link>
             {" · "}
             <a
-              href="mailto:hello@outwit.digital"
+              href="mailto:hello@outwitdigital.com"
               className="font-semibold text-ow-orange hover:underline"
             >
               Email me
