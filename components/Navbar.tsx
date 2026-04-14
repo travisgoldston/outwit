@@ -7,11 +7,19 @@ import { useState, useEffect } from "react";
 const navLinks = [
   { href: "/lab", label: "Lab" },
   { href: "/insights", label: "Insights" },
+  { href: "/locations", label: "Locations" },
   { href: "/about", label: "About" },
-];
+] as const;
+
+const serviceLinks = [
+  { href: "/services/seo", label: "SEO" },
+  { href: "/services/web-design", label: "Web Design" },
+  { href: "/services/conversion-optimization", label: "Conversion Optimization" },
+] as const;
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
 
   useEffect(() => {
     if (mobileOpen) document.body.style.overflow = "hidden";
@@ -47,6 +55,47 @@ export default function Navbar() {
             </Link>
           </li>
         ))}
+        <li
+          className="relative"
+          onMouseEnter={() => setServicesOpen(true)}
+          onMouseLeave={() => setServicesOpen(false)}
+        >
+          <button
+            type="button"
+            className="inline-flex items-center gap-1 text-[0.84rem] font-medium tracking-wide text-ow-mid transition hover:text-ow-charcoal"
+            aria-expanded={servicesOpen}
+            onClick={() => setServicesOpen((o) => !o)}
+          >
+            Services <span aria-hidden>▾</span>
+          </button>
+          {servicesOpen && (
+            <div className="absolute left-0 top-full mt-3 w-[260px] rounded-ow border border-[rgba(20,40,60,0.18)] bg-white p-2 shadow-ow">
+              <Link
+                href="/services"
+                className="block rounded-ow-sm px-3 py-2 text-sm font-semibold text-ow-charcoal transition hover:bg-ow-cream"
+              >
+                All services
+              </Link>
+              <div className="my-2 h-px bg-[rgba(20,40,60,0.12)]" />
+              {serviceLinks.map((s) => (
+                <Link
+                  key={s.href}
+                  href={s.href}
+                  className="block rounded-ow-sm px-3 py-2 text-sm text-ow-mid transition hover:bg-ow-cream hover:text-ow-charcoal"
+                >
+                  {s.label}
+                </Link>
+              ))}
+              <div className="my-2 h-px bg-[rgba(20,40,60,0.12)]" />
+              <Link
+                href="/pricing"
+                className="block rounded-ow-sm px-3 py-2 text-sm text-ow-orange transition hover:bg-[rgba(240,100,0,0.08)]"
+              >
+                Pricing →
+              </Link>
+            </div>
+          )}
+        </li>
         <li>
           <Link
             href="/#contact"
@@ -65,12 +114,12 @@ export default function Navbar() {
         >
           🦊 Lab is open
         </Link>
-        <a
-          href="mailto:hello@outwit.digital"
+        <Link
+          href="/contact"
           className="rounded-ow-sm bg-ow-charcoal px-[22px] py-2 text-[0.82rem] font-semibold tracking-wide text-white transition hover:-translate-y-px hover:bg-ow-slate"
         >
-          Say hello →
-        </a>
+          Get a Strategy Call
+        </Link>
       </div>
 
       <button
@@ -103,6 +152,37 @@ export default function Navbar() {
                 </Link>
               </li>
             ))}
+            <li className="pt-2">
+              <p className="font-mono text-[0.7rem] uppercase tracking-[0.18em] text-ow-mid">
+                Services
+              </p>
+              <div className="mt-2 flex flex-col gap-2">
+                <Link
+                  href="/services"
+                  className="block text-[0.9rem] font-semibold text-ow-charcoal"
+                  onClick={() => setMobileOpen(false)}
+                >
+                  All services
+                </Link>
+                {serviceLinks.map((s) => (
+                  <Link
+                    key={s.href}
+                    href={s.href}
+                    className="block text-[0.9rem] font-medium text-ow-charcoal"
+                    onClick={() => setMobileOpen(false)}
+                  >
+                    {s.label}
+                  </Link>
+                ))}
+                <Link
+                  href="/pricing"
+                  className="block text-[0.9rem] font-semibold text-ow-orange"
+                  onClick={() => setMobileOpen(false)}
+                >
+                  Pricing →
+                </Link>
+              </div>
+            </li>
             <li>
               <Link
                 href="/#contact"
@@ -114,13 +194,13 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="pt-2">
-              <a
-                href="mailto:hello@outwit.digital"
+              <Link
+                href="/contact"
                 className="inline-block rounded-ow-sm bg-ow-orange px-5 py-2.5 text-sm font-semibold text-white"
                 onClick={() => setMobileOpen(false)}
               >
-                Say hello →
-              </a>
+                Book a Strategy Call
+              </Link>
             </li>
           </ul>
         </div>

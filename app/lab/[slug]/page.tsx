@@ -5,6 +5,7 @@ import {
   LAB_EXPERIMENTS,
   type LabSlug,
 } from "@/content/lab";
+import { buildMetadata, breadcrumbJsonLd, jsonLd, SITE } from "@/lib/seo";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -18,16 +19,18 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { slug } = await params;
   const experiment = LAB_EXPERIMENTS[slug as LabSlug];
   if (!experiment) {
-    return {
-      title: "Outwit Lab — Experiment",
+    return buildMetadata({
+      title: "Lab experiment",
       description: "Experiment from the Outwit Lab.",
-    };
+      path: "/lab",
+    });
   }
 
-  return {
-    title: `Outwit Lab — ${experiment.title}`,
+  return buildMetadata({
+    title: `Lab — ${experiment.title}`,
     description: experiment.summary,
-  };
+    path: `/lab/${experiment.slug}`,
+  });
 }
 
 export default async function LabExperimentPage({ params }: PageProps) {
@@ -41,6 +44,19 @@ export default async function LabExperimentPage({ params }: PageProps) {
   return (
     <div className="bg-ow-cream px-5 py-16 pt-24 text-ow-charcoal lg:px-12 lg:py-24">
       <div className="mx-auto max-w-3xl">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={jsonLd(
+            breadcrumbJsonLd({
+              url: `${SITE.baseUrl}/lab/${experiment.slug}`,
+              crumbs: [
+                { name: "Home", path: "/" },
+                { name: "Lab", path: "/lab" },
+                { name: experiment.title, path: `/lab/${experiment.slug}` },
+              ],
+            })
+          )}
+        />
         <Link
           href="/lab"
           className="text-sm font-medium text-ow-mid transition-colors hover:text-ow-orange"

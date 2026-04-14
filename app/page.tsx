@@ -11,6 +11,7 @@ import {
   BLOG_POSTS,
   type BlogSlug,
 } from "@/content/blog";
+import { jsonLd, localBusinessJsonLd } from "@/lib/seo";
 
 const FEATURED_SLUG = "what-makes-a-high-converting-website" satisfies BlogSlug;
 
@@ -46,6 +47,10 @@ export default function Page() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={jsonLd(localBusinessJsonLd())}
+      />
       <HomeHero />
       <LabTicker />
       <WhatOutwitIs />

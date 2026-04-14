@@ -1,16 +1,30 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { BLOG_LIST, BLOG_PUBLISHED } from "@/content/blog";
+import type { Metadata } from "next";
+import { buildMetadata, breadcrumbJsonLd, jsonLd, SITE } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Outwit — Insights",
-  description:
-    "Notes on SEO, websites, and marketing from someone who tests everything on real sites first.",
+  ...buildMetadata({
+    title: "Insights",
+    description:
+      "Notes on SEO, websites, and marketing from a North Texas agency that tests everything with real data first.",
+    path: "/insights",
+  }),
 };
 
 export default function InsightsPage() {
+  const url = `${SITE.baseUrl}/insights`;
+  const crumbs = [
+    { name: "Home", path: "/" },
+    { name: "Insights", path: "/insights" },
+  ];
+
   return (
     <div className="bg-ow-cream px-5 py-16 pt-24 text-ow-charcoal lg:px-12 lg:py-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={jsonLd(breadcrumbJsonLd({ url, crumbs }))}
+      />
       <div className="mx-auto max-w-4xl text-center">
         <p className="ow-label flex w-full justify-center">Insights</p>
         <h1 className="mt-2 font-sans text-4xl font-extrabold tracking-tight sm:text-5xl">

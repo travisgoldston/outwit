@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Outwit — About",
+export const metadata: Metadata = buildMetadata({
+  title: "About",
   description:
-    "Travis Goldston — Outwit is my personal marketing lab where I publish SEO and marketing experiments with real data.",
-};
+    "Meet Travis Goldston. Outwit is a North Texas SEO and web design agency backed by a public lab of real experiments and Search Console data.",
+  path: "/about",
+});
 
 export default function AboutPage() {
   return (
@@ -60,10 +62,15 @@ export default function AboutPage() {
           </div>
 
           <p className="mt-12 border-t border-[rgba(20,40,60,0.12)] pt-10 text-base leading-relaxed text-ow-mid">
-            Want to talk? Email{" "}
-            <a href="mailto:hello@outwit.digital" className="font-semibold text-ow-orange hover:underline">
-              hello@outwit.digital
-            </a>
+            If you&apos;re a local business that needs help getting found on Google, that&apos;s what
+            Outwit does.{" "}
+            <Link href="/services" className="font-semibold text-ow-orange no-underline hover:underline">
+              Check out our services
+            </Link>{" "}
+            or{" "}
+            <Link href="/contact" className="font-semibold text-ow-orange no-underline hover:underline">
+              book a strategy call
+            </Link>
             .
           </p>
         </div>

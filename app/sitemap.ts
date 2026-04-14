@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { BLOG_SLUGS } from "@/content/blog";
 import { LAB_SLUGS } from "@/content/lab";
+import { CITY_SLUGS } from "@/content/locations";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://outwit.digital";
@@ -10,8 +11,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/lab",
     "/insights",
     "/about",
+    "/services",
+    "/services/seo",
+    "/services/web-design",
+    "/services/conversion-optimization",
+    "/pricing",
+    "/locations",
+    "/case-studies",
+    "/contact",
     ...BLOG_SLUGS.map((slug) => `/insights/${slug}`),
     ...LAB_SLUGS.map((slug) => `/lab/${slug}`),
+    ...CITY_SLUGS.map((slug) => `/locations/${slug}`),
   ];
 
   const now = new Date();

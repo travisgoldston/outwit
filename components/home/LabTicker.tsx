@@ -4,7 +4,7 @@ const ITEMS = [
   { tag: "$200 Niche Site", text: "Can it make money? Data's in." },
   { tag: "City Pages", text: "Do they rank or sit ignored?" },
   { tag: "Local SEO Agency", text: "Building one live. Posting screenshots." },
-  { tag: "Fractional CMO", text: "YoY organic growth, documented." },
+  { tag: "Next Test", text: "Coming soon. Real data only." },
 ];
 
 export default function LabTicker() {

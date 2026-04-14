@@ -3,7 +3,6 @@ export type LabSlug =
   | "how-fast-can-a-new-domain-rank"
   | "can-a-200-niche-site-make-money"
   | "building-a-local-seo-agency-site-from-scratch"
-  | "fractional-cmo-seo-growing-a-brand-organic-traffic"
   | "testing-city-pages-for-local-seo";
 
 export const LAB_SLUGS: LabSlug[] = [
@@ -11,7 +10,6 @@ export const LAB_SLUGS: LabSlug[] = [
   "how-fast-can-a-new-domain-rank",
   "can-a-200-niche-site-make-money",
   "building-a-local-seo-agency-site-from-scratch",
-  "fractional-cmo-seo-growing-a-brand-organic-traffic",
   "testing-city-pages-for-local-seo",
 ];
 
@@ -188,7 +186,7 @@ export const LAB_EXPERIMENTS: Record<LabSlug, LabExperiment> = {
     title: "Building a local SEO agency site from scratch",
     status: "In Progress",
     summary:
-      "A public rebuild and growth log with Search Console screenshots every two weeks: indexed pages, impressions, clicks, and rankings.",
+      "A public rebuild and growth log for Outwit with Search Console screenshots every two weeks: indexed pages, impressions, clicks, and rankings.",
     problem:
       "Most marketing sites claim results, but rarely show the timeline and messy details. I want a transparent growth log from a clean rebuild.",
     hypothesis:
@@ -216,49 +214,8 @@ export const LAB_EXPERIMENTS: Record<LabSlug, LabExperiment> = {
         type: "screenshot",
         title: "Google Search Console snapshot (baseline)",
         caption: "Replace with a real screenshot from GSC. Update every 2 weeks.",
-        src: "/lab/brand-tbd/gsc-baseline.png",
+        src: "/lab/outwit/gsc-baseline.png",
         alt: "Google Search Console performance screenshot (baseline)",
-      },
-    ],
-    findings: ["Early notes will appear here as data comes in."],
-    whatItMeans: ["This will be updated as results accumulate."],
-    whatIdDoDifferently: ["TBD"],
-    links: [{ label: "More experiments", href: "/lab" }],
-  },
-
-  "fractional-cmo-seo-growing-a-brand-organic-traffic": {
-    slug: "fractional-cmo-seo-growing-a-brand-organic-traffic",
-    title: "Fractional CMO SEO: Growing a brand’s organic traffic",
-    status: "In Progress",
-    summary:
-      "Documenting the SEO work with YoY data, position changes, content strategy decisions, and honest takeaways.",
-    problem:
-      "SEO advice is cheap. What matters is the decision-making: what we tried, what moved, and what didn’t.",
-    hypothesis:
-      "If we prioritize high-intent content updates, tighten internal linking, and publish consistently around a clear topical map, we can drive YoY organic growth without chasing volume for its own sake.",
-    method: [
-      "Audit the existing content and map it to search intent.",
-      "Identify quick-win updates (titles, headings, internal links, missing sections).",
-      "Publish/refresh content on a predictable cadence.",
-      "Track YoY impressions/clicks and the queries/pages driving movement.",
-    ],
-    dataSources: [
-      "Google Search Console (YoY comparisons)",
-      "Analytics (engaged sessions, conversions if available)",
-    ],
-    lastUpdated: { iso: "2026-04-01", label: "April 1, 2026" },
-    data: [
-      {
-        type: "metric",
-        label: "YoY impressions",
-        value: "TBD",
-        note: "Replace with the latest 12-month comparison from Search Console.",
-      },
-      {
-        type: "metric",
-        label: "YoY clicks",
-        value: "TBD",
-        note: "Replace with the latest 12-month comparison from Search Console.",
       },
     ],
     findings: ["Early notes will appear here as data comes in."],

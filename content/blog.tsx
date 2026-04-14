@@ -337,16 +337,11 @@ export const BLOG_POSTS: Record<BlogSlug, BlogPost> = {
           <p className="mt-6 leading-relaxed text-slate-700">
             The best way to know if your investment is working isn’t just
             rankings. It’s whether search is sending the right visitors and
-            whether those visitors are turning into leads or customers. If
-            you’d like a strategy that’s built for that outcome, our{" "}
-            <ArticleLink href="https://boldspark.co">
-              lead generation services
-            </ArticleLink>{" "}
-            and{" "}
-            <ArticleLink href="https://boldspark.co">SEO strategy</ArticleLink> work
-            are built around it.{" "}
-            <ArticleLink href="mailto:hello.digital">Tell us about your goals</ArticleLink>{" "}
-            and we’ll outline a realistic timeline and plan.
+            whether those visitors are turning into leads or customers. If you want help turning
+            SEO into consistent calls, start with our{" "}
+            <ArticleLink href="/services/seo">SEO service</ArticleLink> and{" "}
+            <ArticleLink href="/pricing">pricing</ArticleLink>. If you’re ready to talk,{" "}
+            <ArticleLink href="/contact">book a strategy call</ArticleLink>.
           </p>
         </>
       );

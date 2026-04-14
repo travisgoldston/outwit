@@ -6,6 +6,7 @@ import {
   BLOG_SLUGS,
   type BlogSlug,
 } from "@/content/blog";
+import { buildMetadata, breadcrumbJsonLd, jsonLd, SITE } from "@/lib/seo";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -19,18 +20,17 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { slug } = await params;
   const article = BLOG_POSTS[slug as BlogSlug];
   if (!article) {
-    return {
-      title: "Outwit — Insights",
-    };
+    return buildMetadata({
+      title: "Insights",
+      description: "Notes on SEO, websites, and marketing—tested first, written plainly.",
+      path: "/insights",
+    });
   }
-  return {
-    title: `Outwit — ${article.title}`,
+  return buildMetadata({
+    title: article.title,
     description: article.metaDescription,
-    openGraph: {
-      title: `${article.title} | Outwit`,
-      description: article.metaDescription,
-    },
-  };
+    path: `/insights/${article.slug}`,
+  });
 }
 
 export default async function InsightArticlePage({ params }: PageProps) {
@@ -61,6 +61,19 @@ export default async function InsightArticlePage({ params }: PageProps) {
               url: canonicalUrl,
             }),
           }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={jsonLd(
+            breadcrumbJsonLd({
+              url: canonicalUrl,
+              crumbs: [
+                { name: "Home", path: "/" },
+                { name: "Insights", path: "/insights" },
+                { name: article.title, path: `/insights/${article.slug}` },
+              ],
+            })
+          )}
         />
 
         <Link

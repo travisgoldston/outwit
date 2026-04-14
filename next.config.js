@@ -14,31 +14,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: "/services",
-        destination: "/",
-        permanent: true,
-      },
-      {
-        source: "/services/:path*",
-        destination: "/",
-        permanent: true,
-      },
-      {
-        source: "/case-studies",
-        destination: "/lab",
-        permanent: true,
-      },
-      {
-        source: "/case-studies/:path*",
-        destination: "/lab",
-        permanent: true,
-      },
-      {
-        source: "/contact",
-        destination: "/about",
-        permanent: true,
-      },
-      {
         source: "/projects",
         destination: "/",
         permanent: true,

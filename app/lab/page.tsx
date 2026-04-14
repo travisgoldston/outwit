@@ -1,11 +1,15 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { LAB_EXPERIMENTS, LAB_SLUGS } from "@/content/lab";
+import type { Metadata } from "next";
+import { buildMetadata, breadcrumbJsonLd, jsonLd, SITE } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Outwit — Lab",
-  description:
-    "Marketing experiments I run with real data and real projects—published here so you can see what actually moves the needle.",
+  ...buildMetadata({
+    title: "Lab",
+    description:
+      "The Outwit Lab: public SEO and marketing experiments with real data, Search Console screenshots, and clear methodology.",
+    path: "/lab",
+  }),
 };
 
 function statusChip(slug: (typeof LAB_SLUGS)[number]) {
@@ -17,8 +21,18 @@ function statusChip(slug: (typeof LAB_SLUGS)[number]) {
 }
 
 export default function LabPage() {
+  const url = `${SITE.baseUrl}/lab`;
+  const crumbs = [
+    { name: "Home", path: "/" },
+    { name: "Lab", path: "/lab" },
+  ];
+
   return (
     <div className="bg-ow-cream px-5 py-16 pt-24 text-ow-charcoal lg:px-12 lg:py-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={jsonLd(breadcrumbJsonLd({ url, crumbs }))}
+      />
       <div className="mx-auto max-w-4xl text-center">
         <p className="ow-label flex w-full justify-center">The Lab</p>
         <h1 className="mt-2 font-sans text-4xl font-extrabold tracking-tight text-ow-charcoal sm:text-5xl">

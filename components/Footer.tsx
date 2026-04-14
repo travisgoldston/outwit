@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="border-t border-[rgba(20,40,60,0.12)] bg-ow-cream px-5 pb-8 pt-14 sm:px-8 lg:px-12">
-      <div className="mx-auto grid max-w-6xl gap-10 pb-10 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr] lg:gap-12">
+      <div className="mx-auto grid max-w-6xl gap-10 pb-10 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr_1fr_1fr] lg:gap-12">
         <div>
           <div className="mb-2.5 flex items-center gap-2">
             <Image
@@ -19,7 +19,7 @@ export default function Footer() {
             </span>
           </div>
           <p className="max-w-[230px] text-[0.84rem] leading-relaxed text-ow-mid">
-            Marketing experiments with real data. SEO, web, and notes from the lab—North Texas.
+            Outfoxed by Outwit 🦊
           </p>
         </div>
 
@@ -102,6 +102,58 @@ export default function Footer() {
 
         <div>
           <h4 className="mb-3.5 font-mono text-[0.62rem] font-semibold uppercase tracking-[0.2em] text-ow-charcoal">
+            Services
+          </h4>
+          <ul className="flex flex-col gap-2">
+            <li>
+              <Link href="/services" className="text-[0.84rem] text-ow-mid transition hover:text-ow-charcoal">
+                All services
+              </Link>
+            </li>
+            <li>
+              <Link href="/services/seo" className="text-[0.84rem] text-ow-mid transition hover:text-ow-charcoal">
+                SEO
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/services/web-design"
+                className="text-[0.84rem] text-ow-mid transition hover:text-ow-charcoal"
+              >
+                Web Design
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/services/conversion-optimization"
+                className="text-[0.84rem] text-ow-mid transition hover:text-ow-charcoal"
+              >
+                Conversion Optimization
+              </Link>
+            </li>
+            <li>
+              <Link href="/pricing" className="text-[0.84rem] font-semibold text-ow-orange transition hover:text-ow-ember">
+                Pricing
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="mb-3.5 font-mono text-[0.62rem] font-semibold uppercase tracking-[0.2em] text-ow-charcoal">
+            Locations
+          </h4>
+          <ul className="flex flex-col gap-2">
+            <li>
+              <Link href="/locations" className="text-[0.84rem] text-ow-mid transition hover:text-ow-charcoal">
+                North Texas locations
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="mb-3.5 font-mono text-[0.62rem] font-semibold uppercase tracking-[0.2em] text-ow-charcoal">
             Connect
           </h4>
           <ul className="flex flex-col gap-2">
@@ -111,7 +163,7 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/#contact" scroll className="text-[0.84rem] text-ow-mid transition hover:text-ow-charcoal">
+              <Link href="/contact" className="text-[0.84rem] text-ow-mid transition hover:text-ow-charcoal">
                 Contact
               </Link>
             </li>
