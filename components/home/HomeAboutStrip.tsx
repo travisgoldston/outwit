@@ -18,7 +18,7 @@ export default function HomeAboutStrip() {
         <div>
           <p className="text-2xl font-extrabold tracking-tight text-ow-charcoal">Travis Goldston.</p>
           <p className="mt-1 font-mono text-[0.68rem] font-medium uppercase tracking-[0.14em] text-ow-orange">
-            Outwit
+            Founder · Outwit
           </p>
           <p className="mt-4 text-[0.96rem] leading-[1.82] text-ow-mid">
             I have way too many hobbies. Vibe coding is my crack cocaine.{" "}

@@ -30,7 +30,7 @@ export default function AboutPage() {
             Hi, I&apos;m Travis.
           </h1>
           <p className="mt-3 font-mono text-[0.68rem] font-medium uppercase tracking-[0.14em] text-ow-orange">
-            Outwit
+            Founder · Outwit
           </p>
 
           <div className="mt-8 max-w-none space-y-6 text-base leading-relaxed text-ow-mid">
