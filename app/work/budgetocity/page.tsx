@@ -205,20 +205,20 @@ export default function BudgetocityCaseStudyPage() {
                   aria-hidden
                   className="pointer-events-none absolute rounded-[8px] bg-white/35 backdrop-blur-md"
                   style={{
-                    left: "1.0%",
-                    top: "18.6%",
-                    width: "18.6%",
-                    height: "18.0%",
+                    left: "0.6%",
+                    top: "27.8%",
+                    width: "24.2%",
+                    height: "20.8%",
                   }}
                 />
                 <div
                   aria-hidden
                   className="pointer-events-none absolute rounded-[8px] bg-white/35 backdrop-blur-md"
                   style={{
-                    left: "39.0%",
-                    top: "18.6%",
-                    width: "18.6%",
-                    height: "18.0%",
+                    left: "41.8%",
+                    top: "27.8%",
+                    width: "23.6%",
+                    height: "20.8%",
                   }}
                 />
               </div>
