@@ -181,27 +181,6 @@ export default function BudgetocityCaseStudyPage() {
                 </span>
               </li>
             </ul>
-
-            <div className="mt-8 overflow-hidden rounded-ow border border-[rgba(20,40,60,0.12)] bg-white">
-              <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[rgba(20,40,60,0.12)] px-5 py-3">
-                <span className="font-mono text-[0.72rem] uppercase tracking-[0.1em] text-ow-mid">
-                  Google Search Console · 28-day YoY comparison
-                </span>
-                <span className="rounded-[2px] bg-[rgba(20,40,60,0.06)] px-2 py-1 font-mono text-[0.68rem] text-ow-mid">
-                  Real screenshot
-                </span>
-              </div>
-
-              <div className="relative">
-                <Image
-                  src="/work/budgetocity/gsc-yoy.png"
-                  alt="Google Search Console performance comparison screenshot"
-                  width={1600}
-                  height={900}
-                  className="block h-auto w-full"
-                />
-              </div>
-            </div>
           </section>
 
           <section>
