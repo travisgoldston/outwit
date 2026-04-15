@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function HomeAboutStrip() {
   return (
-    <section className="border-t border-[rgba(20,40,60,0.12)] bg-ow-cream px-5 pb-0 pt-16 sm:px-8 lg:px-12 lg:pt-20">
+    <section className="border-t border-[rgba(20,40,60,0.12)] bg-ow-cream px-5 py-20 sm:px-8 lg:px-12 lg:py-24">
       <div className="mx-auto grid max-w-[960px] items-center gap-12 lg:grid-cols-[auto_1fr] lg:gap-16">
         <div className="mx-auto flex h-[180px] w-[180px] shrink-0 items-center justify-center overflow-hidden rounded-[20px] border border-[rgba(20,40,60,0.18)] bg-white p-5 shadow-ow sm:mx-0">
           <Image
