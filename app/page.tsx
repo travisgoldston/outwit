@@ -3,6 +3,7 @@ import HomeHero from "@/components/home/HomeHero";
 import LabTicker from "@/components/home/LabTicker";
 import WhatOutwitIs from "@/components/home/WhatOutwitIs";
 import HomeAboutStrip from "@/components/home/HomeAboutStrip";
+import WhoWeveHelpedSection from "@/components/home/WhoWeveHelpedSection";
 import HomeCta from "@/components/home/HomeCta";
 import { LAB_SLUGS, LAB_EXPERIMENTS, type LabSlug } from "@/content/lab";
 import {
@@ -95,6 +96,8 @@ export default function Page() {
           })}
         </div>
       </section>
+
+      <WhoWeveHelpedSection />
 
       <section className="border-t border-[rgba(20,40,60,0.12)] bg-white px-5 py-20 sm:px-8 lg:px-12 lg:py-24">
         <div className="mb-10 flex flex-wrap items-end justify-between gap-4">
