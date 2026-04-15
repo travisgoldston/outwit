@@ -69,7 +69,8 @@ export default function Navbar() {
             Services <span aria-hidden>▾</span>
           </button>
           {servicesOpen && (
-            <div className="absolute left-0 top-full mt-3 w-[260px] rounded-ow border border-[rgba(20,40,60,0.18)] bg-white p-2 shadow-ow">
+            <div className="absolute left-0 top-full w-[260px] pt-3">
+              <div className="rounded-ow border border-[rgba(20,40,60,0.18)] bg-white p-2 shadow-ow">
               <Link
                 href="/services"
                 className="block rounded-ow-sm px-3 py-2 text-sm font-semibold text-ow-charcoal transition hover:bg-ow-cream"
@@ -93,6 +94,7 @@ export default function Navbar() {
               >
                 Pricing →
               </Link>
+              </div>
             </div>
           )}
         </li>

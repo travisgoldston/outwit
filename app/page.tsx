@@ -57,7 +57,7 @@ export default function Page() {
       <LabTicker />
       <WhatOutwitIs />
 
-      <section id="lab" className="bg-ow-cream px-5 py-20 sm:px-8 lg:px-12 lg:py-24">
+      <section id="lab" className="bg-ow-cream px-5 pb-0 pt-20 sm:px-8 lg:px-12 lg:pt-24">
         <div className="mb-10 flex flex-wrap items-end justify-between gap-4">
           <div>
             <p className="ow-label">The Lab</p>
@@ -101,7 +101,7 @@ export default function Page() {
       <HomeMethodologySection />
       <WhoWeveHelpedSection />
 
-      <section className="border-t border-[rgba(20,40,60,0.12)] bg-white px-5 py-20 sm:px-8 lg:px-12 lg:py-24">
+      <section className="border-t border-[rgba(20,40,60,0.12)] bg-white px-5 pb-0 pt-20 sm:px-8 lg:px-12 lg:pt-24">
         <div className="mb-10 flex flex-wrap items-end justify-between gap-4">
           <div>
             <p className="ow-label">Insights</p>

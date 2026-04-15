@@ -200,14 +200,25 @@ export default function BudgetocityCaseStudyPage() {
                   height={900}
                   className="block h-auto w-full"
                 />
+                {/* Blur sensitive tiles (clicks + CTR) without editing the source image */}
                 <div
                   aria-hidden
-                  className="pointer-events-none absolute rounded-[6px] bg-white/40 backdrop-blur-md"
+                  className="pointer-events-none absolute rounded-[8px] bg-white/35 backdrop-blur-md"
                   style={{
-                    left: "2.2%",
-                    top: "13.5%",
-                    width: "17.2%",
-                    height: "16.5%",
+                    left: "0.8%",
+                    top: "18.2%",
+                    width: "18.2%",
+                    height: "18.4%",
+                  }}
+                />
+                <div
+                  aria-hidden
+                  className="pointer-events-none absolute rounded-[8px] bg-white/35 backdrop-blur-md"
+                  style={{
+                    left: "36.8%",
+                    top: "18.2%",
+                    width: "18.2%",
+                    height: "18.4%",
                   }}
                 />
               </div>

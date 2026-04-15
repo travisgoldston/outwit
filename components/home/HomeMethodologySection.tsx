@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function HomeMethodologySection() {
   return (
-    <section className="border-t border-[rgba(20,40,60,0.12)] bg-white px-5 py-20 sm:px-8 lg:px-12 lg:py-24">
+    <section className="border-t border-[rgba(20,40,60,0.12)] bg-white px-5 pb-0 pt-20 sm:px-8 lg:px-12 lg:pt-24">
       <div className="mx-auto grid max-w-[1100px] items-start gap-12 lg:grid-cols-2 lg:gap-20">
         <div>
           <p className="ow-label">How it works</p>
