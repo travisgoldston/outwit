@@ -215,9 +215,9 @@ export default function BudgetocityCaseStudyPage() {
                   aria-hidden
                   className="pointer-events-none absolute rounded-[8px] bg-white/35 backdrop-blur-md"
                   style={{
-                    left: "36.8%",
+                    left: "39.2%",
                     top: "18.2%",
-                    width: "18.2%",
+                    width: "15.6%",
                     height: "18.4%",
                   }}
                 />
