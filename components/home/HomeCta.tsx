@@ -26,12 +26,12 @@ export default function HomeCta() {
           </p>
         </div>
         <div className="flex shrink-0 flex-col items-start gap-3">
-          <a
-            href="mailto:hello@outwitdigital.com"
+          <Link
+            href="/contact"
             className="inline-flex items-center gap-2 rounded-ow-sm bg-ow-orange px-8 py-[15px] text-[0.92rem] font-bold text-white whitespace-nowrap transition hover:-translate-y-0.5 hover:bg-ow-ember hover:shadow-[0_8px_28px_rgba(240,100,0,0.35)]"
           >
             Say hello →
-          </a>
+          </Link>
           <Link
             href="/lab"
             className="inline-flex items-center gap-2 rounded-ow-sm border-[1.5px] border-white/15 bg-transparent px-7 py-[13px] text-[0.88rem] font-medium text-white/50 whitespace-nowrap transition hover:border-white/40 hover:text-white"

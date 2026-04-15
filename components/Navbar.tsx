@@ -98,8 +98,7 @@ export default function Navbar() {
         </li>
         <li>
           <Link
-            href="/#contact"
-            scroll={true}
+            href="/contact"
             className="text-[0.84rem] font-medium tracking-wide text-ow-mid transition hover:text-ow-charcoal"
           >
             Contact
@@ -185,8 +184,7 @@ export default function Navbar() {
             </li>
             <li>
               <Link
-                href="/#contact"
-                scroll
+                href="/contact"
                 className="block text-[0.9rem] font-medium text-ow-charcoal"
                 onClick={() => setMobileOpen(false)}
               >

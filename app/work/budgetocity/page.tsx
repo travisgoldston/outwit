@@ -147,6 +147,11 @@ export default function BudgetocityCaseStudyPage() {
               Google noticed.
             </h3>
 
+            <p className="mb-5 text-[0.975rem] leading-[1.75] text-ow-slate">
+              The primary goal here wasn&apos;t necessarily clicks—it was ranking. Moving from page 3 to page 1 changes
+              everything. This is still a work in progress, but the results speak for themselves.
+            </p>
+
             <ul className="m-0 list-none space-y-0">
               <li className="flex gap-4 border-b border-[rgba(20,40,60,0.12)] py-4">
                 <span className="min-w-[80px] font-sans text-[1.5rem] font-extrabold italic leading-none text-ow-orange">
@@ -187,13 +192,25 @@ export default function BudgetocityCaseStudyPage() {
                 </span>
               </div>
 
-              <Image
-                src="/work/budgetocity/gsc-yoy.png"
-                alt="Google Search Console performance comparison screenshot"
-                width={1600}
-                height={900}
-                className="block h-auto w-full"
-              />
+              <div className="relative">
+                <Image
+                  src="/work/budgetocity/gsc-yoy.png"
+                  alt="Google Search Console performance comparison screenshot"
+                  width={1600}
+                  height={900}
+                  className="block h-auto w-full"
+                />
+                <div
+                  aria-hidden
+                  className="pointer-events-none absolute rounded-[6px] bg-white/40 backdrop-blur-md"
+                  style={{
+                    left: "2.2%",
+                    top: "13.5%",
+                    width: "17.2%",
+                    height: "16.5%",
+                  }}
+                />
+              </div>
             </div>
           </section>
 
